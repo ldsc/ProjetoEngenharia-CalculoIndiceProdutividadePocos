@@ -168,31 +168,179 @@ Eliminam-se os requisitos "impossíveis" e ajusta-se a idéia do sistema de
 \end_layout
 
 \begin_layout Section
-O que é a análise de domínio
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
 Análise de domínio
 \end_layout
 
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Análise-de-domínio"
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Esta parte deve ser apagada na versão final; serve apenas como lembrete
- dos itens que vocês precisam considerar
+\begin_layout Standard
+A tecnologia de poços horizontais constitui o padrão de perfuração e implementaç
+ão de poços de desenvolvimento na indústria do petróleo, ao lado da perfuração
+ direcional, principalmente em ambientes offshore, devido ao alto custo
+ de um poço.
+ Antes do avanço da tecnologia para a perfuração de poços horizontais a
+ desvantagem em relação a poços verticais era que apenas uma área poderia
+ ser drenada por um mesmo poço.
 \end_layout
+
+\begin_layout Standard
+A partir do surgimento de novas técnicas de perfuração passaram-se a perfurar
+ poços horizontais multilaterais, assim um poço poderia drenar mais de um
+ reservatório.
+ A partir de um poço vertical perfuram-se vários trechos horizontais em
+ diferentes camadas.
+ O principal motivo para esse tipo é o grande aumento que se dá de produtividade
+, podendo apontar outras vantagens em relação ao poço vertical como menor
+ gradiente de pressão, menor número de poços, maior exposição ao reservatório,
+ poços de longo alcance, redução da produção de areia, entre outros.
+ Porém, como qualquer outro método há desvantagens, por exemplo, se o poço
+ horizontal for atingido pela água proveniente do contato óleo/água ascendente,
+ dependendo da completação que foi utilizada no poço, ele deverá ser fechado
+ ou transformado em um poço injetor, não podendo haver intervenção ou recompleta
+ção.
+\end_layout
+
+\begin_layout Standard
+O projeto de perfuração de um poço horizontal é diferente de um poço vertical,
+ porque a sua produtividade depende de seu comprimento, além de fatores
+ determinantes em ambos os projetos como viscosidade do óleo e permeabilidade
+ da formação e vários aspectos relativos à perfuração do trecho horizontal.
+\end_layout
+
+\begin_layout Standard
+Este projeto tem como objetivo evidenciar em que situações, em termos de
+ produtividade, qual design de poço seria mais recomendado por meio de um
+ estudo com embasamento teórico sobre diversos parâmetros de reservatório
+ que podem intervir na produtivdade do poço horizontal e qual o ganho de
+ produtividade em um poço vertical à estimulação, em especial o fraturamento
+ hidráulico.
+\end_layout
+
+\begin_layout Standard
+Depois de estudar as especificações do sistema e estudos de biblioteca e
+ de disciplinas do curso foi possível identificar nosso domínio de trabalho:
+\end_layout
+
+\begin_layout Itemize
+O software irá calcular vários índices de produtividade para um mesmo reservatór
+io dado por meio dos métodos a depender do caso ser isotrópico ou anisotrópico;
+\end_layout
+
+\begin_layout Itemize
+O software usará conceitos de engenharia de reservatório e da engenharia
+ de poço para que se realize as simulações, aqui iremos ter explanações
+ básicas de quando se usar cada método, porém é necessário que se tenha
+ o conhecimento básico dessas disciplinas para a realização da simulação.
+\end_layout
+
+\begin_layout Itemize
+O software plotará os resultados dos índices de produtividade para poços
+ com diferentes design.
+\end_layout
+
+\begin_layout Section
+Formulação teórica
+\end_layout
+
+\begin_layout Subsection
+Produtividade de Poços
+\end_layout
+
+\begin_layout Standard
+Inicialmente, serão apresentadas algumas definições de parâmetros para uma
+ boa compreensão de termos e conceitos utilizados no decorrer do projeto.
+\end_layout
+
+\begin_layout Subsection
+Índice de Produtividade
+\end_layout
+
+\begin_layout Standard
+O índice de produtividade, de forma simplificada, é dado pela equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+IP=\frac{Q}{Pe-Pw}\label{eq:1}
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q=vazão\left[m^{3}/d\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Pe=pressão\:estática\:do\:reservatório\:\left[kgf/cm^{2}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P_{w}=pressão\:de\:fluxo\:do\:poço\:\left[kgf/cm^{2}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Efeito Skin
+\end_layout
+
+\begin_layout Standard
+Segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Joshi"
+literal "false"
+
+\end_inset
+
+ o efeito de película ou de skin é um modelo matemático introduzido na indústria
+ de petróleo por Van Everdingen & Hurst com o objetivo de simular uma simulação
+ física originada por um fenômeno real, o dano à formação.
+\end_layout
+
+\begin_layout Standard
+A partir da definição do fator de skin pode-se definir o raio efetivo do
+ poço por meio da equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r_{w}'=re^{-s}\label{eq:2}
+\end{equation}
 
 \end_inset
 
@@ -200,88 +348,447 @@ Esta parte deve ser apagada na versão final; serve apenas como lembrete
 \end_layout
 
 \begin_layout Standard
-A análise de domínio é uma parte da elaboração; seu objetivo é entender
- o domínio, a abrangência do sistema a ser desenvolvido.
- Envolve itens como estimar o reuso do sistema.
- Neste ponto, o analista pensa no sistema de uma forma mais genérica, identifica
-ndo conceitos fundamentais que podem ser reaproveitados em outros sistemas.
- 
+Onde:
 \end_layout
 
-\begin_layout Itemize
-Estudo dos requisitos/especificações do sistema.
+\begin_layout Standard
+\begin_inset Formula $r_{w}^{'}=raio\:efetivo\:do\:poço\:\left[cm\right]$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Definição e caracterização do domínio a ser investigado (área dos softwares
- e bibliotecas a serem investigadas).
- Uma boa maneira de identificar os assuntos relacionados ao sistema que
- está sendo desenvolvido é dar uma olhada nos livros, manuais e artigos
- da área.
+\begin_layout Standard
+\begin_inset Formula $r_{w}=raio\:do\:poço\:\left[cm\right]$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Manter contato com especialistas que tenham domínio dos conceitos envolvidos.
- Segundo 
+\begin_layout Standard
+\begin_inset Formula $s=fator\:de\:skin$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Regime Permanente
+\end_layout
+
+\begin_layout Standard
+As soluções analíticas em estado estacionário ou permanente são a forma
+ mais simples de soluções para poços horizontais.
+ No regime de fluxo permanente, por hpótese admitimos que a pressão em qualquer
+ ponto do reservatório é independente do tempo.
+\end_layout
+
+\begin_layout Standard
+Na realidade são pouquíssimos casos de reservatórios que operam sob as condições
+ do regime de fluxo permanente.
+ Apesar disso, essas soluções são usadas em grande frequência segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "prog-UML-MartimFowler"
-literal "true"
+key "Joshi"
+literal "false"
 
 \end_inset
 
-, estas pessoas "devem ser abertas, ter bastante conhecimento prático e
- estar disponíveis para perguntas".
+ pelos seguintes fatos:
 \end_layout
 
-\begin_layout Itemize
-Deve-se fazer entrevistas com os usuários do sistema (para detalhamento
- dos diagramas de caso de uso).
+\begin_layout Enumerate
+São de fácil dedução analítica;
 \end_layout
 
-\begin_layout Itemize
-Identificação de amostras (instalar e testar softwares e bibliotecas similares).
+\begin_layout Enumerate
+Podem ser usados para obter soluções para o fluxo transiente, usa-se o artifício
+ de aumentar o raio de drenagem com o tempo;
 \end_layout
 
-\begin_layout Itemize
-Na elaboração deve-se analisar a possibilidade de se reaproveitar projetos
- antigos (sistemas existentes etc).
- Procurar as classes em bibliotecas existentes antes de implementá-las 
+\begin_layout Enumerate
+Podem ser usadas para se obter soluções para o fluxo pseudopermanente por
+ meio do emprego do fator de Dietz, que permite o cálculo da pseudopressão
+ para diversas geometrias do reservatório;
+\end_layout
+
+\begin_layout Enumerate
+Podem ser verificadas experimentalmente por meio de modelos de laboratório
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "prog-EngSof-Pressman"
-literal "true"
+key "Rosa"
+literal "false"
 
 \end_inset
 
 .
- Se a equipe de desenvolvimento já tem experiência com alguns sistemas,
- isto deve ser considerado.
- A idéia é reaproveitar o conhecimento legado.
 \end_layout
 
-\begin_layout Itemize
-Identificação e definição dos objetos genéricos (a serem reutilizados).
+\begin_layout Subsection
+Produtividade de Poços Horizontais
 \end_layout
 
 \begin_layout Standard
-Talvez o aspecto mais importante da elaboração seja o contato com o cliente.
- Quando o cliente/usuário tem uma noção básica de como o sistema é desenvolvido,
- ele passa a fazer solicitações que serão mais facilmente implementadas.
- 
+Os métodos abaixo são para formações isotrópicas, ou seja, com a permeabilidade
+ vertical igual à horizontal.
+\end_layout
+
+\begin_layout Itemize
+Borisov: 
+\begin_inset Formula 
+\begin{equation}
+IP=\frac{\frac{2\pi k_{h}h}{\mu}}{ln(\frac{4r_{eh}}{L})+[(\frac{h}{L})ln(\frac{h}{2\pi r_{w}})]}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Giger:
+\begin_inset Formula 
+\begin{equation}
+IP=\frac{\frac{2\pi k_{h}h}{\mu}}{(\frac{L}{h})ln(\frac{1+\sqrt{1-(\frac{L}{2r_{eh}})²}}{\frac{L}{2r_{eh}}})+ln(\frac{h}{2\pi r_{w}})}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Joshi:
+\begin_inset Formula 
+\begin{equation}
+IP=\frac{2\pi k_{h}h}{ln(\frac{a+\sqrt{a^{2}-(\frac{L}{2})^{2}}}{\frac{L}{2}})+(\frac{h}{L})ln(\frac{h}{2r_{w}})}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a=(\frac{L}{2})\sqrt{0.5+\sqrt{0.25+(\frac{2r_{eh}}{L})^{4}}}\label{eq:6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $IP=Índice\:de\:Produtividade$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k_{h}=permeabilidade\:horizontal$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h=altura\:do\:reservatório$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mu=viscosidade\:do\:óleo$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{eh}=raio\:exeterno\:do\:reservatório$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L=comprimento\:horizontal\:do\:reservatório$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{w}=raio\:do\:poço$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na literatura também é apresentado uma solução que é independente do raio
+ de drenagem 
+\begin_inset Formula $r_{eh}$
+\end_inset
+
+ do poço.
+ segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Shedid"
+literal "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+IP=\frac{\frac{2\pi hk}{\mu B_{o}}}{[ln(\frac{h/2r_{w})}{L/h}+(0.25+\frac{C}{L})(\frac{1}{r_{w}}-\frac{2}{h})]}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{o}=fator\:volume\:de\:formação\:do\:óleo$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+E a contante 
+\begin_inset Formula $C$
+\end_inset
+
+ é mostrada na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Constante C"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ abaixo:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/AnaliseDeDominio.png
-	width 100text%
+	filename C:/Users/Usuario/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Figura-3-18.PNG
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Constante 
+\begin_inset Formula $C$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Constante C"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cálculo do IP com anisotropia
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+IP=\frac{Q}{\Delta P}=\frac{\frac{2\pi k_{h}h}{\mu}}{ln(\frac{a+\sqrt{a-(\frac{L}{2})²}}{\frac{L}{2}})+(\frac{\beta h}{L})ln(\frac{\beta h}{2r_{w}})}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\beta=\sqrt{\frac{k_{h}}{k_{v}}}\label{eq:9}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Delta P\;é\:a\:queda\:de\:pressão\:no\:reservatório$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Modelo de Renard e Dupuy:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+IP=\frac{2\pi k_{h}h}{\mu}\left(\frac{1}{cosh^{-1}\left(X\right)+\left(\frac{\beta h}{L}\right)\left(ln\left[\frac{h}{2\pi r_{w}'}\right]\right)}\right)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r_{w}'=\frac{1+\beta}{2\beta}r_{w}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+X=\frac{2a}{L}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Isso é usado para uma área elipsoidal, a é dado pela equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ e 
+\begin_inset Formula $\beta$
+\end_inset
+
+ pela equação 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:9"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Poços Verticais Fraturados
+\end_layout
+
+\begin_layout Subsubsection
+Fraturamento Hidráulico
+\end_layout
+
+\begin_layout Standard
+O fraturamento hidráulico é uma técnica usada para estimular poços através
+ da aplicação de uma pressão contra a rocha reservatório causando seu rompimento
+ por tração por uso de um fluido chamado fluido de fraturamento.
+ Durante a operação de fraturamento de um poço vertical não se tem muito
+ controle sobre a altura da fratura, que pode ser muito grande, a depender
+ da resistência oferecida pelas formações adjacentes.
+ Como pode ser visto na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tipos-de-fratura"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(a), a fratura penetra totalmente a formação, isto é, a altura da fratura
+ é igual à da formação e na parte 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tipos-de-fratura"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(b), a fratura diminui a partir do momento em que se distancia do poço.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/ProjetoEngenharia-CarolinaB-DouglasR/imagens/WhatsApp Image 2021-08-26 at 15.40.29.jpeg
+	scale 70
 
 \end_inset
 
@@ -292,263 +799,799 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Elaboração e análise de domínio
+Tipos de fratura 
 \begin_inset CommandInset label
 LatexCommand label
-name "cap:Análise-de-domínio."
+name "fig:Tipos-de-fratura"
 
 \end_inset
 
- (adaptado de 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Segundo 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "prog-EngSof-Pressman"
-literal "true"
+key "Joshi"
+literal "false"
 
 \end_inset
 
-)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
-Análise de domínio
-\end_layout
-
-\begin_layout Standard
-Após estudo dos requisitos/especificações do sistema, algumas entrevistas,
- estudos na biblioteca e disciplinas do curso foi possível identificar nosso
- domínio de trabalho:
-\end_layout
-
-\begin_layout Itemize
-Definição e caracterização do domínio a ser investigado 
-\end_layout
-
-\begin_layout Itemize
-Descrição das áreas/disciplinas relacionadas.
-\end_layout
-
-\begin_layout Itemize
-Descrição de questões associadas a espaço/tempo (espaço físico, local, instalaçã
-o).
-\end_layout
-
-\begin_layout Itemize
-Fotografias de sistemas equivalentes/parecidos.
-\end_layout
-
-\begin_layout Itemize
-...
-\end_layout
-
-\begin_layout Section
-Formulação teórica
-\end_layout
-
-\begin_layout Standard
-...coloque aqui texto explicando a formulação física-matemática, a descrição
- das equações que serão utilizadas...
-\end_layout
-
-\begin_layout Standard
-...aqui entram figuras, tabelas explicativas, equações a serem utilizadas no
- software...
-\end_layout
-
-\begin_layout Standard
-...logo depois, com os dados levantados na análise de domínio, e esta formulação
- teórica, iremos identificar os pacotes, os assuntos com os quais iremos
- trabalhar...
-\end_layout
-
-\begin_layout Standard
-...
- no final da formulação teórica, indicar livros e artigos que tem mais informaçã
-o sobre o assunto...
-\end_layout
-
-\begin_layout Standard
-...se vai usar modelos numéricos, colocar seção 3.3.x falando deles; no final
- citar/referenciar fontes...
-\end_layout
-
-\begin_layout Section
-O que é identificação de pacotes
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Identificação de pacotes
-\end_layout
-
-\end_inset
-
- – assuntos
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Identificação-de-pacotes"
-
-\end_inset
-
-
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Assuntos
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Esta parte deve ser apagada na versão final; serve apenas como lembrete
- dos itens que vocês precisam considerar
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Um assunto é aquilo que é tratado ou abordado em uma discussão, em um estudo
- e é utilizado para orientar o leitor em um modelo amplo e complexo.
-\end_layout
-
-\begin_layout Itemize
-Se um grupo de classes troca muitas informações entre si, provavelmente
- as classes fazem parte de um mesmo assunto.
- Assim, classes que se relacionam por meio de conceitos em comum fazem parte
- de uma mesma área, são reunidas e formam um assunto (pacote).
-\end_layout
-
-\begin_layout Itemize
-Em um pacote, os nomes de classes e de associações devem ser semelhantes.
- 
-\end_layout
-
-\begin_layout Itemize
-Preste atenção a semelhanças na forma.
- Procedimentos semelhantes indicam polimorfismo e são candidatos a superclasses.
- Usualmente a classe mais genérica de uma hierarquia de classes identifica
- um assunto.
- 
-\end_layout
-
-\begin_layout Section
-Identificação de pacotes – assuntos
-\end_layout
-
-\begin_layout Standard
-...aqui...
-\end_layout
-
-\begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
-\end_layout
-
-\begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
-\end_layout
-
-\begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
-\end_layout
-
-\begin_layout Section
-O que é o diagrama de pacotes
-\emph on
-
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Diagrama de pacotes
-\end_layout
-
-\end_inset
-
-
-\emph default
- – assuntos
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-assuntos
-\end_layout
-
-\end_inset
-
-
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-módulos
-\end_layout
-
-\end_inset
-
-
-\emph on
-
-\begin_inset Index idx
-status collapsed
-
-\begin_layout Plain Layout
-Diagrama de pacotes (assuntos)
-\end_layout
-
-\end_inset
-
-
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:diagrama de assuntos-pacotes"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Um diagrama de pacotes é útil para mostrar as dependências entre as diversas
- partes do sistema; pode incluir: sistemas, subsistemas, hierarquias de
- classes, classes, interfaces, componentes, nós, colaborações e casos de
- uso.
-\end_layout
-
-\begin_layout Standard
-O exemplo da Figura 
+ do ponto de vista do reservatório, as fraturas artificiais ou induzidas
+ são subdivididas em três categorias diferentes, como mostra a figura 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "fig:Diagrama-de-Pacotes"
+reference "fig:Categorias-de-fraturas"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- apresenta um diagrama de pacotes para um sistema de métodos numéricos.
- Observe que o diagrama de pacotes inclui um pacote bibliotecas, o qual
- é dividido em bibliotecas matemáticas, de estatística e de simulação.
- A seguir o componente biblioteca de simulação será detalhado.
+: fraturas com fluxo uniforme (a), fraturas de conduvidade infinita (b)
+ e fraturas com condutividade finitas (c).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/ProjetoEngenharia-CarolinaB-DouglasR/imagens/WhatsApp Image 2021-08-26 at 15.40.29 (2).jpeg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Categorias de fraturas 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Categorias-de-fraturas"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(a) Fratura com fluxo uniforme: O raio efetivo de um poço com fratura sob
+ fluxo uniforme é definido, segundo 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Joshi"
+literal "false"
+
+\end_inset
+
+, por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r_{w}'=\frac{L}{2e}=\frac{x_{_{f}}}{e}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{w}'=raio\:efetivo\:do\:poço$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L=comprimento\:total\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{f}=comprimento\:de\:uma\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e=logaritmo\:neperiano$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(b) Fratura com condutividade infinita: O raio efetivo de um poço com fratura
+ de condutividade infinita que penetra totalmente é definido, de acordo
+ com Joshi baseado no modelo de Prats, por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r_{w}'=\frac{L}{4}=\frac{x_{f}}{2}
+\end{equation}
+
+\end_inset
+
  
+\begin_inset Formula $se\;\left(\frac{x_{f}}{x_{e}}\right)>0.3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{e}\;é\:a\:metade\:do\:comprimento\:de\:uma\:área\:quadrada\:drenada$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(c) Fratura com condutividade finita: A condutividade adimensional é definida
+ por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F_{CD}=\frac{k_{f}b_{f}}{kx_{f}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k_{f}=permeabilidade\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b_{f}=largura\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=permeabilidade\:da\:formação$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{f}=comprimento\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L=comprimento\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para 
+\begin_inset Formula $F_{CD}<0.1$
+\end_inset
+
+, a seguinte equação pode ser usada para calcular o raio efetivo do poço:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r_{w}'=\frac{0.2807k_{f}bf}{k}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modelos de cálculo de IP para poços verticais fraturados
+\end_layout
+
+\begin_layout Standard
+A equação do modelo de Prats explicita o ganho de produtividade em poço
+ vertical fraturado em relação a um poço vertical convencional.
+\end_layout
+
+\begin_layout Itemize
+Prats:
+\begin_inset Formula 
+\begin{equation}
+\frac{IP}{IP_{0}}=\frac{ln\left(\frac{r_{e}}{r_{w}}\right)}{ln\left(\frac{re}{rw'}\right)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a=\frac{\pi kx_{f}}{2k_{f}w}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+r_{wD}'=\frac{r_{w}'}{x_{f}}=\frac{r_{w}e^{-s_{f}}}{x_{f}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $IP=índice\:de\:produtividade\:do\:poço\:vertical\:fraturado$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $IP_{0}=índice\:de\:produtividade\:do\:poço\:vertical\:sem\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{e}=raio\:externo$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{w}=raio\:do\:poço$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{w}'=raio\:efetivo\:do\:poço$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{wD}'=raio\:efetivo\:do\:poço\:admensional$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k_{f}w=condutividade\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{f}=comprimento\:de\:uma\:asa\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s_{f}=parâmetro\:de\:Prats$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=permeabilidade\:do\:reservatório$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No caso particular de condutividade infinita para 
+\begin_inset Formula $a\rightarrow0$
+\end_inset
+
+,então 
+\begin_inset Formula $r_{wD}'=0.5$
+\end_inset
+
+, assim:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{IP}{IP_{0}}=\frac{ln\left(\frac{r_{e}}{r_{w}}\right)}{ln\left(\frac{r_{e}}{0.5L'}\right)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L\;é\:o\:raio\:da\:fratura.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O parâmetro 
+\begin_inset Formula $a$
+\end_inset
+
+ é dado por meio do gráfico da figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Parâmentroa"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ abaixo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/ProjetoEngenharia-CarolinaB-DouglasR/imagens/WhatsApp Image 2021-08-26 at 15.40.29 (1).jpeg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Parâmentro 
+\begin_inset Formula $a$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Parâmentroa"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A equação do modelo de McGuire & Sikora supõe um reservatório em regime
+ de fluxo pseudo-permanente, ou seja, vazão constante e área de drenagem
+ quadrada.
+\end_layout
+
+\begin_layout Itemize
+McGuire & Sikora:
+\end_layout
+
+\begin_layout Standard
+Neste modelo, é usada a condutividade relativa:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+CR=\frac{w_{f}k_{f}}{k}\sqrt{\frac{40}{A}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w_{f}=abertura\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k_{f}=permeabilidade\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=permeabilidade\:da\:formação$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A equação de Cinco-Ley desenvolvido em 1978 trata do reservatório em regime
+ de fluxo transiente, com vazão constante no poço e condutividade de fratura
+ infinita.
+\end_layout
+
+\begin_layout Standard
+A condutividade adimensionalizada introduzida pelo modelo é dada pela equação
+ a seguir:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{fD}=\frac{k_{f}w}{k_{f}x}=\frac{\pi}{2a}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sendo 
+\begin_inset Formula $a$
+\end_inset
+
+ a capacidade relativa da fratura (Modelo de Prats).
+ Ou pode ser obtida através do gráfico da figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:coef.frat."
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/ProjetoEngenharia-CarolinaB-DouglasR/imagens/WhatsApp Image 2021-08-26 at 15.40.30.jpeg
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Condutividade da fratura 
+\begin_inset Formula $C_{fD}$
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:coef.frat."
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Fraturamento ácido
+\end_layout
+
+\begin_layout Standard
+Nesta modalidade de estimulação é combinado o fraturamento hidráulico e
+ a acidificação matricial.
+ A fratura é propagada através de um processo hidráulico, mas a condutividade
+ da fratura é caracterizada pela reação do ácido com a rocha utilizada,criando
+ tortuosidades nas superfícies de fratura.
+\end_layout
+
+\begin_layout Standard
+Modelo de condutividade para fraturamento ácido:
+\end_layout
+
+\begin_layout Itemize
+Nierode & Kruk (1973)
+\end_layout
+
+\begin_layout Standard
+Desenvolveram uma equação empírica da condutividade da fratura por fraturamento
+ ácido como é apresentada pela equação:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+kfw=C_{1}e^{-C_{2}S}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sendo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{1}=0.265(DREC)^{0.822}=1.47x10^{7}w_{i}^{2.47}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{2}=[13.9-1.3ln(RES)].10^{-3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+para 
+\begin_inset Formula $RES<20000\:psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+C_{2}=[3.8-0.28ln(RES)].10^{-3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+para 
+\begin_inset Formula $RES\geq20000\:psi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+w_{i}=\frac{XV}{2(1-\phi)x_{f}h_{f}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Onde:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k_{f}w=condutividade\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=pressão\:de\:fechamento\:(closing\:stress)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $DREC=condutividade\:equivalente\:à\:quantidade\:de\:rocha\:dissolvida$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $RES=resistência\:da\:rocha\:à\:endentação$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w_{i}=abertura\:da\:fratura\:através\:da\:dissolução\:da\:rocha\:pelo\:ácido\:antes\:do\:fechamento\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X=capacidade\:de\:dissolução\:volumétrica\:do\:ácido$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=volume\:injetado$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phi=porosidade\:da\:formação$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{f}=comprimento\:de\:asa\:de\:uma\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h_{f}=altura\:da\:fratura$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $RES$
+\end_inset
+
+ é um parâmetro de deformação da rocha, assim como o módulo de elasticidade
+ 
+\begin_inset Formula $E$
+\end_inset
+
+, medido em laboratório por meio de um aparelho chamado penetrômetro.
+\end_layout
+
+\begin_layout Standard
+Para mais informações sobre o assunto, o livro 
+\begin_inset Quotes eld
+\end_inset
+
+Well Completion Design
+\begin_inset Quotes erd
+\end_inset
+
+ complementará.
 \end_layout
 
 \begin_layout Section
@@ -556,12 +1599,47 @@ Diagrama de pacotes – assuntos
 \end_layout
 
 \begin_layout Standard
-...aqui...
+Com base na análise de domínio do software desenvolvido, foram identicados
+ os seguintes pacotes:
+\end_layout
+
+\begin_layout Itemize
+Pacote de de Dados: O programa irá solicitar os dados de entrada (parâmetros
+ do reservatório e do fluido) ao usuário.
+\end_layout
+
+\begin_layout Itemize
+Pacote de Poço: O usuário irá informar se deseja fazer a simulação com reservató
+rio isotrópico ou anisotrópico.
+\end_layout
+
+\begin_layout Itemize
+Pacote de Conversão : O usuário irá escolher o sistema de unidade que poderá
+ ser 
+\begin_inset Formula $S.I$
+\end_inset
+
+, petrobras ou americano e este pacote terá métodos de conversão entre essas
+ unidades os quais será mostrado o resultado final.
+\end_layout
+
+\begin_layout Itemize
+Pacote de Métodos de cálculo de IP : Aqui serão encontrados os métodos para
+ o cálculo do índice de produtividade.
+\end_layout
+
+\begin_layout Itemize
+Pacote e Gráficos: Usando um software Gnuplot, será possível gerar gráficos
+ relacionando cada índice de produtividade com cada método.
+\end_layout
+
+\begin_layout Itemize
+Pacote Simulador: Relaciona os pacotes acima, sendo responsável pela criação
+ e destruição dos objetos.
 \end_layout
 
 \begin_layout Standard
-coloque aqui texto falando do diagrama de pacotes, referencie a figura.
- Veja Figura 
+Veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Diagrama-de-Pacotes"
@@ -575,13 +1653,13 @@ reference "fig:Diagrama-de-Pacotes"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/AnaliseDeDominio.png
-	width 100text%
+	filename C:/Users/Usuario/ProjetoEngenharia-CarolinaB-DouglasR/imagens/DiagramaDePacotes.png
+	scale 70
 
 \end_inset
 
@@ -610,22 +1688,6 @@ name "fig:Diagrama-de-Pacotes"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body
