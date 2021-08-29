@@ -873,7 +873,7 @@ DESENVOLVIMENTO DO SOFTWARE
 \begin_inset Newline newline
 \end_inset
 
-XXX
+CÁLCULO DO ÍNDICE DE PRODUTIVIDADE DE POÇOS HORIZONTAIS E VERTICAIS 
 \begin_inset Newline newline
 \end_inset
 
@@ -895,15 +895,7 @@ Versão 1:
 \begin_inset Newline newline
 \end_inset
 
-AUTORES
-\begin_inset Newline newline
-\end_inset
-
-Versão 2:
-\begin_inset Newline newline
-\end_inset
-
-AUTORES
+CAROLINA BASTOS E DOUGLAS RIBEIRO
 \begin_inset Newline newline
 \end_inset
 
@@ -936,7 +928,7 @@ MACAÉ - RJ
 \begin_inset Newline newline
 \end_inset
 
-Janeiro - 2015
+Agosto - 2021
 \end_layout
 
 \begin_layout Standard
@@ -996,7 +988,8 @@ status open
 
 
 \backslash
-lfoot{SeuNomeAqui} 
+lfoot{Carolina B.
+ e Douglas R.} 
 \backslash
 rfoot{
 \backslash
@@ -1031,14 +1024,17 @@ today ele vai colocar data no material impresso
 \end_layout
 
 \begin_layout Standard
-No presente projeto de engenharia desenvolve-se o software XXXX, um software
- aplicado a engenharia de petróleo e que utiliza o paradigma da orientação
- a objetos.
+No presente projeto de engenharia desenvolve-se o software Cálculo do Índice
+ de Produtividade de Poços Horizontais e Verticais, um software aplicado
+ a engenharia de petróleo e que utiliza o paradigma da orientação a objetos.
+ 
 \end_layout
 
-\begin_layout Itemize
-O primeiro parágrafo da introdução pode ser um super resumo do trabalho.
- A ideia é fazer um resumo do resumo.
+\begin_layout Standard
+O software é da área de engenharia de poços e permite simular a influência
+ de parâmetros do reservatório e do fluido na produtividade dos poços, podendo
+ os resultados serem comparados para definir qual melhor design de poço
+ para cada cenário.
 \end_layout
 
 \begin_layout Section
@@ -1053,36 +1049,25 @@ name "sec:Escopo-do-Problema"
 \end_layout
 
 \begin_layout Standard
-Segundo o CREA/CONFEA um dos quesitos fundamentais que diferenciam a atuação
- de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver
- um projeto em engenharia; Neste trabalho, desenvolve-se um projeto em engenhari
-a de software aplicado a solução de um problema específico de engenharia
- de petróleo.
- Trabalhando-se com todo ciclo de um projeto, isto é, especificação, elaboração,
- análise, projeto, desenvolvimento, teste e documentação.
- 
+O projeto de perfuração de um poço horizontal é diferente de um projeto
+ de perfuração de um poço vertical porque a produtividade do poço depende
+ do comprimento do mesmo, além de fatores determinantes em ambos os projetos
+ como permeabilidades, anisotropias, espessura permeável, viscosidade do
+ óleo e vários aspectos relativos à perfuração do trecho horizontal.
+ Para cada diferente cenário, haverá uma diferente solução de poço para
+ desenvolver o campo.
+ E isto engloba além do fator financeiro, a capacidade produtiva desses
+ poços, se será ou não vantajoso a exploração do mesmo.
 \end_layout
 
-\begin_layout Itemize
-ESTE MODELO TEM TEXTOS EXPLICATVOS QUE DEVEM SER ELIMINADOS DA VERSÃO FINAL.
- O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE
- DEVE ENTRAR EM CADA SEÇÃO.
-\end_layout
-
-\begin_layout Itemize
-Definir o escopo do projeto de engenharia, a ideia geral do software, acentuar
- sua importância, usos e aplicações em engenharia [de petróleo].
-\end_layout
-
-\begin_layout Itemize
-Delimitar o assunto.
- Situá-lo no tempo e no espaço.
- Situá-lo em relação a outros softwares.
-\end_layout
-
-\begin_layout Itemize
-Neste capítulo podem entrar figuras que ilustram a ideia geral, o detalhamento
- será feito depois, na elaboração.
+\begin_layout Standard
+Por isso, é importante evidenciar em que situações, em termos de produtividade,
+ qual design de poço seria mais recomendado através de uma comparação de
+ resultados, alinhado com um embasamento teórico, sobre diversos parâmetros
+ de reservatório que podem intervir na produtividade do poço horizontal
+ e qual o ganho de produtividade em relação ao poço vertical.
+ Assim os engenheiros de reservatório e de poço podem trabalhar de forma
+ conjunta para escolher a técnica mais apropriada.
 \end_layout
 
 \begin_layout Section
@@ -1102,22 +1087,15 @@ Os objetivos deste projeto de engenharia são:
 
 \begin_layout Itemize
 Objetivo geral:
-\begin_inset Separator latexpar
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-Descreva aqui o objetivo geral do projeto de engenharia, incluindo vínculos
- com engenharia de petróleo e com modelagem matemática computacional (ideia
- de lógica, algoritmos,...).
-\end_layout
-
-\begin_layout Itemize
-Desenvolver um projeto de engenharia de software para ...[.....descrever de forma
- clara, direta, objetiva, o objetivo geral do software].
+Desenvolver um projeto de engenharia de software para resolver os diferentes
+ modelos matemáticos de previsão de produtividade de poços horizontais e
+ verticais e a influência dos parâmetros de reservatórios nos mesmos para
+ analisar em que situações, em termos de produtividade, qual design de poço
+ seria mais recomendado através das simulações.
 \end_layout
 
 \end_deeper
@@ -1145,17 +1123,26 @@ o os fluxos de processamento).
 \end_layout
 
 \begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
+Calcular o Índice de Produtividade (IP) dos poços, a partir dos modelos
+ analíticos de Borisov, Giger, Joshi e Prats.
 \end_layout
 
 \begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
+Calcular, em casos que houver 
+\shape italic
+skin,
+\shape default
+ o raio efetivo do poço 
+\begin_inset Formula $\left(r_{w}^{'}\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Itemize
-Simular (realizar simulações para teste do software desenvolvido).
+Simular a influência de parâmentros do reservatório, como a altura, a anisotropi
+a, a centralização vertical e a viscosidade do fluido nos resultados do
+ IP.
 \end_layout
 
 \begin_layout Itemize
