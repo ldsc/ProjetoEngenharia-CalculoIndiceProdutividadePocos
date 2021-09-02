@@ -167,19 +167,20 @@ reference "cap:Diagrama-de-classes"
 \end_inset
 
 .
- Como podemos perceber, ele é constituído de seis classes.
+ Como podemos perceber, ele é constituído de doze classes.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
-sideways false
+sideways true
 status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-9-Diagrama-de-classes-heranca.png
+	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/class diagram.png
 	width 100text%
 
 \end_inset
@@ -216,14 +217,6 @@ name "cap:Diagrama-de-classes"
 \end_layout
 
 \begin_layout Standard
-Nota: 
-\begin_inset space ~
-\end_inset
-
- 
-\begin_inset Newline newline
-\end_inset
-
 deve ocupar toda a página impressa! se necessário rotacionar 90 graus; SE
  NECESSÁRIO DIVIDIR EM 2 PÁGINAS; o importante é que toda figura/tabela
  deve ser bem legível (fonte mínima = 10).
@@ -241,25 +234,62 @@ name "subsec:Dicionário-de-classes"
 \end_layout
 
 \begin_layout Itemize
-Classe CEntradaDados: Solicita ao usuário a entrada dos dados e armazena.
+Classe CParamentrosPoco: Solicita ao usuário a entrada dos dados e armazena.
 \end_layout
 
 \begin_layout Itemize
-Classe CSistemaUnidades: Realiza a conversão de unidades para o sistema
- escolhido pelo usuário na classe CEntradaDados.
+Classe CConversaoUnidades: Realiza a conversão de unidades do sistema SI
+ para o sistema escolhido pelo usuário na classe CParametrosPoco.
 \end_layout
 
 \begin_layout Itemize
-Classe CIndiceProdutividade: Calcula o índice de produtividade de acordo
- com o modelo escolhido pelo usuário em CEntradaDados.
+Classe CIPAnisotropico: Calcula o fator de anisotropia, se for o tipo de
+ formação selecionada pelo usuário na classe CParamentrosPoco.
 \end_layout
 
 \begin_layout Itemize
-Classe CReh: Calcula o raio de drenagem do poço horizontal.
+Classe CPocoFraturamentoAcido: Calcula os parâmetros da fratura e as constantes
+ necessárias para o cálculo do IP se o poço tiver sido submetido ao fraturamnto
+ ácido.
 \end_layout
 
 \begin_layout Itemize
-Classe CSalvar: Salva os resultados em um arquivo de disco.
+Classe CPocoFraturamentoHidraulico: Calcula os parâmetros da fratura e as
+ constantes necessárias para o cálculo do IP se o poço tiver sido submetido
+ ao fraturamento hidráulico.
+\end_layout
+
+\begin_layout Itemize
+Classe CBorisov: Calcula o IP do poço pelo modelo de Borisov.
+\end_layout
+
+\begin_layout Itemize
+Classe CGiger: Calcula o IP do poço pelo modelo de Giger.
+\end_layout
+
+\begin_layout Itemize
+Classe CJoshi: Calcula o IP do poço pelo modelo de Joshi.
+\end_layout
+
+\begin_layout Itemize
+Classe CRenard&Dupuy: Calcula o IP do poço pelo modelo de Renard&Dupuy.
+\end_layout
+
+\begin_layout Itemize
+Classe CShedid: Calcula o IP do poço pelo modelo de Shedid.
+\end_layout
+
+\begin_layout Itemize
+Classe CPrats: Calcula o IP do poço pelo modelo de Prats.
+\end_layout
+
+\begin_layout Itemize
+Classe CSimulador: Faz as simulações do índice de produtividades dos poços
+ (classe 
+\shape italic
+main
+\shape default
+ do programa)
 \end_layout
 
 \begin_layout Itemize
@@ -312,8 +342,8 @@ name "subsec:diagrama de sequência"
 
 \shape italic
 \emph on
-O diagrama de seqüência enfatiza a troca de eventos e mensagens e sua ordem
- temporal.
+O diagrama de seqüência enfatiza a troca de eventos, dee mensagens e sua
+ ordem temporal.
  Contém informações sobre o fluxo de controle do software.
  Costuma ser montado a partir de um diagrama de caso de uso e estabelece
  o relacionamento dos atores (usuários e sistemas externos) com alguns objetos
@@ -367,7 +397,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de seqüência
+Diagrama de seqüência geral 
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-sequencia"
@@ -401,7 +431,17 @@ O
 diagrama de seqüência específico do software é mostrado na
 \shape default
 \emph default
- figura —
+ figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cap:Diagrama-de-sequencia-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -410,6 +450,49 @@ Foi utilizado como exemplo um estudo de caso para comparar a produtividade
  Primeiro se este for perfurado horizontalmente, através das equações e
  modelos explicados na seção de especificação; e segundo, se ele for perfurado
  verticalmente e fraturado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../imagens/fig-3-12-Diagrama-de-eventos-sequencia-prova.png
+	lyxscale 85
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de seqüência específico
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-sequencia-1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -463,7 +546,7 @@ name "par:Diagrama-de-colaboração:"
 \begin_layout Standard
 No diagrama de comunicação o foco é a interação e a troca de mensagens e
  dados entre os objetos.
- A figura 
+ Na figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Diagrama-de-Comunicação"
@@ -473,12 +556,12 @@ reference "subsec:Diagrama-de-Comunicação"
  o diagrama de comunicação mostra a sequência do software para um caso em
  que o modelo de Joshi com anisotropia de permeabilidades é selecionado
  pelo usuário.
- Observe que a Classe CEntradaDados passa os atributos informados pelo usuário
- para as classes: CIndiceProdutividade (Modelo Matemático, Tipo de Formação)
- e CSistemaUnidades (Sistema de Unidades escolhida pelo usuário).
- A classe CIndiceProdutividade por sua vez, após realizar os cálculo, envia
- esses resultados para a classe CGnuplot que gera a visualização desses
- resultados de forma gráfica;
+ Observe que a Classe CSimulador acessa os parâmetros do poços e do reservatório
+ da classe CParamentrosPoco, passa os atributos informados pelo usuário
+ para as classes CConversaoUnidades, CIPAnisotropia e CJoshi.
+ A classe CSimulador então, após realizar os cálculo, envia esses resultados
+ para a classe CGnuplot que gera a visualização desses resultados de forma
+ gráfica.
 \end_layout
 
 \begin_layout Standard
@@ -491,7 +574,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/DiagComunicacao-CalculoAreaFuncao.png
+	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/communication diagram.bmp
 	lyxscale 85
 	width 100text%
 
@@ -559,7 +642,6 @@ name "subsec:diagrama de estados"
 Um diagrama de máquina de estado representa os diversos estados que o objeto
  assume e os eventos que ocorrem ao longo de sua vida ou mesmo ao longo
  de um processo (histórico do objeto).
- É usado para modelar aspectos dinâmicos do objeto.
  É usado para modelar aspectos dinâmicos do objeto, como mostra a figura
  
 \begin_inset CommandInset ref
@@ -568,8 +650,8 @@ reference "cap:Diagrama-de-maquina-de-estado"
 
 \end_inset
 
- para a classe CIndiceProdutividade.
- Observe que, durante a execução do programa, essa classe passa por várias
+.
+ Observe que, durante a execução do programa, o objeto passa por várias
  etapas.
 \end_layout
 
@@ -583,7 +665,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-14-Diagrama-de-estados-aluno.png
+	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/state diagram.bmp
 	lyxscale 85
 	width 100text%
 
@@ -628,15 +710,12 @@ reference "cap:Diagrama-de-atividades"
 
 \end_inset
 
- correspondente a uma atividade específica do diagrama de máguina de estado.
+ corresponde a uma atividade específica do diagrama de máguina de estado.
  Observe que foi escolhido um cenário fictício qualquer em que o poço recebe
- os atributos de permeabilidade, espessura e compromimento do reservatório,
- viscosidade do fludo que ele irá produzir e informações como o raio e o
- sistema de unidades adotado.
- O modelo selecionado é o de Renard e Dupuy com anisotropia de permeabilidades.
-\end_layout
-
-\begin_layout Standard
+ os atributos de espessura do reservatório, permeabilidade horizontal, viscosida
+de, raio externo, compromimento do reservatório, raio do poço, permeabilidade
+ vertical e informações do modelo escolhido e do sistema de unidades adotado.
+ O sistema de unidades escolhido é o Petrobras e o modelo o de Borisov.
 \begin_inset Float figure
 placement H
 wide false
@@ -646,7 +725,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/DiagAtividade-MetodoArea.png
+	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/activity diagram.bmp
 	lyxscale 85
 	width 100text%
 
