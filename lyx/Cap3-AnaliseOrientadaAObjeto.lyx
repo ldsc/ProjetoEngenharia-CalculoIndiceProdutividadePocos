@@ -216,12 +216,6 @@ name "cap:Diagrama-de-classes"
 
 \end_layout
 
-\begin_layout Standard
-deve ocupar toda a página impressa! se necessário rotacionar 90 graus; SE
- NECESSÁRIO DIVIDIR EM 2 PÁGINAS; o importante é que toda figura/tabela
- deve ser bem legível (fonte mínima = 10).
-\end_layout
-
 \begin_layout Subsection
 Dicionário de classes
 \begin_inset CommandInset label
@@ -372,6 +366,7 @@ reference "cap:Diagrama-de-sequencia"
 \end_inset
 
 .
+ 
 \end_layout
 
 \begin_layout Standard
@@ -384,7 +379,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-12-Diagrama-de-eventos-sequencia-prova.png
+	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/DiagramaDeSequencia.jpeg
 	lyxscale 85
 	width 100text%
 
@@ -401,84 +396,6 @@ Diagrama de seqüência geral
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-sequencia"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-
-\shape italic
-\emph on
-Diagrama de sequência específico
-\end_layout
-
-\begin_layout Standard
-O 
-\shape italic
-\emph on
-diagrama de seqüência específico do software é mostrado na
-\shape default
-\emph default
- figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Diagrama-de-sequencia-1"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Foi utilizado como exemplo um estudo de caso para comparar a produtividade
- de um poço.
- Primeiro se este for perfurado horizontalmente, através das equações e
- modelos explicados na seção de especificação; e segundo, se ele for perfurado
- verticalmente e fraturado.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../imagens/fig-3-12-Diagrama-de-eventos-sequencia-prova.png
-	lyxscale 85
-	width 100text%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Diagrama de seqüência específico
-\begin_inset CommandInset label
-LatexCommand label
-name "cap:Diagrama-de-sequencia-1"
 
 \end_inset
 
