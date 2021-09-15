@@ -1251,15 +1251,7 @@ reference "cap:Diagrama-de-componentes"
  um exemplo de diagrama de componentes.
  Observe que este inclui muitas dependências, ilustrando as relações entre
  os arquivos.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Por exemplo: o subsistema biblioteca inclui os arquivos das classes A e
+ Por exemplo: o subsistema biblioteca inclui os arquivos das classes A e
  B, e a geração dos objetos A.obj e B.obj depende dos arquivos A.h, A.cpp, B.h
  e B.cpp.
  A geração da biblioteca depende dos arquivos A.obj e B.obj.
@@ -1272,7 +1264,7 @@ Por exemplo: o subsistema biblioteca inclui os arquivos das classes A e
  da biblioteca Qt, do módulo de arquivos MinhaJanela e do banco de dados.
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Algumas observações úteis para o diagrama de componentes:
 \end_layout
 
@@ -1295,11 +1287,6 @@ status open
 \begin_layout Plain Layout
 Na versão final apagar este texto copiado do livro; e colocado aqui para
  lhe auxiliar; deixar somente o que é pertinente ao trabalho
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -1410,6 +1397,11 @@ storage
 \end_layout
 
 \begin_layout Standard
+Pode-se utilizar uma anotação de localização para identificar onde determinado
+ componente está residente, por exemplo {localização: sala 3}.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -1453,10 +1445,6 @@ name "cap:Diagrama-de-implantação."
 \end_layout
 
 \begin_layout Description
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
 Nota: 
 \begin_inset space ~
 \end_inset
@@ -1470,11 +1458,6 @@ Não perca de vista a visão do todo; do projeto de engenharia como um todo.
  Este é um diferencial fundamental do engenheiro em relação ao técnico,
  a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
  de modelar processos/sistemas/produtos de engenharia.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body
