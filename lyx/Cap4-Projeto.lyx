@@ -443,7 +443,6 @@ Exemplo: na análise você define que existe um método para salvar um arquivo
  Já no projeto, você inclui as bibliotecas necessárias para acesso ao disco,
  cria um objeto específico para acessar o disco, podendo, portanto, acrescentar
  novas classes àquelas desenvolvidas na análise.
- 
 \end_layout
 
 \end_inset
@@ -473,46 +472,61 @@ name "subsec:Efeito-do-projeto-no-modelo-estrutural"
 \end_layout
 
 \begin_layout Itemize
-Neste projeto foram utilizadas as seguintes bibliotecas
+Adicionar nos diagramas de pacotes as bibliotecas e subsistemas selecionados
+ no projeto do sistema (exemplo: a biblioteca gráfica selecionada).
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
 \begin_layout Itemize
-string,para utilização de palavras.
+Neste projeto foi adicionada a biblioteca gráfico CGnuplot.
 \end_layout
 
-\begin_layout Itemize
-vector,para utilização de vetores contendo dados.
-\end_layout
-
-\begin_layout Itemize
-fstream,utilizado para gravar e ler arquivos de disco.
-\end_layout
-
-\begin_layout Itemize
-<cmath>,utilizada para obter as funções matemáticas para implementação dos
- métodos.
-\end_layout
-
-\begin_layout Itemize
-<iostream>,para entrada e saída de dados,pelo teclado e tela respectivamente.
-\end_layout
-
-\begin_layout Itemize
-<iomanip>,para utilização de ferramentas de formatação do layout de tabelas.
-\end_layout
-
+\end_deeper
 \begin_layout Itemize
 Novas classes e associações oriundas das bibliotecas selecionadas e da linguagem
  escolhida devem ser acrescentadas ao modelo.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Não se aplica a este projeto.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Estabelecer as dependências e restrições associadas à plataforma escolhida.
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+O 
+\shape italic
+Software
+\shape default
+ necessita das plataformas GNU/Linux ou Windows para ser executado.
 \end_layout
 
 \begin_layout Itemize
-Após a análise e o projeto do sistema,pode surgir a necessidade da criação
- de novas classes e associações.Problemas como esse poderão surgir durante
- a implementação do banco de dadosserá,sendo assim passível de modificação
- ou criação de novas classes,atributos e métodos.
+No sistema operacional Windows, é necessário a instalação do 
+\shape italic
+Software
+\shape default
+ Gnuplot para o funcionamento do programa.
 \end_layout
 
+\end_deeper
 \begin_layout Subsubsection
 Efeitos do projeto no modelo
 \begin_inset Index idx
@@ -535,10 +549,36 @@ name "subsec:Efeito-do-projeto-no-modelo-dinamico"
 \end_layout
 
 \begin_layout Itemize
-Neste projeto,o usuário fala qual tipo de poço se quer o índice de produtividade
- e por qual método ele deseja calcular.
+Revisar os diagramas de seqüência e de comunicação considerando a plataforma
+ escolhida.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+Estamos revisando a medida que desenvolvemos o código.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Verificar a necessidade de se revisar, ampliar e adicionar novos diagramas
+ de máquinas de estado e de atividades.
+ 
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Estamos revisando a medida que desenvolvemos o código.
+\end_layout
+
+\end_deeper
 \begin_layout Subsubsection
 Efeitos do projeto nos atributos
 \begin_inset Index idx
@@ -613,7 +653,7 @@ vos (exemplo: hd, rede).
 
 \begin_deeper
 \begin_layout Itemize
-Estamos verificando a medida que construimos o código.
+Estamos verificando a medida que desenvolvemos o código.
 \end_layout
 
 \end_deeper
@@ -638,7 +678,7 @@ Algoritmos complexos podem ser subdivididos.
 
 \begin_deeper
 \begin_layout Itemize
-Estamos trabalhando na otimização a medida que construimos o código.
+Estamos trabalhando na otimização a medida que desenvolvemos o código.
 \end_layout
 
 \end_deeper
@@ -668,7 +708,7 @@ Revise os diagramas de classes, de seqüência e de máquina de estado.
 
 \begin_deeper
 \begin_layout Itemize
-Estamos revisando a medida que construímos o código e vemos necessidade
+Estamos revisando a medida que desenvolvemos o código.e vemos necessidade
  de mudanças.
 \end_layout
 
@@ -719,7 +759,11 @@ Reorganização das classes e dos métodos (criar métodos genéricos com parâm
 
 \begin_deeper
 \begin_layout Itemize
-Não se aplica a este projeto (por enquanto).
+Está sendo realizada uma reformulação das classes, separando-as em classes
+ menores e conceitos independentes.
+ Por exemplo, tínhamos elaborado uma classe para cada modelo de cálculo
+ de IP e agora rearranjamos para que fique uma classe reunindo os modelos
+ para poços do tipo horizontal e uma outra classe com os do tipo vertical.
 \end_layout
 
 \end_deeper
@@ -869,8 +913,11 @@ Faça uma análise de aspectos relativos à otimização do sistema.
 
 \begin_deeper
 \begin_layout Itemize
-A análise de aspectos relativos à otimização está sendo feita na medida
- em que desenvolvemos o código.
+Inicialmente pensamos em solicitar ao usuário os dados de entrada em sistema
+ SI de unidades, fazer a conversão e então realizar os cáculos do IP.
+ Entretando, a ordem de execução foi invertida e todos os cálculos serão
+ feitos no sistema SI de unidades e, apenas ao final de todos os cálculos,
+ será realizada a conversão para as unidades determinadas pelo usuário.
 \end_layout
 
 \end_deeper
@@ -885,7 +932,7 @@ Identifique pontos a serem otimizados em que podem ser utilizados processos
 
 \begin_deeper
 \begin_layout Itemize
-A identificação dos pontos a serem otimizados está sendo feita na medida
+A identificação dos pontos a serem otimizados está sendo feita a medida
  em que desenvolvemos o código.
 \end_layout
 
@@ -906,7 +953,7 @@ Se o acesso a determinados objetos (atributos/métodos) requer um caminho
 
 \begin_deeper
 \begin_layout Itemize
-Estamos trabalhando nisso na medida em que desenvolvemos o código.
+Estamos trabalhando nisso a medida em que desenvolvemos o código.
 \end_layout
 
 \end_deeper
@@ -928,7 +975,7 @@ Revise as associações nos diagramas de classes.
 
 \begin_deeper
 \begin_layout Itemize
-Estamos revisando na medida em que desenvolvemos o código.
+Estamos revisando a medida em que desenvolvemos o código.
 \end_layout
 
 \end_deeper
@@ -971,16 +1018,13 @@ name "sec:Diagrama-de-componentes"
 \end_layout
 
 \begin_layout Standard
-Neste projeto,temos as classes CJoshi*(entre outros métodos),CPrats,CPoço,CReser
-vatório,CFluido,CGnuplot,CConversaUnidades e CSimulador e gerar objetos
- respectivos para cada classe.A classe CConversaoUnidades depende dos objetos
- criados pelas outras classes para pegar esses valores,convertê-los e,após
- isso,a Classe CSimulador pegar esses dados guardados nestes objetos e executá-l
-os com um objeto criado em sua própria classe.
-\end_layout
-
-\begin_layout Standard
-A classe CSimulador é quem faz a junção,
+O diagrama de componentes mostra a forma como os componentes do software
+ se relacionam, suas dependências.
+ Inclui itens como: componentes, subsistemas, executáveis, nós, associações,
+ dependências, generalizações, restrições e notas.
+ Exemplos de componentes são bibliotecas estáticas, bibliotecas dinâmicas,
+ dlls, componentes Java, executáveis, arquivos de disco, código-fonte.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -1051,10 +1095,6 @@ Na versão final apagar este texto copiado do livro; e colocado aqui para
 \end_layout
 
 \begin_layout Standard
-Neste projeto blablabla
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -1064,9 +1104,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Douglas Ribeiro/OneDrive/Área de Trabalho/ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/DiagramaDeComponentes.png
+	filename C:/Users/Usuario/Desktop/Programação Prática/ProjetoEngenharia-CarolinaB-DouglasR/imagens/component diagram.bmp
 	lyxscale 90
-	width 100text%
 
 \end_inset
 
@@ -1141,15 +1180,7 @@ reference "cap:Diagrama-de-implantação."
 
 \end_inset
 
- um exemplo de diagrama de implantação de um cluster.
- Observe a presença de um servidor conectado a um switch.
- Os nós do cluster (ou clientes) também estão conectados ao switch.
- Os resultados das simulações são armazenados em um servidor de arquivos
- (
-\emph on
-storage
-\emph default
-).
+ um exemplo de diagrama de implantação utilizado.
 \end_layout
 
 \begin_layout Standard
@@ -1162,9 +1193,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/fig-3-17-diagrama-execucao.png
+	filename C:/Users/Usuario/Desktop/Programação Prática/ProjetoEngenharia-CarolinaB-DouglasR/imagens/deployment diagram.png
 	lyxscale 90
-	width 100text%
 
 \end_inset
 
