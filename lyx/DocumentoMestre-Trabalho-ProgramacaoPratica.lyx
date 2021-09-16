@@ -163,11 +163,6 @@ filename "Cap3-AnaliseOrientadaAObjeto.lyx"
 
 \begin_layout Standard
 \align block
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-\align block
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap4-Projeto.lyx"
@@ -175,6 +170,15 @@ filename "Cap4-Projeto.lyx"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\align block
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap5-ProjetoOrientadoAObjeto.lyx"
