@@ -640,7 +640,7 @@ Cálculo do IP com anisotropia
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-IP=\frac{Q}{\Delta P}=\frac{\frac{2\pi k_{h}h}{\mu}}{ln(\frac{a+\sqrt{a-(\frac{L}{2})²}}{\frac{L}{2}})+(\frac{\beta h}{L})ln(\frac{\beta h}{2r_{w}})}
+IP=\frac{Q}{\Delta P}=\frac{\frac{2\pi k_{h}h}{\mu}}{ln(\frac{a+\sqrt{a²-(\frac{L}{2})²}}{\frac{L}{2}})+(\frac{\beta h}{L})ln(\frac{\beta h}{2r_{w}})}
 \end{equation}
 
 \end_inset
