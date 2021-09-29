@@ -180,7 +180,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Programação Prática/ProjetoEngenharia-CarolinaB-DouglasR/imagens/class diagram_V02.bmp
+	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/class diagram.png
 	width 100text%
 
 \end_inset
@@ -267,20 +267,8 @@ Classe CJoshiHorizontal: Calcula o IP do poço horizontal pelo modelo de
 \end_layout
 
 \begin_layout Itemize
-Classe CJoshiAnisotropico: Calcula o IP do poço pelo modelo de Joshi em
- casos de reservatórios anisotrópicos.
-\end_layout
-
-\begin_layout Itemize
-Classe CShedid: Calcula o IP do poço pelo modelo de Shedid.
-\end_layout
-
-\begin_layout Itemize
-Classe CRenard&Dupuy: Calcula o IP do poço pelo modelo de Renard&Dupuy.
-\end_layout
-
-\begin_layout Itemize
-Classe CPocosFraturados
+Classe CIPAnisotropico: Calcula o fator de anisotropia, se for o tipo de
+ formação selecionada pelo usuário na classe CParamentrosPoco.
 \end_layout
 
 \begin_layout Itemize
@@ -295,6 +283,18 @@ Classe CFraturamentoHidraulico: Calcula os parâmetros da fratura e as constante
 \end_layout
 
 \begin_layout Itemize
+Classe CRenard&Dupuy: Calcula o IP do poço pelo modelo de Renard&Dupuy.
+\end_layout
+
+\begin_layout Itemize
+Classe CShedid: Calcula o IP do poço pelo modelo de Shedid.
+\end_layout
+
+\begin_layout Itemize
+Classe CPrats: Calcula o IP do poço pelo modelo de Prats.
+\end_layout
+
+\begin_layout Itemize
 Classe CSimulador: Faz as simulações do índice de produtividades dos poços
  (classe 
 \shape italic
@@ -306,10 +306,6 @@ main
 \begin_layout Itemize
 Classe CGnuplot: Gera uma visualização gráfica dos resultados usando software
  externo Gnuplot.
-\end_layout
-
-\begin_layout Itemize
-Main: Executa todo o programa.
 \end_layout
 
 \begin_layout Section
@@ -357,7 +353,7 @@ name "subsec:diagrama de sequência"
 
 \shape italic
 \emph on
-O diagrama de seqüência enfatiza a troca de eventos, de mensagens e sua
+O diagrama de seqüência enfatiza a troca de eventos, dee mensagens e sua
  ordem temporal.
  Contém informações sobre o fluxo de controle do software.
  Costuma ser montado a partir de um diagrama de caso de uso e estabelece

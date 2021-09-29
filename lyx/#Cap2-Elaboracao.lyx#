@@ -788,6 +788,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename C:/Users/Usuario/Desktop/Programação Prática/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Figura-3-19.PNG
+	scale 70
 
 \end_inset
 
@@ -852,6 +853,7 @@ status collapsed
 \align center
 \begin_inset Graphics
 	filename C:/Users/Usuario/Desktop/Programação Prática/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Figura-3-21.PNG
+	scale 70
 
 \end_inset
 
@@ -1217,12 +1219,13 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Programação Prática/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Figura-3-20.PNG
+	filename C:/Users/Usuario/ProjetoEngenharia-CarolinaB-DouglasR/imagens/WhatsApp Image 2021-08-26 at 15.40.29 (1).jpeg
+	scale 70
 
 \end_inset
 
@@ -1357,7 +1360,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Programação Prática/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Figura-3-22.PNG
+	filename C:/Users/Usuario/ProjetoEngenharia-CarolinaB-DouglasR/imagens/WhatsApp Image 2021-08-26 at 15.40.30.jpeg
+	scale 70
 
 \end_inset
 

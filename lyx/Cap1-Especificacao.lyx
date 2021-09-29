@@ -241,7 +241,7 @@ Nome
 \begin_inset Text
 
 \begin_layout Plain Layout
-Software para Cáculo do Índice de Produtividade de Poços Horizontais e Verticais
+Cáculo do Índice de Produtividade de Poços Horizontais e Verticais
 \end_layout
 
 \end_inset
@@ -391,8 +391,8 @@ RF-01
 \begin_inset Text
 
 \begin_layout Plain Layout
-O programa deverá solicitar os dados de entrada (parâmetros do reservatório
- e do fluido) ao usuário.
+O programa deverá solicitar os dados de entrada (parâmetros do poço, do
+ reservatório e do fluido) ao usuário.
 \end_layout
 
 \end_inset
