@@ -1052,7 +1052,7 @@ name "sec:Escopo-do-Problema"
 O projeto de perfuração de um poço horizontal é diferente de um projeto
  de perfuração de um poço vertical porque a produtividade do poço depende
  do comprimento do mesmo, além de fatores determinantes em ambos os projetos
- como permeabilidades, anisotropias, espessura permeável, viscosidade do
+ como permeabilidade, anisotropias, espessura permeável, viscosidade do
  óleo e vários aspectos relativos à perfuração do trecho horizontal.
  Para cada diferente cenário, haverá uma diferente solução de poço para
  desenvolver o campo.
@@ -1119,24 +1119,12 @@ Modelagem estática do software (diagramas de caso de uso, de pacotes, de
 
 \begin_layout Itemize
 Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificand
-o os fluxos de processamento).
+o o fluxo de processamento).
 \end_layout
 
 \begin_layout Itemize
 Calcular o Índice de Produtividade (IP) dos poços, a partir dos modelos
- analíticos de Borisov, Giger, Joshi e Prats.
-\end_layout
-
-\begin_layout Itemize
-Calcular, em casos que houver 
-\shape italic
-skin,
-\shape default
- o raio efetivo do poço 
-\begin_inset Formula $\left(r_{w}^{'}\right)$
-\end_inset
-
-.
+ analíticos de Borisov, Giger, Joshi e RenardDupuy e Shedid.
 \end_layout
 
 \begin_layout Itemize

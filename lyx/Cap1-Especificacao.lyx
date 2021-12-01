@@ -335,11 +335,11 @@ O projeto a ser desenvolvido cosiste de um programa que deverá realizar
  Os cálculos serão feitos a partir de modelos matemáticos existentes na
  literatura e na dinâmica de execução do software, o usuário poderá escolher
  qual modelo deseja utilizar, qual o tipo de formação a ser atravessada
- pelo poço e o sistema de unidades adotado.
+ e as características do fluido produzido.
  Além disso, o usuário deverá entrar com os dados do reservatório (permeabilidad
 es horizontal e vertical, espessura, comprimento e raio do poço) e viscosidade
- do fluido - ou poderá inserir esses dados em um arquivo .txt e usá-lo como
- input do programa.
+ e fator de formação do fluido - ou poderá inserir esses dados em um arquivo
+ .txt e usá-lo como input do programa.
  Ao final da simulação o usuário poderá ver os resultados em tela, gerar
  gráficos e salvá-los como imagem.
 \end_layout
@@ -351,7 +351,7 @@ Requisitos funcionais
 \begin_layout Standard
 Apresenta-se a seguir os requisitos funcionais
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 coloque aqueles que fazem sentido para seu sistema
@@ -450,6 +450,9 @@ O programa também deverá permitir o carregamento desses dados de entrada
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features tabularvalignment="middle" tabularwidth="14cm">
@@ -463,49 +466,6 @@ O programa também deverá permitir o carregamento desses dados de entrada
 
 \series bold
 RF-03
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-O usuário deverá ter liberdade para escolher o sistema de unidade que deseja
- realizar os cálculos (dentre aqueles mais comuns utilizados na engenharia).
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle" tabularwidth="14cm">
-<column alignment="center" valignment="top">
-<column alignment="block" valignment="top" width="11.5cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-RF-04
 \end_layout
 
 \end_inset
@@ -548,7 +508,7 @@ O usuário deverá ter liberdade para escolher o tipo de formação que o poço
 \begin_layout Plain Layout
 
 \series bold
-RF-05
+RF-04
 \end_layout
 
 \end_inset
@@ -592,7 +552,7 @@ O usuário deverá ter liberdade para escolher o modelo matemático para o
 \begin_layout Plain Layout
 
 \series bold
-RF-06
+RF-05
 \end_layout
 
 \end_inset
@@ -631,7 +591,7 @@ O programa deverá mostrar os resultados dos cálculos de IP na tela.
 \begin_layout Plain Layout
 
 \series bold
-RF-07
+RF-06
 \end_layout
 
 \end_inset
@@ -688,7 +648,7 @@ RNF-01
 
 \begin_layout Plain Layout
 Os cálculos devem ser feitos utilizando-se formulações/modelos matemáticos
- conhecidaos na literatura.
+ conhecidos na literatura.
 \end_layout
 
 \end_inset
@@ -780,7 +740,7 @@ do software
 \end_layout
 
 \begin_layout Standard
-A tabela 1.1 apresenta um caso de uso do sistema.
+A tabela 2.1 apresenta um caso de uso do sistema.
 \begin_inset Float table
 placement H
 wide false
@@ -876,35 +836,25 @@ Etapas:
 
 \begin_layout Plain Layout
 1.
- Entrar com os dados do reservatório e do fluido (permeabilidade, espessura,
- viscosidade, etc.).
+ Entrar com os dados do poço, do reservatório e do fluido (permeabilidade,
+ espessura, viscosidade, etc.).
 \end_layout
 
 \begin_layout Plain Layout
 2.
- Definir o sistema de unidades a ser utilizado.
-\end_layout
-
-\begin_layout Plain Layout
-3.
  Definir o tipo de formação a ser atravessada pelo poço: isotrópica ou anisotróp
 ica.
 \end_layout
 
 \begin_layout Plain Layout
-5.
+3.
  Definir o modelo matemático mais apropriado para aquele cenário de reservatório
-/fluido.
+/fluido a partir da analise dos resultados.
 \end_layout
 
 \begin_layout Plain Layout
-6.
- Analisar resultados.
-\end_layout
-
-\begin_layout Plain Layout
-7.
- Plotar os resultados em um gráfico.
+4.
+ Salvar resultados em disco.
 \end_layout
 
 \end_inset
@@ -926,7 +876,7 @@ Cenários alternativos:
 \begin_layout Plain Layout
 Inserir valores negativos para parâmetros do reservatório ou incompatíveis
  com a ordem de grandeza do problema real.
- Escolher alguma unidade de medida que seja incompatível com o sistema adotado.
+ 
 \end_layout
 
 \end_inset
@@ -970,8 +920,7 @@ reference "cap:Diagrama-caso-uso-geral"
 
 \end_inset
 
- mostra o usuário interagindo com o software para obter o IP de um poço
- horizontal.
+ mostra o usuário interagindo com o software para obter o IP de um poço.
  Neste caso de uso geral, o usuário insere os dados de entrada (via tela
  ou através de um arquivo .txt) para então analisar o resultado obtido.
 \end_layout
@@ -980,12 +929,12 @@ reference "cap:Diagrama-caso-uso-geral"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama de caso geral.png
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_CasoUso_Geral.png
 	width 100text%
 
 \end_inset
@@ -1020,7 +969,7 @@ name "cap:Diagrama-caso-uso-geral"
 \begin_layout Subsection
 Diagrama de caso de uso específico
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
  do software
@@ -1032,7 +981,8 @@ status open
 \end_layout
 
 \begin_layout Standard
-O caso de uso Calcular IP de um Poço Horizontal descrito na Figura 
+O caso de uso Comparar IP de um reservatório anisotrópico e anisotrópico
+ descrito na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cap:Diagrama-caso-uso-geral"
@@ -1057,21 +1007,21 @@ reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 \end_inset
 
 .
- O usuário pode escolher diferenetes métodos ou mudar o design do poço para
- vertical e então plotar esses diferentes cenários em um gráfico para fazer
- comparações e definir qual melhor se adequa ao projeto.
+ O usuário pode variar os parâmetros do poço e do reservatório e então plotar
+ esses diferentes cenários em um gráfico para fazer comparações e definir
+ qual melhor se adequa ao projeto.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama de caso de uso específico.png
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_CasoUso_Especifico.png
 	width 100text%
 
 \end_inset
@@ -1083,8 +1033,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso específico – Escolha do modelo e grar gráfico com
- os resultados 
+Diagrama de caso de uso específico – Comparando o IP de reservatório isotrópico
+ com um anisotrópico 
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"

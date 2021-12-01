@@ -167,7 +167,7 @@ reference "cap:Diagrama-de-classes"
 \end_inset
 
 .
- Como podemos perceber, ele é constituído de doze classes.
+ Como podemos perceber, ele é constituído de quatorze classes.
 \end_layout
 
 \begin_layout Standard
@@ -180,7 +180,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Programação Prática/ProjetoEngenharia-CarolinaB-DouglasR/imagens/class diagram_V02.bmp
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_classe.png
 	width 100text%
 
 \end_inset
@@ -228,33 +228,34 @@ name "subsec:Dicionário-de-classes"
 \end_layout
 
 \begin_layout Itemize
-Classe CPoco: Solicita ao usuário os dados do poço e armazena.
+Classe CDadosPoco: Solicita ao usuário os dados do poço e armazena.
 \end_layout
 
 \begin_layout Itemize
-Classe CFluido: Solicita ao usuário os dados do fluido e armazena.
+Classe CDadosFluido: Solicita ao usuário os dados do fluido e armazena.
 \end_layout
 
 \begin_layout Itemize
-Classe CReservatorio: Solicita ao usuário os dados do reservatório e armazena.
+Classe CDadosReservatorio: Solicita ao usuário os dados do reservatório
+ e armazena.
 \end_layout
 
 \begin_layout Itemize
-Classe CReservatorioVertical: Solicita ao usuário os dados do reservatório
+Classe CDadosReservatorioVertical: Solicita ao usuário os dados do reservatório
  vertical e armazena.
 \end_layout
 
 \begin_layout Itemize
-Classe CConversaoUnidades: Realiza a conversão de unidades do sistema SI
- para o sistema escolhido pelo usuário.
+Classe CShedid: Calcula o IP do poço pelo modelo de Shedid.
 \end_layout
 
 \begin_layout Itemize
-Classe CGiger: Calcula o IP do poço pelo modelo de Giger.
+Classe CRenardDupuy: Calcula o IP do poço pelo modelo de Renard&Dupuy.
 \end_layout
 
 \begin_layout Itemize
-Classe CBorisov: Calcula o IP do poço pelo modelo de Borisov.
+Classe CJoshiAnisotropico: Calcula o IP do poço pelo modelo de Joshi em
+ casos de reservatórios anisotrópicos.
 \end_layout
 
 \begin_layout Itemize
@@ -267,31 +268,15 @@ Classe CJoshiHorizontal: Calcula o IP do poço horizontal pelo modelo de
 \end_layout
 
 \begin_layout Itemize
-Classe CJoshiAnisotropico: Calcula o IP do poço pelo modelo de Joshi em
- casos de reservatórios anisotrópicos.
+Classe CGiger: Calcula o IP do poço pelo modelo de Giger.
 \end_layout
 
 \begin_layout Itemize
-Classe CShedid: Calcula o IP do poço pelo modelo de Shedid.
+Classe CBorisov: Calcula o IP do poço pelo modelo de Borisov.
 \end_layout
 
 \begin_layout Itemize
-Classe CRenard&Dupuy: Calcula o IP do poço pelo modelo de Renard&Dupuy.
-\end_layout
-
-\begin_layout Itemize
-Classe CPocosFraturados
-\end_layout
-
-\begin_layout Itemize
-Classe CAcidificacao: Calcula os parâmetros da fratura e as constantes necessári
-as para o cálculo do IP se o poço tiver sido submetido ao fraturamento ácido.
-\end_layout
-
-\begin_layout Itemize
-Classe CFraturamentoHidraulico: Calcula os parâmetros da fratura e as constantes
- necessárias para o cálculo do IP se o poço tiver sido submetido ao fraturamento
- hidráulico.
+Classe CCalcIP: Calcula o IP, utilizando os modelos disponíveis.
 \end_layout
 
 \begin_layout Itemize
@@ -304,12 +289,8 @@ main
 \end_layout
 
 \begin_layout Itemize
-Classe CGnuplot: Gera uma visualização gráfica dos resultados usando software
- externo Gnuplot.
-\end_layout
-
-\begin_layout Itemize
-Main: Executa todo o programa.
+Classe GnuplotExcrption: Gera uma visualização gráfica dos resultados usando
+ software externo Gnuplot.
 \end_layout
 
 \begin_layout Section
@@ -400,7 +381,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/DiagramaDeSequencia.jpeg
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_Sequencia.png
 	lyxscale 85
 	width 100text%
 
@@ -492,14 +473,14 @@ reference "subsec:Diagrama-de-Comunicação"
 \end_inset
 
  o diagrama de comunicação mostra a sequência do software para um caso em
- que o modelo de Joshi com anisotropia de permeabilidades é selecionado
- pelo usuário.
- Observe que a Classe CSimulador acessa os parâmetros do poços e do reservatório
- da classe CParamentrosPoco, passa os atributos informados pelo usuário
- para as classes CConversaoUnidades, CIPAnisotropia e CJoshi.
+ que o modelo de Joshi é utilizados para o cálculo do IP.
+ Observe que a Classe CSimulador acessa os parâmetros do fluido, do poço
+ e do reservatório a partir das classes CDadosFluido, CDadosPoco e CDadosReserva
+torio, respectivamente, que passa os atributos informados pelo usuário para
+ as classes CCalcIP que por sua fez chama a classe CJoshi.
  A classe CSimulador então, após realizar os cálculo, envia esses resultados
- para a classe CGnuplot que gera a visualização desses resultados de forma
- gráfica.
+ para a classe CGnuplotException que gera a visualização e salva esses resultado
+s de forma gráfica.
 \end_layout
 
 \begin_layout Standard
@@ -512,7 +493,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/communication diagram.bmp
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_Comunicacao.png
 	lyxscale 85
 	width 100text%
 
@@ -603,7 +584,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/state diagram.bmp
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_MaquinaEstado.png
 	lyxscale 85
 	width 100text%
 
@@ -650,10 +631,14 @@ reference "cap:Diagrama-de-atividades"
 
  corresponde a uma atividade específica do diagrama de máguina de estado.
  Observe que foi escolhido um cenário fictício qualquer em que o poço recebe
- os atributos de espessura do reservatório, permeabilidade horizontal, viscosida
-de, raio externo, compromimento do reservatório, raio do poço, permeabilidade
- vertical e informações do modelo escolhido e do sistema de unidades adotado.
- O sistema de unidades escolhido é o Petrobras e o modelo o de Borisov.
+ os dados do poço, raio interno, a viscosidade e fator volume formação do
+ fluido e parâmentros do reservatório como raio externo, espessura, comprimento
+ e permeabilidade vertical, que são informações necessáris para calcular
+ IP.
+ O modelo escolhido como exemplo é o Borisov.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
@@ -663,7 +648,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/ProjetoEngenharia_ProgramacaoPratica/ProjetoEngenharia-CarolinaB-DouglasR/imagens/activity diagram.bmp
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_Atividades.png
 	lyxscale 85
 	width 100text%
 
