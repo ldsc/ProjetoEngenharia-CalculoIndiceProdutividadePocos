@@ -146,27 +146,14 @@ Teste 1: Descrição
 \end_layout
 
 \begin_layout Standard
-No início apresente texto explicativo do teste:
-\end_layout
+O presente trabalho apresenta interface em modo texto.
+ O software, primeiramente, pergunta ao usuário se ele deseja a execução
+ do programa e, após isso, o usuário entra com os dados do sistema poço-reservat
+ório com extensão .dat e .txt.
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Itemize
-O que esta sendo testado?
-\end_layout
-
-\begin_layout Itemize
-Como o teste vai ser realizado?
-\end_layout
-
-\begin_layout Itemize
-Como o programa será validado?
-\end_layout
-
-\begin_layout Standard
-A seguir apresente texto explicando a sequência do teste e imagens do programa
- (captura de tela).
-\end_layout
-
-\begin_layout Standard
+\begin_layout Plain Layout
 coloque aqui texto falando do diagrama de pacotes, referencie a figura.
  Veja Figura 
 \begin_inset CommandInset ref
@@ -178,17 +165,22 @@ reference "fig:Teste-TelaPrograma-Captura1"
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/SAIL-TelaCapturada-2.png
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/teste_apresentação.png
 	width 100text%
 
 \end_inset
@@ -200,7 +192,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Interface com usuário do programa.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Teste-TelaPrograma-Captura1"
@@ -225,27 +217,30 @@ Teste 2: Descrição
 \end_layout
 
 \begin_layout Standard
-No início apresente texto explicativo do teste:
+Instruções::
 \end_layout
 
 \begin_layout Itemize
-O que esta sendo testado?
+Neste programa, serão calculados os índices de produtividade de um determinado
+ reservatório pelos seguintes métodos da literatura: Borisov, Joshi, Joshi
+ Anisotrópico, Giger, Renard & Dupuy e Sheddid.
 \end_layout
 
 \begin_layout Itemize
-Como o teste vai ser realizado?
+O programa, primeiramente, precisa ser aberto no diretório onde o código
+ se encontra e, depois disso, compila-se o código em um programa como o
+ visual Studio 2019, neste caso, o programa foi compilado direto utilizando-se
+ o dev C++.
 \end_layout
 
 \begin_layout Itemize
-Como o programa será validado?
-\end_layout
+O programa pôde ser validado com base nos resultados obtidos na monografia
+ em que foi baseado, neste caso, todos os dados possuem saída em .txt após
+ a simulação para cada método.
+\begin_inset Note Note
+status collapsed
 
-\begin_layout Standard
-A seguir apresente texto explicando a sequência do teste e imagens do programa
- (captura de tela).
-\end_layout
-
-\begin_layout Standard
+\begin_layout Plain Layout
 Coloque aqui texto falando do diagrama de pacotes, referencie a figura.
  Veja Figura 
 \begin_inset CommandInset ref
@@ -257,17 +252,22 @@ reference "fig:Teste-TelaPrograma-Captura2"
 .
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../imagens/SAIL-TelaCapturada-2.png
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Histograma.png
 	width 100text%
 
 \end_inset
@@ -279,7 +279,8 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Tela do programa mostrando xxx
+Histograma com os resultados para cada método do cálculo do Índice de Produtivid
+ade.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Teste-TelaPrograma-Captura2"
@@ -300,6 +301,10 @@ name "fig:Teste-TelaPrograma-Captura2"
 \end_layout
 
 \begin_layout Description
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 Nota: 
 \begin_inset space ~
 \end_inset
@@ -313,6 +318,11 @@ Não perca de vista a visão do todo; do projeto de engenharia como um todo.
  Este é um diferencial fundamental do engenheiro em relação ao técnico,
  a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
  de modelar processos/sistemas/produtos de engenharia.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

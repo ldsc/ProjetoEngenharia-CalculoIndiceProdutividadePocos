@@ -504,17 +504,31 @@ doxygen
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
 
 \begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Doxygen.png
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-\begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Doxygen.png
-	scale 70
+Histograma com os resultados para cada método do cálculo do Índice de Produtivid
+ade.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Doxygen"
 
 \end_inset
 
@@ -523,10 +537,6 @@ status collapsed
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
