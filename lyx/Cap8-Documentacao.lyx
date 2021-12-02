@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass extbook
 \begin_preamble
 \usepackage {graphicx}
@@ -30,16 +32,18 @@
 \language_package auto
 \inputencoding auto
 \fontencoding global
-\font_roman default
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -70,6 +74,7 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_minted 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -84,7 +89,10 @@
 \tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language english
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
@@ -120,12 +128,10 @@ thechapter - Documentação}
 \end_layout
 
 \begin_layout Standard
-Todo projeto de engenharia precisa ser bem documentado.
- Neste sentido, apresenta-se neste capítulo a documentação de uso do "software
- XXXX".
+A presente documentação refere-se ao uso do "Programa em C++ para o cálculo
+ do Índice de Produtividade de Poços Horizontais e Verticais.
  Esta documentação tem o formato de uma apostila que explica passo a passo
- como usar o software.
- 
+ ao usuário como usar o programa.
 \end_layout
 
 \begin_layout Section
@@ -138,42 +144,73 @@ Descreve-se aqui o manual do usuário, um guia que explica, passo a passo
 \end_layout
 
 \begin_layout Subsection
-Como instalar o software
-\end_layout
-
-\begin_layout Standard
-Para instalar o software execute o seguinte passo a passo:
-\end_layout
-
-\begin_layout Itemize
-blablabla
-\end_layout
-
-\begin_layout Itemize
-..
-\end_layout
-
-\begin_layout Itemize
-.
-\end_layout
-
-\begin_layout Subsection
 Como rodar o software
 \end_layout
 
 \begin_layout Standard
-Para rodar o software ....blablabla
+Abra o terminal, vá para o diretório onde está o projeto, compile o programa
+ e depois o execute.
+ Logo após, siga os seguintes passos:
 \end_layout
 
 \begin_layout Standard
-Veja no Capítulo 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:Teste"
+1.
+ O programa apresentará uma pequena interface e perguntará se o usuário
+ quer continuar a execução, sendo 1 para continuar e 0 para não, caso o
+ usuário digite outro valor, aparecerá uma mensagem de erro pedindo que
+ digite os valores anteriormente ditos.
+\end_layout
 
+\begin_layout Standard
+2.
+ Selecionando-se a opção 1, o programa vai para o diretório onde se encontra
+ os arquivos em formato .txt, que possuem nesta sequência e nesta ordem as
+ propriedades do poço e do reservatório e esses dados devem ser postos no
+ sistema S.I de unidades para gerar o índice de produtividade correto: permeabili
+dade horizontal, raio do poço, raio do reservatório, comprimento do poço,
+ permeabilidade vertical, altura do reservatório, viscosidade do fluido,
+ fator volume-formação do fluido.
+\end_layout
+
+\begin_layout Standard
+3.
+ Após o usuário escolher o sistema reservatório-poço a ser analisado na
+ pasta 
+\begin_inset Quotes eld
 \end_inset
 
- - Teste, exemplos de uso do software.
+Src
+\begin_inset Quotes erd
+\end_inset
+
+ , o software vai mostrar os dados na tela e perguntará se estão corretos,
+ sendo 1 para confirmar e 2 sinalizará que os dados estão incorretos.
+\end_layout
+
+\begin_layout Standard
+4.
+ Em seguida, após a confirmação dos dados, o programa pedirá um nome para
+ o arquivo de saída a qual ficará à escolha do usuário.
+\end_layout
+
+\begin_layout Standard
+5.
+ Feita a escolha do nome, o programa mostrará na tela que está a plotar
+ os gráficos e basta apertar enter para que a figura com um histograma apareça
+ na tela com os resultados obtidos dos índices de produtividade de cada
+ tipo: Borisov, Joshi, Joshi Anisotrópico, Giger, Renard & Dupuy e Sheddid.
+\end_layout
+
+\begin_layout Standard
+6.
+ A figura será salva no diretório onde se encontra o código fonte e um arquivo
+ .txt será gerado com os valores dos índices de produtividade.
+\end_layout
+
+\begin_layout Standard
+7.
+ Por último, o programa vai perguntar ao usuário se ele quer fazer uma nova
+ simulação.
 \end_layout
 
 \begin_layout Section
@@ -199,6 +236,7 @@ Instalar o compilador g++ da GNU disponível em
 LatexCommand href
 name "http://gcc.gnu.org"
 target "http://gcc.gnu.org"
+literal "false"
 
 \end_inset
 
@@ -224,6 +262,7 @@ gnuplot
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.gnuplot.info/"
+literal "false"
 
 \end_inset
 
@@ -237,8 +276,14 @@ gnuplot
 \end_layout
 
 \begin_layout Itemize
+É recomendado usar versões mais atualizadas de compiladores para se conseguir
+ usar a biblioteca filesystem, que somente pode ser usada para versões C++17
+ a C++20.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Coloque aqui quaisquer dependências de arquivos com dados
@@ -246,12 +291,9 @@ Coloque aqui quaisquer dependências de arquivos com dados
 
 \end_inset
 
-.
-\end_layout
 
-\begin_layout Itemize
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Coloque aqui quaisquer dependências de softwares ou sistemas externos
@@ -259,7 +301,7 @@ Coloque aqui quaisquer dependências de softwares ou sistemas externos
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsection
@@ -285,6 +327,10 @@ doxygen
 
 \begin_layout Itemize
 Veja informações sobre uso do formato JAVADOC em:
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -292,6 +338,7 @@ Veja informações sobre uso do formato JAVADOC em:
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html"
+literal "false"
 
 \end_inset
 
@@ -305,6 +352,10 @@ Veja informações sobre o software
 doxygen
 \family default
  em
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -312,6 +363,7 @@ doxygen
 \begin_inset CommandInset href
 LatexCommand href
 target "http://www.stack.nl/~dimitri/doxygen/"
+literal "false"
 
 \end_inset
 
@@ -347,6 +399,10 @@ Abra um terminal.
 
 \begin_layout Itemize
 Vá para o diretório onde esta o código.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -365,7 +421,7 @@ doxygen
  gerar o arquivo de definições (arquivo que diz para o doxygem como deve
  ser a documentação).
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 O software doxywizard é uma interface gráfica que permite a configuração
@@ -378,6 +434,10 @@ No GNU/Linux o doxywizard pode ser instaldo com o comando yum install doxygen-do
 xywizard.
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -397,6 +457,10 @@ Peça para o
 doxygen
 \family default
  gerar a documentação.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -409,6 +473,10 @@ doxygen
 \end_deeper
 \begin_layout Itemize
 Verifique a documentação gerada abrindo o arquivo html/index.html.
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -434,7 +502,44 @@ doxygen
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Doxygen.png
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Description
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 Nota: 
 \begin_inset space ~
 \end_inset
@@ -448,6 +553,11 @@ Não perca de vista a visão do todo; do projeto de engenharia como um todo.
  Este é um diferencial fundamental do engenheiro em relação ao técnico,
  a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
  de modelar processos/sistemas/produtos de engenharia.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

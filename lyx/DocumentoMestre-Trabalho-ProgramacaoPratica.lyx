@@ -185,6 +185,17 @@ filename "Cap6-Implementacao.lyx"
 
 \begin_layout Standard
 \align block
+\begin_inset CommandInset include
+LatexCommand include
+filename "Cap8-Documentacao.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
 \begin_inset Note Note
 status collapsed
 
@@ -193,17 +204,6 @@ status collapsed
 \begin_inset CommandInset include
 LatexCommand include
 filename "Cap5-ProjetoOrientadoAObjeto.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap6-Implementacao.lyx"
 
 \end_inset
 

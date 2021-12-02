@@ -645,10 +645,6 @@ main
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -682,7 +678,7 @@ CAplicacao
 .
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -701,7 +697,7 @@ licacao-h}] {../listagens/CAplicacao.h}
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -723,7 +719,7 @@ CAplicacao
  
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -742,11 +738,6 @@ lstinputlisting[ caption={Arquivo de implementação da classe CAplicacao.},
 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset Note Note
 status collapsed
@@ -754,6 +745,194 @@ status collapsed
 \begin_layout Plain Layout
 note que para saída mudamos a cor de fundo para azul; geramos a saída e
  depois redefinimos para "sem cor de fundo".
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CBorisov-h}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+note que dentro de 
+\backslash
+ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
+ abaixo label={CAplicacao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\family typewriter
+C
+\family default
+Borisov.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CBorisov.}, label={CBori
+sov-h}] {../listagens/CBorisov.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CBorisov-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+Borisov.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CBorisov.},
+ label={CBorisov-cpp}] {../listagens/CBorisov.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CCalcIP-h}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+note que dentro de 
+\backslash
+ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
+ abaixo label={CAplicacao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\family typewriter
+C
+\family default
+CalcIP.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CCalcIP.}, label={CCalcI
+P}] {../listagens/CCalcIP.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CCalcIP-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+CalcIP.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CCalcIP.}, label={CC
+alcIP-cpp}] {../listagens/CCalcIP.cpp}
 \end_layout
 
 \end_inset
@@ -1148,194 +1327,6 @@ status open
 
 
 \backslash
-ref{CCalcIP-h}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-note que dentro de 
-\backslash
-ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CAplicacao-h}
-\end_layout
-
-\end_inset
-
- o arquivo com código da classe 
-\family typewriter
-C
-\family default
-CalcIP.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CCalcIP.}, label={CCalcI
-P}] {../listagens/CCalcIP.h}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CCalcIP-cpp}
-\end_layout
-
-\end_inset
-
- o arquivo de implementação da classe 
-\family typewriter
-C
-\family default
-CalcIP.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CCalcIP.}, label={CC
-alcIP-cpp}] {../listagens/CCalcIP.cpp}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CBorisov-h}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-note que dentro de 
-\backslash
-ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CAplicacao-h}
-\end_layout
-
-\end_inset
-
- o arquivo com código da classe 
-\family typewriter
-C
-\family default
-Borisov.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CBorisov.}, label={CBori
-sov-h}] {../listagens/CBorisov.h}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CBorisov-cpp}
-\end_layout
-
-\end_inset
-
- o arquivo de implementação da classe 
-\family typewriter
-C
-\family default
-Borisov.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CBorisov.},
- label={CBorisov-cpp}] {../listagens/CBorisov.cpp}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
 ref{CGiger-h}
 \end_layout
 
@@ -1414,6 +1405,100 @@ lstset{style=C++}
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CGiger.}, label={CGi
 ger-cpp}] {../listagens/CGiger.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CGnuplot-h}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+note que dentro de 
+\backslash
+ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
+ abaixo label={CAplicacao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\family typewriter
+C
+\family default
+Gnuplot.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CGnuplot.}, label={CGnup
+lot}] {../listagens/CGnuplot.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CGnuplot-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+Gnuplot.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CGnuplot.},
+ label={CGnuplot-cpp}] {../listagens/CGnuplot.cpp}
 \end_layout
 
 \end_inset
@@ -1602,6 +1687,100 @@ lstset{style=C++}
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CJoshiAnisotropico.}
 , label={CJoshiAnisotropico-cpp}] {../listagens/CJoshiAnisotropico.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CJoshiHorizontal-h}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+note que dentro de 
+\backslash
+ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
+ abaixo label={CAplicacao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\family typewriter
+C
+\family default
+JoshiHorizontal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CJoshiHorizontal.},
+ label={CJoshiHorizontal}] {../listagens/CJoshiHorizontal.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CJoshiHorizontal-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+JoshiHorizontal.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CJoshiHorizontal.},
+ label={CJoshiHorizontal-cpp}] {../listagens/CJoshiHorizontal.cpp}
 \end_layout
 
 \end_inset
@@ -1884,100 +2063,6 @@ lstset{style=C++}
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CSimulador.},
  label={CSimulador-cpp}] {../listagens/CSimulador.cpp}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CGnuplot-h}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-note que dentro de 
-\backslash
-ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CAplicacao-h}
-\end_layout
-
-\end_inset
-
- o arquivo com código da classe 
-\family typewriter
-C
-\family default
-Gnuplot.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CGnuplot.}, label={CGnup
-lot}] {../listagens/CGnuplot.h}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CGnuplot-cpp}
-\end_layout
-
-\end_inset
-
- o arquivo de implementação da classe 
-\family typewriter
-C
-\family default
-Gnuplot.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CGnuplot.},
- label={CGnuplot-cpp}] {../listagens/CGnuplot.cpp}
 \end_layout
 
 \end_inset
