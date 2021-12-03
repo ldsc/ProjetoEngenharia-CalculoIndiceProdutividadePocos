@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto de ProgramaÃ§Ã£o PrÃ¡tica - Ãndice de Produtividade de PoÃ§os Horizontais e Verticais: CÃ³digo-Fonte de CSimulador.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto de ProgramaÃ§Ã£o PrÃ¡tica - Ãndice de Produtividade de PoÃ§os Horizontais e Verticais<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Busca','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">CSimulador.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_c_simulador_8h.html">VÃ¡ para a documentaÃ§Ã£o desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef CSIMULADOR_H_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define CSIMULADOR_H_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span> <span class="comment">// inclusão da biblioteca string para a entrada dos arquivos</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;filesystem&gt;</span> <span class="comment">// inclusão da biblioteca filesystem para criação do path que contém os dados do poço/reservatório</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_c_calc_i_p_8h.html">CCalcIP.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="_c_dados_fluido_8h.html">CDadosFluido.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="_c_dados_reservatorio_8h.html">CDadosReservatorio.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="_c_dados_reservatorio_vertical_8h.html">CDadosReservatorioVertical.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_c_dados_poco_8h.html">CDadosPoco.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_c_borisov_8h.html">CBorisov.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_c_giger_8h.html">CGiger.h</a>&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &quot;<a class="code" href="_c_joshi_8h.html">CJoshi.h</a>&quot;</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &quot;<a class="code" href="_c_renard_dupuy_8h.html">CRenardDupuy.h</a>&quot;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#include &quot;<a class="code" href="_c_shedid_8h.html">CShedid.h</a>&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="_c_gnuplot_8h.html">CGnuplot.h</a>&quot;</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_c_simulador.html">   19</a></span><span class="keyword">class </span><a class="code hl_class" href="class_c_simulador.html">CSimulador</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="class_c_simulador.html#aaf6ebb4adb5392c89f6c5bc62fee234c">   24</a></span>        <a class="code hl_class" href="class_c_dados_fluido.html">CDadosFluido</a> <a class="code hl_variable" href="class_c_simulador.html#aaf6ebb4adb5392c89f6c5bc62fee234c">fluido</a>; </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_c_simulador.html#a88afc8b22380a28ec08d86e41c0e7648">   25</a></span>        <a class="code hl_class" href="class_c_dados_reservatorio.html">CDadosReservatorio</a> <a class="code hl_variable" href="class_c_simulador.html#a88afc8b22380a28ec08d86e41c0e7648">reservatorio</a>; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_c_simulador.html#a135fbd1c837bf259f2290aea7b937273">   26</a></span>        <a class="code hl_class" href="class_c_dados_reservatorio_vertical.html">CDadosReservatorioVertical</a> <a class="code hl_variable" href="class_c_simulador.html#a135fbd1c837bf259f2290aea7b937273">reservatorioV</a>; </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_c_simulador.html#a694511fb55582fc2a5c66bad62553bc3">   27</a></span>        <a class="code hl_class" href="class_c_dados_poco.html">CDadosPoco</a> <a class="code hl_variable" href="class_c_simulador.html#a694511fb55582fc2a5c66bad62553bc3">poco</a>; </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_c_simulador.html#ae2212d20c6d153b081e5c74ee5a656f0">   28</a></span>        <a class="code hl_class" href="class_c_borisov.html">CBorisov</a> <a class="code hl_variable" href="class_c_simulador.html#ae2212d20c6d153b081e5c74ee5a656f0">borisov</a>; </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_c_simulador.html#a6f3a9220ac922d2dd6ff16053c0d6a4c">   29</a></span>        <a class="code hl_class" href="class_c_giger.html">CGiger</a> <a class="code hl_variable" href="class_c_simulador.html#a6f3a9220ac922d2dd6ff16053c0d6a4c">giger</a>; </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_c_simulador.html#aa37fb65422775819410843faac5c6a31">   30</a></span>        <a class="code hl_class" href="class_c_joshi.html">CJoshi</a> <a class="code hl_variable" href="class_c_simulador.html#aa37fb65422775819410843faac5c6a31">joshi</a>; </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_c_simulador.html#a6f0c9fc1a60edc70f2c774460201b1e5">   31</a></span>        <a class="code hl_class" href="class_c_renard_dupuy.html">CRenardDupuy</a> <a class="code hl_variable" href="class_c_simulador.html#a6f0c9fc1a60edc70f2c774460201b1e5">dupuy</a>; </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_c_simulador.html#ad33e311fe92f67d8625dd9a4c98b7e36">   32</a></span>        <a class="code hl_class" href="class_c_shedid.html">CShedid</a> <a class="code hl_variable" href="class_c_simulador.html#ad33e311fe92f67d8625dd9a4c98b7e36">shedid</a>; </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_c_simulador.html#afec254c8bc1242f703dc3995670762d9">   33</a></span>        <a class="code hl_class" href="class_gnuplot.html">Gnuplot</a> <a class="code hl_variable" href="class_c_simulador.html#afec254c8bc1242f703dc3995670762d9">plot</a>; </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="class_c_simulador.html#aa5abf5e65b423714d5bab7f645d36b77">   35</a></span>        <a class="code hl_function" href="class_c_simulador.html#aa5abf5e65b423714d5bab7f645d36b77">CSimulador</a>(){}; </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_simulador.html#a2c133eeda9304e5e18d29a2648aba166">EntradaDados</a>(); </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_simulador.html#a1ac176412324d15a6be92422401c98ea">Plot</a>(std::vector &lt;double&gt; _plot); </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_c_simulador.html#a872caae3a7cf2a96a4ce71493976e239">Executar</a>(); </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_c_simulador.html#a8925b568a19df0c278d07c6f947d14d5">   41</a></span>        <a class="code hl_function" href="class_c_simulador.html#a8925b568a19df0c278d07c6f947d14d5">~CSimulador</a>(){}; </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>};</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_c_borisov_8h_html"><div class="ttname"><a href="_c_borisov_8h.html">CBorisov.h</a></div></div>
+<div class="ttc" id="a_c_calc_i_p_8h_html"><div class="ttname"><a href="_c_calc_i_p_8h.html">CCalcIP.h</a></div></div>
+<div class="ttc" id="a_c_dados_fluido_8h_html"><div class="ttname"><a href="_c_dados_fluido_8h.html">CDadosFluido.h</a></div></div>
+<div class="ttc" id="a_c_dados_poco_8h_html"><div class="ttname"><a href="_c_dados_poco_8h.html">CDadosPoco.h</a></div></div>
+<div class="ttc" id="a_c_dados_reservatorio_8h_html"><div class="ttname"><a href="_c_dados_reservatorio_8h.html">CDadosReservatorio.h</a></div></div>
+<div class="ttc" id="a_c_dados_reservatorio_vertical_8h_html"><div class="ttname"><a href="_c_dados_reservatorio_vertical_8h.html">CDadosReservatorioVertical.h</a></div></div>
+<div class="ttc" id="a_c_giger_8h_html"><div class="ttname"><a href="_c_giger_8h.html">CGiger.h</a></div></div>
+<div class="ttc" id="a_c_gnuplot_8h_html"><div class="ttname"><a href="_c_gnuplot_8h.html">CGnuplot.h</a></div></div>
+<div class="ttc" id="a_c_joshi_8h_html"><div class="ttname"><a href="_c_joshi_8h.html">CJoshi.h</a></div></div>
+<div class="ttc" id="a_c_renard_dupuy_8h_html"><div class="ttname"><a href="_c_renard_dupuy_8h.html">CRenardDupuy.h</a></div></div>
+<div class="ttc" id="a_c_shedid_8h_html"><div class="ttname"><a href="_c_shedid_8h.html">CShedid.h</a></div></div>
+<div class="ttc" id="aclass_c_borisov_html"><div class="ttname"><a href="class_c_borisov.html">CBorisov</a></div><div class="ttdoc">Condição para não definir a classe mais de uma vez.</div><div class="ttdef"><b>Definition:</b> CBorisov.h:9</div></div>
+<div class="ttc" id="aclass_c_dados_fluido_html"><div class="ttname"><a href="class_c_dados_fluido.html">CDadosFluido</a></div><div class="ttdoc">Condição para não definir a classe mais de uma vez.</div><div class="ttdef"><b>Definition:</b> CDadosFluido.h:6</div></div>
+<div class="ttc" id="aclass_c_dados_poco_html"><div class="ttname"><a href="class_c_dados_poco.html">CDadosPoco</a></div><div class="ttdoc">Condição para não definir a classe mais de uma vez.</div><div class="ttdef"><b>Definition:</b> CDadosPoco.h:7</div></div>
+<div class="ttc" id="aclass_c_dados_reservatorio_html"><div class="ttname"><a href="class_c_dados_reservatorio.html">CDadosReservatorio</a></div><div class="ttdoc">Condição para não definir a classe mais de uma vez.</div><div class="ttdef"><b>Definition:</b> CDadosReservatorio.h:5</div></div>
+<div class="ttc" id="aclass_c_dados_reservatorio_vertical_html"><div class="ttname"><a href="class_c_dados_reservatorio_vertical.html">CDadosReservatorioVertical</a></div><div class="ttdoc">Condição para não definir a classe mais de uma vez.</div><div class="ttdef"><b>Definition:</b> CDadosReservatorioVertical.h:8</div></div>
+<div class="ttc" id="aclass_c_giger_html"><div class="ttname"><a href="class_c_giger.html">CGiger</a></div><div class="ttdoc">Condição para não definir a classe mais de uma vez.</div><div class="ttdef"><b>Definition:</b> CGiger.h:8</div></div>
+<div class="ttc" id="aclass_c_joshi_html"><div class="ttname"><a href="class_c_joshi.html">CJoshi</a></div><div class="ttdoc">Inclusão da classe abstrata.</div><div class="ttdef"><b>Definition:</b> CJoshi.h:8</div></div>
+<div class="ttc" id="aclass_c_renard_dupuy_html"><div class="ttname"><a href="class_c_renard_dupuy.html">CRenardDupuy</a></div><div class="ttdoc">Condição para não definir a classe mais de uma vez.</div><div class="ttdef"><b>Definition:</b> CRenardDupuy.h:8</div></div>
+<div class="ttc" id="aclass_c_shedid_html"><div class="ttname"><a href="class_c_shedid.html">CShedid</a></div><div class="ttdoc">Condição para não definir a classe mais de uma vez.</div><div class="ttdef"><b>Definition:</b> CShedid.h:8</div></div>
+<div class="ttc" id="aclass_c_simulador_html"><div class="ttname"><a href="class_c_simulador.html">CSimulador</a></div><div class="ttdoc">Inclusão das classes para obtenção dos dados e criação dos objetos.</div><div class="ttdef"><b>Definition:</b> CSimulador.h:20</div></div>
+<div class="ttc" id="aclass_c_simulador_html_a135fbd1c837bf259f2290aea7b937273"><div class="ttname"><a href="class_c_simulador.html#a135fbd1c837bf259f2290aea7b937273">CSimulador::reservatorioV</a></div><div class="ttdeci">CDadosReservatorioVertical reservatorioV</div><div class="ttdoc">criação do objeto reservatório para acessar os parâmetros e métodos da classe</div><div class="ttdef"><b>Definition:</b> CSimulador.h:26</div></div>
+<div class="ttc" id="aclass_c_simulador_html_a1ac176412324d15a6be92422401c98ea"><div class="ttname"><a href="class_c_simulador.html#a1ac176412324d15a6be92422401c98ea">CSimulador::Plot</a></div><div class="ttdeci">void Plot(std::vector&lt; double &gt; _plot)</div><div class="ttdoc">função para entrada dos dados</div><div class="ttdef"><b>Definition:</b> CSimulador.cpp:116</div></div>
+<div class="ttc" id="aclass_c_simulador_html_a2c133eeda9304e5e18d29a2648aba166"><div class="ttname"><a href="class_c_simulador.html#a2c133eeda9304e5e18d29a2648aba166">CSimulador::EntradaDados</a></div><div class="ttdeci">void EntradaDados()</div><div class="ttdoc">construtor</div><div class="ttdef"><b>Definition:</b> CSimulador.cpp:14</div></div>
+<div class="ttc" id="aclass_c_simulador_html_a694511fb55582fc2a5c66bad62553bc3"><div class="ttname"><a href="class_c_simulador.html#a694511fb55582fc2a5c66bad62553bc3">CSimulador::poco</a></div><div class="ttdeci">CDadosPoco poco</div><div class="ttdoc">criação do objeto reservatórioV para acessar os parâmetros e métodos da classe</div><div class="ttdef"><b>Definition:</b> CSimulador.h:27</div></div>
+<div class="ttc" id="aclass_c_simulador_html_a6f0c9fc1a60edc70f2c774460201b1e5"><div class="ttname"><a href="class_c_simulador.html#a6f0c9fc1a60edc70f2c774460201b1e5">CSimulador::dupuy</a></div><div class="ttdeci">CRenardDupuy dupuy</div><div class="ttdoc">criação do obeto Joshi para acessar o método</div><div class="ttdef"><b>Definition:</b> CSimulador.h:31</div></div>
+<div class="ttc" id="aclass_c_simulador_html_a6f3a9220ac922d2dd6ff16053c0d6a4c"><div class="ttname"><a href="class_c_simulador.html#a6f3a9220ac922d2dd6ff16053c0d6a4c">CSimulador::giger</a></div><div class="ttdeci">CGiger giger</div><div class="ttdoc">criação do objeto borisov para acessar o método</div><div class="ttdef"><b>Definition:</b> CSimulador.h:29</div></div>
+<div class="ttc" id="aclass_c_simulador_html_a872caae3a7cf2a96a4ce71493976e239"><div class="ttname"><a href="class_c_simulador.html#a872caae3a7cf2a96a4ce71493976e239">CSimulador::Executar</a></div><div class="ttdeci">void Executar()</div><div class="ttdoc">função para plotar o histograma</div><div class="ttdef"><b>Definition:</b> CSimulador.cpp:141</div></div>
+<div class="ttc" id="aclass_c_simulador_html_a88afc8b22380a28ec08d86e41c0e7648"><div class="ttname"><a href="class_c_simulador.html#a88afc8b22380a28ec08d86e41c0e7648">CSimulador::reservatorio</a></div><div class="ttdeci">CDadosReservatorio reservatorio</div><div class="ttdoc">criação do objeto fluido para acessar os parâmetros e métodos da classe</div><div class="ttdef"><b>Definition:</b> CSimulador.h:25</div></div>
+<div class="ttc" id="aclass_c_simulador_html_a8925b568a19df0c278d07c6f947d14d5"><div class="ttname"><a href="class_c_simulador.html#a8925b568a19df0c278d07c6f947d14d5">CSimulador::~CSimulador</a></div><div class="ttdeci">~CSimulador()</div><div class="ttdoc">função que vai englobar e fazer todos os cálculos</div><div class="ttdef"><b>Definition:</b> CSimulador.h:41</div></div>
+<div class="ttc" id="aclass_c_simulador_html_aa37fb65422775819410843faac5c6a31"><div class="ttname"><a href="class_c_simulador.html#aa37fb65422775819410843faac5c6a31">CSimulador::joshi</a></div><div class="ttdeci">CJoshi joshi</div><div class="ttdoc">criação do objeto giger para acssar o método</div><div class="ttdef"><b>Definition:</b> CSimulador.h:30</div></div>
+<div class="ttc" id="aclass_c_simulador_html_aa5abf5e65b423714d5bab7f645d36b77"><div class="ttname"><a href="class_c_simulador.html#aa5abf5e65b423714d5bab7f645d36b77">CSimulador::CSimulador</a></div><div class="ttdeci">CSimulador()</div><div class="ttdoc">criação do objeto plot para plotação do histograma</div><div class="ttdef"><b>Definition:</b> CSimulador.h:35</div></div>
+<div class="ttc" id="aclass_c_simulador_html_aaf6ebb4adb5392c89f6c5bc62fee234c"><div class="ttname"><a href="class_c_simulador.html#aaf6ebb4adb5392c89f6c5bc62fee234c">CSimulador::fluido</a></div><div class="ttdeci">CDadosFluido fluido</div><div class="ttdef"><b>Definition:</b> CSimulador.h:24</div></div>
+<div class="ttc" id="aclass_c_simulador_html_ad33e311fe92f67d8625dd9a4c98b7e36"><div class="ttname"><a href="class_c_simulador.html#ad33e311fe92f67d8625dd9a4c98b7e36">CSimulador::shedid</a></div><div class="ttdeci">CShedid shedid</div><div class="ttdoc">criação do objeto dupuy para acessar o método</div><div class="ttdef"><b>Definition:</b> CSimulador.h:32</div></div>
+<div class="ttc" id="aclass_c_simulador_html_ae2212d20c6d153b081e5c74ee5a656f0"><div class="ttname"><a href="class_c_simulador.html#ae2212d20c6d153b081e5c74ee5a656f0">CSimulador::borisov</a></div><div class="ttdeci">CBorisov borisov</div><div class="ttdoc">criação do objeto poço para acessar os parâmetros e métodos da classe</div><div class="ttdef"><b>Definition:</b> CSimulador.h:28</div></div>
+<div class="ttc" id="aclass_c_simulador_html_afec254c8bc1242f703dc3995670762d9"><div class="ttname"><a href="class_c_simulador.html#afec254c8bc1242f703dc3995670762d9">CSimulador::plot</a></div><div class="ttdeci">Gnuplot plot</div><div class="ttdoc">criação do objeto Shedid para acessar o método</div><div class="ttdef"><b>Definition:</b> CSimulador.h:33</div></div>
+<div class="ttc" id="aclass_gnuplot_html"><div class="ttname"><a href="class_gnuplot.html">Gnuplot</a></div><div class="ttdoc">Classe de interface para acesso ao programa gnuplot.</div><div class="ttdef"><b>Definition:</b> CGnuplot.h:70</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>
