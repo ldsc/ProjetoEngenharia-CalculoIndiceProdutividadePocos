@@ -7,11 +7,11 @@
 #include <conio.h>
 #include <dirent.h>
 
-#include "CSimulador.h"
+#include "CSimuladorIP.h"
 
 using namespace std;
 
-void CSimulador::EntradaDados()
+void CSimuladorIP::EntradaDados()
 {
 	
 	cout << "#############################################################################" << endl;
@@ -67,10 +67,10 @@ void CSimulador::EntradaDados()
 	
 	in.close();
 	
-	cout << "######################################################################################################################" << endl;
+	cout << "\n######################################################################################################################" << endl;
 	cout << "#                                                                                                                    #" << endl;
 	cout << "#                                      Dados estao corretos? 1 -sim  | 2- nao                                        #" << endl;
-	cout << "#  " << "Kh = " << reservatorio.GetK() << " | Rw = " << poco.GetRw() << " | Re = " << reservatorio.GetRe() << " | L = " << reservatorio.GetL() << " | Kv = " << reservatorioV.GetKv() << " | H = " << reservatorio.GetH() << " | mi = " << fluido.Getmi() << " | Bo = " << fluido.GetBo() << "           #" << endl;
+	cout << "#   " << "Kh = " << reservatorio.GetK() << " | Rw = " << poco.GetRw() << " | Re = " << reservatorio.GetRe() << " | L = " << reservatorio.GetL() << " | Kv = " << reservatorioV.GetKv() << " | H = " << reservatorio.GetH() << " | mi = " << fluido.Getmi() << " | Bo = " << fluido.GetBo() << "            #" << endl;
 	cout << "#                                                                                                                    #" << endl;
 	cout << "######################################################################################################################" << endl << endl;
 	
@@ -88,7 +88,7 @@ void CSimulador::EntradaDados()
 	{
 	errado = true;
 	tst = false;
-	cout << "#############################################################################" << endl;
+	cout << "\n#############################################################################" << endl;
 	cout << "#                                                                           #" << endl;
 	cout << "#                          Importacao de dados                              #" << endl;
 	cout << "#                                                                           #" << endl;
@@ -99,7 +99,7 @@ void CSimulador::EntradaDados()
 	else
 	{
 	cout << "opcao invalida!!!" <<endl;
-	cout << "######################################################################################################################" << endl;
+	cout << "\n######################################################################################################################" << endl;
 	cout << "#                                                                                                                    #" << endl;
 	cout << "#                                      Dados estao corretos? 1 -sim  | 2- nao                                        #" << endl;
 	cout << "#  " << "Kh = " << reservatorio.GetK() << " | Rw = " << poco.GetRw() << " | Re = " << reservatorio.GetRe() << " | L = " << reservatorio.GetL() << " | Kv = " << reservatorioV.GetKv() << " | H = " << reservatorio.GetH() << " | mi = " << fluido.Getmi() << " | Bo = " << fluido.GetBo() << "           #" << endl;
@@ -113,15 +113,17 @@ void CSimulador::EntradaDados()
 	
 }
 
-void CSimulador::Plot(vector <double> _plot)
+void CSimuladorIP::Plot(vector <double> _plot, string NomeArquivo)
 {
 	
 	
-	cout << "#############################################################################" << endl;
+	cout << "\n#############################################################################" << endl;
 	cout << "#                                                                           #" << endl;
 	cout << "#                            Plotando Graficos                              #" << endl;
 	cout << "#                                                                           #" << endl;
 	cout << "#############################################################################" << endl << endl;
+	
+	Gnuplot::Terminal("qt");	
 		
 	plot.set_xlabel("Modelo");
 	plot.set_ylabel("IP");
@@ -132,16 +134,19 @@ void CSimulador::Plot(vector <double> _plot)
 	plot.Cmd("set boxwidth 0.5");
 	plot.Cmd("set style fill solid 0.5");
 	plot.set_style("histograms");
-	plot.savetops("gnusave");
 	
-	plot.plot_x(_plot);	
+	plot.ShowOnScreen();
+		
+	plot.plot_x(_plot);
+	plot.savetops(NomeArquivo);	
+	cout << "Aperte qualquer tecla para continuar ..." << endl;
   	_getch();
 }
 
-void CSimulador::Executar()
+void CSimuladorIP::Executar()
 {
 	
-	cout << "#############################################################################" << endl;
+	cout << "\n#############################################################################" << endl;
 	cout << "#                                                                           #" << endl;
 	cout << "#    Projeto Programacao Pratica - Calculo Indice de produtividade          #" << endl;
 	cout << "#                                                                           #" << endl;
@@ -174,7 +179,7 @@ void CSimulador::Executar()
 	{
 		EntradaDados();	
 		
-	cout << "#############################################################################" << endl;
+	cout << "\n#############################################################################" << endl;
 	cout << "#                                                                           #" << endl;
 	cout << "#             Qual nome do arquivo de saida de dados?                       #" << endl;
 	cout << "#                                                                           #" << endl;
@@ -186,7 +191,7 @@ void CSimulador::Executar()
 		cin.get();
 		getline(cin, arquivoSaida);
 		
-		arquivoSaida = "Src/"+arquivoSaida;
+		arquivoSaida = "Src/Saida/"+arquivoSaida;
 		
 		ofstream out;
 		out.open(arquivoSaida, fstream::out);
@@ -212,18 +217,23 @@ void CSimulador::Executar()
 		out << "#Borisov Joshi JoshiVertical Giger RenardDupuy Shedid" << endl;
 		out << BORISOV << " " << JOSHI << " " << JOSHIANISIO << " " << GIGER << " " << DUPUY << " " << SHEDID;
 		
-	cout << "#############################################################################" << endl;
+	cout << "\n#############################################################################" << endl;
 	cout << "#                                                                           #" << endl;
 	cout << "#                              Dados Salvos!                                #" << endl;
 	cout << "#                                                                           #" << endl;
 	cout << "#############################################################################" << endl << endl;
 		
+	
+	cout << "Entre com come do arquivo de imagem:\n" << endl;
+	
+	string _nomeArquivo;
 		
-		Plot(_plot);
+	cin.get();
+	getline (cin, _nomeArquivo);
+		
+		Plot(_plot, _nomeArquivo);
 		
 		out.close();
-		
-		system("gnusave.png");
 		
 		cout << "Gostaria de executar o programa? 1 - Sim | 0 - nao" << endl;
 		cin >> opt;

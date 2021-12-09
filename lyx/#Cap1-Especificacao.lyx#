@@ -880,8 +880,8 @@ reference "cap:Diagrama-caso-uso-geral"
 \end_inset
 
  mostra o usuário interagindo com o software para obter o IP de um poço.
- Neste caso de uso geral, o usuário insere os dados de entrada (via arquivo
- .txt) para então analisar o resultado obtido.
+ Neste caso de uso geral, o usuário insere os dados de entrada (via tela
+ ou através de um arquivo .txt) para então analisar o resultado obtido.
 \end_layout
 
 \begin_layout Standard

@@ -1,18 +1,18 @@
-#ifndef CSHEDID_H
-#define CSHEDID_H
+#ifndef CIPSHEDID_H
+#define CIPSHEDID_H
 
 #include "CCalcIP.h"
 
-class CShedid : CCalcIP
+class CIPshedid : CCalcIP
 {
 	
 	public:
 		
-		CShedid(){};
+		CIPshedid(){};
 		
 		double CalcShedid(double _k, double _h, double _mi, double _re, double _rw, double _L, double _Bo);
 		
-		~CShedid(){};
+		~CIPshedid(){};
 		
 };
 

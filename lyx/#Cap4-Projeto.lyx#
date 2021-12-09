@@ -775,7 +775,7 @@ Está sendo realizada uma reformulação das classes, separando-as em classes
 Além disso, foi criada uma classe genérica de cálculo de IP para que ela
  seja acessada pela CSimuladorIP e a partir daí acessar as classes herdeiras
  que calculam o IP a partir de modelos específicos.
- Anteriormente a CSimuladorIP acessava diretamente todas essas classes.
+ Anteriormente a CSimulador acessava diretamente todas essas classes.
 \end_layout
 
 \end_deeper
@@ -822,7 +822,7 @@ Revise as heranças no diagrama de classes.
 \begin_deeper
 \begin_layout Itemize
 Foi criado relaciomaneto de herança entre a classe genérica CCalcIP e as
- demais CIPjoshi, CIPgiger..
+ demais CJoshi, CGiger..
  que calculam o IP a partir de um modelo específico.
 \end_layout
 

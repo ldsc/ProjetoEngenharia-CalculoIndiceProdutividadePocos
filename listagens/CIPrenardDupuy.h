@@ -1,18 +1,18 @@
-#ifndef CRENARDDUPUY_H_
-#define CRENARDDUPUY_H_
+#ifndef CIPRENARDDUPUY_H_
+#define CIPRENARDDUPUY_H_
 
 #include "CCalcIP.h"
 
-class CRenardDupuy : CCalcIP
+class CIPrenardDupuy : CCalcIP
 {
 		
 	public:
 		
-		CRenardDupuy(){};
+		CIPrenardDupuy(){};
 		
 		double CalcRenardDupuy(double _k, double _h, double _mi, double _re, double _rw, double _L, double _Keff);
 		
-		~CRenardDupuy(){};
+		~CIPrenardDupuy(){};
 		
 };
 

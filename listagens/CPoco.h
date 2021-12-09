@@ -1,7 +1,7 @@
-#ifndef DADOSPOCO_H_
-#define DADOSPOCO_H_
+#ifndef CPOCO_H_
+#define CPOCO_H_
 
-class CDadosPoco
+class CPoco
 {
 	
 	protected:
@@ -10,13 +10,14 @@ class CDadosPoco
 		
 	public:
 		
-		CDadosPoco(){};
+		CPoco(){};
 		
 		void SetRw(double _rw);
 		double GetRw();
 		
-		~CDadosPoco(){};
+		~CPoco(){};
 	
 };
 
 #endif
+

@@ -1,8 +1,8 @@
-#ifndef CDADOSFLUIDO_H_
-#define CDADOSFLUIDO_H_
+#ifndef CFLUIDO_H_
+#define CFLUIDO_H_
 
 
-class CDadosFluido {
+class CFluido {
 	
 	protected:
 		
@@ -10,14 +10,14 @@ class CDadosFluido {
 	
 	public:
 		
-		CDadosFluido(){};
+		CFluido(){};
 		
 		void Setmi(double _mi);
 		void SetBo(double _Bo);
 		double Getmi();
 		double GetBo();		
 		
-		~CDadosFluido(){};
+		~CFluido(){};
 	 
 	
 };

@@ -1,7 +1,7 @@
-#ifndef CDADOSRESERVATORIO_H_
-#define CDADOSRESERVATORIO_H_
+#ifndef CRESERVATORIO_H_
+#define CRESERVATORIO_H_
 
-class CDadosReservatorio {
+class CReservatorio {
 	
 	protected:
 		
@@ -9,7 +9,7 @@ class CDadosReservatorio {
 		
 	public:
 	
-	CDadosReservatorio(){};
+	CReservatorio(){};
 	
 	void SetK (double _k);
 	void SetRe (double _re);
@@ -20,7 +20,7 @@ class CDadosReservatorio {
 	double GetH();
 	double GetL();
 	
-	~CDadosReservatorio(){};
+	~CReservatorio(){};
 		
 };
 

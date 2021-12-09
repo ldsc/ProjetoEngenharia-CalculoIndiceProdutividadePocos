@@ -1,8 +1,8 @@
-#include "CSimulador.h"
+#include "CSimuladorIP.h"
 
 int main (){
 	
-	CSimulador simular;
+	CSimuladorIP simular;
 		
 	simular.Executar();
 		

@@ -468,13 +468,13 @@ reference "subsec:Diagrama-de-Comunicação"
 
  o diagrama de comunicação mostra a sequência do software para um caso em
  que o modelo de Joshi é utilizados para o cálculo do IP.
- Observe que a Classe CSimuladorIP acessa os parâmetros do fluido, do poço
- e do reservatório a partir das classes CFluido, CPoco e CReservatorio,
- respectivamente, que passa os atributos informados pelo usuário para as
- classes CCalcIP que por sua fez chama a classe CIPjoshi.
- A classe CSimuladorIP então, após realizar os cálculo, envia esses resultados
- para a classe CGnuplot que gera a visualização e salva esses resultados
- de forma gráfica.
+ Observe que a Classe CSimulador acessa os parâmetros do fluido, do poço
+ e do reservatório a partir das classes CDadosFluido, CDadosPoco e CDadosReserva
+torio, respectivamente, que passa os atributos informados pelo usuário para
+ as classes CCalcIP que por sua fez chama a classe CJoshi.
+ A classe CSimulador então, após realizar os cálculo, envia esses resultados
+ para a classe CGnuplotException que gera a visualização e salva esses resultado
+s de forma gráfica.
 \end_layout
 
 \begin_layout Standard
@@ -482,7 +482,7 @@ reference "subsec:Diagrama-de-Comunicação"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center

@@ -645,6 +645,10 @@ main
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -678,7 +682,7 @@ CAplicacao
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -697,7 +701,7 @@ licacao-h}] {../listagens/CAplicacao.h}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -719,7 +723,7 @@ CAplicacao
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -731,6 +735,11 @@ lstset{style=C++}
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CAplicacao.},
  label={CAplicacao-cpp}] {../listagens/CAplicacao.cpp}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -761,7 +770,7 @@ status open
 
 
 \backslash
-ref{CBorisov-h}
+ref{CFluido-h}
 \end_layout
 
 \end_inset
@@ -783,7 +792,7 @@ ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
 \family typewriter
 C
 \family default
-Borisov.
+Fluido.
 \end_layout
 
 \begin_layout Standard
@@ -796,8 +805,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CBorisov.}, label={CBori
-sov-h}] {../listagens/CBorisov.h}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CFluido.}, label={CFluid
+o}] {../listagens/CFluido.h}
 \end_layout
 
 \end_inset
@@ -814,7 +823,7 @@ status open
 
 
 \backslash
-ref{CBorisov-cpp}
+ref{CFluido-cpp}
 \end_layout
 
 \end_inset
@@ -823,7 +832,7 @@ ref{CBorisov-cpp}
 \family typewriter
 C
 \family default
-Borisov.
+Fluido.
  
 \end_layout
 
@@ -837,8 +846,290 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CBorisov.},
- label={CBorisov-cpp}] {../listagens/CBorisov.cpp}
+lstinputlisting[ caption={Arquivo de implementação da classe CFluido.}, label={CF
+luido-cpp}] {../listagens/CFluido.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CPoco-h}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+note que dentro de 
+\backslash
+ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
+ abaixo label={CAplicacao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\family typewriter
+C
+\family default
+Poco.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CPoco.}, label={CPoco}]
+ {../listagens/CPoco.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CPoco-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+Poco.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CPoco.}, label={CPoc
+o-cpp}] {../listagens/CPoco.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CReservatorio-h}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+note que dentro de 
+\backslash
+ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
+ abaixo label={CAplicacao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\family typewriter
+C
+\family default
+Reservatorio.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CReservatorio.},
+ label={CReservatorio}] {../listagens/CReservatorio.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CReservatorio-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+Reservatorio.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CReservatorio.},
+ label={CReservatorio-cpp}] {../listagens/CReservatorio.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CReservatorioVertical-h}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+note que dentro de 
+\backslash
+ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
+ abaixo label={CAplicacao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\family typewriter
+C
+\family default
+ReservatorioVertical.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CReservatorioVertical.},
+ label={CReservatorioVertical}] {../listagens/CReservatorioVertical.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CReservatorioVertical-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+ReservatorioVertical.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CReservatorioVertic
+al.}, label={CReservatorioVertical-cpp}] {../listagens/CReservatorioVertical.cpp}
 \end_layout
 
 \end_inset
@@ -949,7 +1240,7 @@ status open
 
 
 \backslash
-ref{CDadosFluido-h}
+ref{CIPborisov-h}
 \end_layout
 
 \end_inset
@@ -971,7 +1262,7 @@ ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
 \family typewriter
 C
 \family default
-DadosFluido.
+IPborisov.
 \end_layout
 
 \begin_layout Standard
@@ -984,8 +1275,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CDadosFluido.},
- label={CDadosFluido}] {../listagens/CDadosFluido.h}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPborisov.}, label={CIP
+borisov-h}] {../listagens/CIPborisov.h}
 \end_layout
 
 \end_inset
@@ -1002,7 +1293,7 @@ status open
 
 
 \backslash
-ref{CDadosFluido-cpp}
+ref{CIPborisov-cpp}
 \end_layout
 
 \end_inset
@@ -1011,7 +1302,7 @@ ref{CDadosFluido-cpp}
 \family typewriter
 C
 \family default
-DadosFluido.
+IPborisov.
  
 \end_layout
 
@@ -1025,8 +1316,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CDadosFluido.},
- label={CDadosFluido-cpp}] {../listagens/CDadosFluido.cpp}
+lstinputlisting[ caption={Arquivo de implementação da classe CIPborisov.},
+ label={CIPborisov-cpp}] {../listagens/CIPborisov.cpp}
 \end_layout
 
 \end_inset
@@ -1043,7 +1334,7 @@ status open
 
 
 \backslash
-ref{CDadosPoco-h}
+ref{CIPgiger-h}
 \end_layout
 
 \end_inset
@@ -1065,7 +1356,7 @@ ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
 \family typewriter
 C
 \family default
-DadosPoco.
+IPgiger.
 \end_layout
 
 \begin_layout Standard
@@ -1078,8 +1369,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CDadosPoco.}, label={CDa
-dosPoco}] {../listagens/CDadosPoco.h}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPgiger.}, label={CIPgi
+ger}] {../listagens/CIPgiger.h}
 \end_layout
 
 \end_inset
@@ -1096,7 +1387,7 @@ status open
 
 
 \backslash
-ref{CDadosPoco-cpp}
+ref{CIPgiger-cpp}
 \end_layout
 
 \end_inset
@@ -1105,7 +1396,7 @@ ref{CDadosPoco-cpp}
 \family typewriter
 C
 \family default
-DadosPoco.
+IPgiger.
  
 \end_layout
 
@@ -1119,8 +1410,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CDadosPoco.},
- label={CDadosPoco-cpp}] {../listagens/CDadosPoco.cpp}
+lstinputlisting[ caption={Arquivo de implementação da classe CIPgiger.},
+ label={CIPgiger-cpp}] {../listagens/CIPgiger.cpp}
 \end_layout
 
 \end_inset
@@ -1137,7 +1428,7 @@ status open
 
 
 \backslash
-ref{CDadosReservatorio-h}
+ref{CIPjoshi-h}
 \end_layout
 
 \end_inset
@@ -1159,7 +1450,7 @@ ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
 \family typewriter
 C
 \family default
-DadosReservatorio.
+IPjoshi.
 \end_layout
 
 \begin_layout Standard
@@ -1172,8 +1463,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CDadosReservatorio.},
- label={CDadosReservatorio}] {../listagens/CDadosReservatorio.h}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPjoshi.}, label={CIPjo
+shi}] {../listagens/CIPjoshi.h}
 \end_layout
 
 \end_inset
@@ -1190,7 +1481,7 @@ status open
 
 
 \backslash
-ref{CDadosReservatorio-cpp}
+ref{CIPjoshi-cpp}
 \end_layout
 
 \end_inset
@@ -1199,7 +1490,7 @@ ref{CDadosReservatorio-cpp}
 \family typewriter
 C
 \family default
-DadosReservatorio.
+IPjoshi.
  
 \end_layout
 
@@ -1213,8 +1504,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CDadosReservatorio.}
-, label={CDadosReservatorio-cpp}] {../listagens/CDadosReservatorio.cpp}
+lstinputlisting[ caption={Arquivo de implementação da classe CIPjoshi.},
+ label={CIPjoshi-cpp}] {../listagens/CIPjoshi.cpp}
 \end_layout
 
 \end_inset
@@ -1231,7 +1522,7 @@ status open
 
 
 \backslash
-ref{CDadosReservatorioVertical-h}
+ref{CIPrenardDupuy-h}
 \end_layout
 
 \end_inset
@@ -1253,7 +1544,7 @@ ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
 \family typewriter
 C
 \family default
-DadosReservatorioVertical.
+IPrenardDupuy.
 \end_layout
 
 \begin_layout Standard
@@ -1266,9 +1557,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CDadosReservatorioVerti
-cal.}, label={CDadosReservatorioVertical}] {../listagens/CDadosReservatorioVertical.
-h}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPrenardDupuy.},
+ label={CIPrenardDupuy}] {../listagens/CIPrenardDupuy.h}
 \end_layout
 
 \end_inset
@@ -1285,7 +1575,7 @@ status open
 
 
 \backslash
-ref{CDadosReservatorioVertical-cpp}
+ref{CIPrenardDupuy-cpp}
 \end_layout
 
 \end_inset
@@ -1294,7 +1584,7 @@ ref{CDadosReservatorioVertical-cpp}
 \family typewriter
 C
 \family default
-DadosReservatorioVertical.
+IPrenardDupuy.
  
 \end_layout
 
@@ -1308,9 +1598,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CDadosReservatorioV
-ertical.}, label={CDadosReservatorioVertical-cpp}] {../listagens/CDadosReservatorio
-Vertical.cpp}
+lstinputlisting[ caption={Arquivo de implementação da classe CIPrenardDupuy.},
+ label={CIPrenardDupuy-cpp}] {../listagens/CIPrenardDupuy.cpp}
 \end_layout
 
 \end_inset
@@ -1327,7 +1616,7 @@ status open
 
 
 \backslash
-ref{CGiger-h}
+ref{CIPshedid-h}
 \end_layout
 
 \end_inset
@@ -1349,7 +1638,7 @@ ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
 \family typewriter
 C
 \family default
-Giger.
+IPshedid.
 \end_layout
 
 \begin_layout Standard
@@ -1362,8 +1651,8 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CGiger.}, label={CGiger}
-] {../listagens/CGiger.h}
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPshedid.}, label={CIPs
+hedid}] {../listagens/CIPshedid.h}
 \end_layout
 
 \end_inset
@@ -1380,7 +1669,7 @@ status open
 
 
 \backslash
-ref{CGiger-cpp}
+ref{CIPshedid-cpp}
 \end_layout
 
 \end_inset
@@ -1389,7 +1678,7 @@ ref{CGiger-cpp}
 \family typewriter
 C
 \family default
-Giger.
+IPshedid.
  
 \end_layout
 
@@ -1403,8 +1692,102 @@ status open
 \backslash
 lstset{style=C++} 
 \backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CGiger.}, label={CGi
-ger-cpp}] {../listagens/CGiger.cpp}
+lstinputlisting[ caption={Arquivo de implementação da classe CIPshedid.},
+ label={CIPshedid-cpp}] {../listagens/CIPshedid.cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CSimuladorIP-h}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+note que dentro de 
+\backslash
+ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
+ abaixo label={CAplicacao-h}
+\end_layout
+
+\end_inset
+
+ o arquivo com código da classe 
+\family typewriter
+C
+\family default
+SimuladorIP.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimulador.}, label={CSi
+mulador}] {../listagens/CSimulador.h}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Apresenta-se na listagem 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+ref{CSimulador-cpp}
+\end_layout
+
+\end_inset
+
+ o arquivo de implementação da classe 
+\family typewriter
+C
+\family default
+Simulador.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lstset{style=C++} 
+\backslash
+lstinputlisting[ caption={Arquivo de implementação da classe CSimulador.},
+ label={CSimulador-cpp}] {../listagens/CSimulador.cpp}
 \end_layout
 
 \end_inset
@@ -1499,570 +1882,6 @@ lstset{style=C++}
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CGnuplot.},
  label={CGnuplot-cpp}] {../listagens/CGnuplot.cpp}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CJoshi-h}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-note que dentro de 
-\backslash
-ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CAplicacao-h}
-\end_layout
-
-\end_inset
-
- o arquivo com código da classe 
-\family typewriter
-C
-\family default
-Joshi.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CJoshi.}, label={CJoshi}
-] {../listagens/CJoshi.h}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CJoshi-cpp}
-\end_layout
-
-\end_inset
-
- o arquivo de implementação da classe 
-\family typewriter
-C
-\family default
-Joshi.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CJoshi.}, label={CJo
-shi-cpp}] {../listagens/CJoshi.cpp}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CJoshiAnisotropico-h}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-note que dentro de 
-\backslash
-ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CAplicacao-h}
-\end_layout
-
-\end_inset
-
- o arquivo com código da classe 
-\family typewriter
-C
-\family default
-JoshiAnisotropico.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CJoshiAnisotropico.},
- label={CJoshiAnisotropico}] {../listagens/CJoshiAnisotropico.h}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CJoshiAnisotropico-cpp}
-\end_layout
-
-\end_inset
-
- o arquivo de implementação da classe 
-\family typewriter
-C
-\family default
-JoshiAnisotropico.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CJoshiAnisotropico.}
-, label={CJoshiAnisotropico-cpp}] {../listagens/CJoshiAnisotropico.cpp}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CJoshiHorizontal-h}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-note que dentro de 
-\backslash
-ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CAplicacao-h}
-\end_layout
-
-\end_inset
-
- o arquivo com código da classe 
-\family typewriter
-C
-\family default
-JoshiHorizontal.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CJoshiHorizontal.},
- label={CJoshiHorizontal}] {../listagens/CJoshiHorizontal.h}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CJoshiHorizontal-cpp}
-\end_layout
-
-\end_inset
-
- o arquivo de implementação da classe 
-\family typewriter
-C
-\family default
-JoshiHorizontal.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CJoshiHorizontal.},
- label={CJoshiHorizontal-cpp}] {../listagens/CJoshiHorizontal.cpp}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CRenardDupuy-h}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-note que dentro de 
-\backslash
-ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CAplicacao-h}
-\end_layout
-
-\end_inset
-
- o arquivo com código da classe 
-\family typewriter
-C
-\family default
-RenardDupuy.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CRenardDupuy.},
- label={CRenardDupuy}] {../listagens/CRenardDupuy.h}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CRenardDupuy-cpp}
-\end_layout
-
-\end_inset
-
- o arquivo de implementação da classe 
-\family typewriter
-C
-\family default
-RenardDupuy.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CRenardDupuy.},
- label={CRenardDupuy-cpp}] {../listagens/CRenardDupuy.cpp}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CShedid-h}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-note que dentro de 
-\backslash
-ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CAplicacao-h}
-\end_layout
-
-\end_inset
-
- o arquivo com código da classe 
-\family typewriter
-C
-\family default
-Shedid.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CShedid.}, label={CShedi
-d}] {../listagens/CShedid.h}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CShedid-cpp}
-\end_layout
-
-\end_inset
-
- o arquivo de implementação da classe 
-\family typewriter
-C
-\family default
-Shedid.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CShedid.}, label={CS
-hedid-cpp}] {../listagens/CShedid.cpp}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CSimulador-h}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-note que dentro de 
-\backslash
-ref{CAplicacao-h} temos o label; o mesmo deve ser igual ao que se encontra
- abaixo label={CAplicacao-h}
-\end_layout
-
-\end_inset
-
- o arquivo com código da classe 
-\family typewriter
-C
-\family default
-Simulador.
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimulador.}, label={CSi
-mulador}] {../listagens/CSimulador.h}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Apresenta-se na listagem 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-ref{CSimulador-cpp}
-\end_layout
-
-\end_inset
-
- o arquivo de implementação da classe 
-\family typewriter
-C
-\family default
-Simulador.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-lstset{style=C++} 
-\backslash
-lstinputlisting[ caption={Arquivo de implementação da classe CSimulador.},
- label={CSimulador-cpp}] {../listagens/CSimulador.cpp}
 \end_layout
 
 \end_inset

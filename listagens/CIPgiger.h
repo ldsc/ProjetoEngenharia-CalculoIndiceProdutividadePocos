@@ -1,19 +1,19 @@
-#ifndef CGIGER_H_
-#define CGIGER_H_
+#ifndef CIPGIGER_H_
+#define CIPGIGER_H_
 
 #include "CCalcIP.h"
 
-class CGiger : CCalcIP
+class CIPgiger : CCalcIP
 {
 
 	
 	public:
 		
-		CGiger(){};
+		CIPgiger(){};
 		
 		double CalcGiger(double _k, double _h, double _mi, double _re, double _rw, double _L);
 		
-		~CGiger(){};
+		~CIPgiger(){};
 	
 	
 };

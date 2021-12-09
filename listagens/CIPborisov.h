@@ -1,18 +1,18 @@
-#ifndef CBORISOV_H_
-#define CBORISOV_H_
+#ifndef CIPBORISOV_H_
+#define CIPBORISOV_H_
 
 #include "CCalcIP.h"
 
-class CBorisov : CCalcIP
+class CIPborisov : CCalcIP
 {
 			
 	public:
 		
-		CBorisov(){};
+		CIPborisov(){};
 		
 		double CalcBorisov(double _k, double _h, double _mi, double _re, double _rw, double _L);
 		
-		~CBorisov(){};
+		~CIPborisov(){};
 		
 };
 

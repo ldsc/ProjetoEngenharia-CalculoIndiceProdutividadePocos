@@ -89,7 +89,7 @@ int Gnuplot::tmpfile_num = 0;
 
 // Se estamos no windows
 #if defined(WIN32) || defined(_WIN32) || defined(__WIN32__) || defined(__TOS_WIN__)
-std::string Gnuplot::m_sGNUPlotFileName = "gnuplot_qt.exe";
+std::string Gnuplot::m_sGNUPlotFileName = "gnuplot.exe";
 std::string Gnuplot::m_sGNUPlotPath = "C:/gnuplot/bin/";
 // Se estamos no unix, GNU/Linux, Mac Os X
 #elif defined(unix) || defined(__unix) || defined(__unix__) || defined(__APPLE__)
@@ -435,8 +435,9 @@ Gnuplot& Gnuplot::savetops(const std::string &filename)
     this->cmd("set term png size 1800,1200");
 
     std::ostringstream cmdstr;
-    cmdstr << "set output \"" << filename << ".png\"";
+    cmdstr << "set output \"./Src/Imagens/" << filename << ".png\"";
     this->cmd(cmdstr.str());
+    this->Replot();
 
     return *this;
 }
