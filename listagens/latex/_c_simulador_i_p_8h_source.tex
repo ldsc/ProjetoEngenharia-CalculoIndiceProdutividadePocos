@@ -1,0 +1,49 @@
+\hypertarget{_c_simulador_i_p_8h_source}{}\doxysection{CSimulador\+IP.\+h}
+\label{_c_simulador_i_p_8h_source}\index{C:/Users/Usuario/Desktop/Codigo/Carol\&Douglas/CSimuladorIP.h@{C:/Users/Usuario/Desktop/Codigo/Carol\&Douglas/CSimuladorIP.h}}
+\mbox{\hyperlink{_c_simulador_i_p_8h}{Vá para a documentação desse arquivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef CSIMULADOR\_H\_}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define CSIMULADOR\_H\_}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <filesystem>}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_calc_i_p_8h}{CCalcIP.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_fluido_8h}{CFluido.h}}"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_reservatorio_8h}{CReservatorio.h}}"{}}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_reservatorio_vertical_8h}{CReservatorioVertical.h}}"{}}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_poco_8h}{CPoco.h}}"{}}}
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_i_pborisov_8h}{CIPborisov.h}}"{}}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_i_pgiger_8h}{CIpgiger.h}}"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_i_pjoshi_8h}{CIPjoshi.h}}"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_i_prenard_dupuy_8h}{CIPrenardDupuy.h}}"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_i_pshedid_8h}{CIpshedid.h}}"{}}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_c_gnuplot_8h}{CGnuplot.h}}"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_c_simulador_i_p}{CSimuladorIP}}}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keyword}{public}:}
+\DoxyCodeLine{22         }
+\DoxyCodeLine{23         \mbox{\hyperlink{class_c_fluido}{CFluido}} \mbox{\hyperlink{class_c_simulador_i_p_a590a6cdafb96f27b3d8bd79154fc0c17}{fluido}};}
+\DoxyCodeLine{24         \mbox{\hyperlink{class_c_reservatorio}{CReservatorio}} \mbox{\hyperlink{class_c_simulador_i_p_a63e97d5b2ad5f90ccc5c5f601bb748bb}{reservatorio}};}
+\DoxyCodeLine{25         \mbox{\hyperlink{class_c_reservatorio_vertical}{CReservatorioVertical}} \mbox{\hyperlink{class_c_simulador_i_p_ace0720b773029b6c5aa553777661280c}{reservatorioV}};}
+\DoxyCodeLine{26         \mbox{\hyperlink{class_c_poco}{CPoco}} \mbox{\hyperlink{class_c_simulador_i_p_a1e0ff8961e9a838ddbd5edb23a446915}{poco}};}
+\DoxyCodeLine{27         \mbox{\hyperlink{class_c_i_pborisov}{CIPborisov}} \mbox{\hyperlink{class_c_simulador_i_p_a8b496f7df4f8ae75c8ed2bc402f71ddd}{borisov}};}
+\DoxyCodeLine{28         \mbox{\hyperlink{class_c_i_pgiger}{CIPgiger}} \mbox{\hyperlink{class_c_simulador_i_p_a4250c329f121c245ab50fb428cf3e629}{giger}};}
+\DoxyCodeLine{29         \mbox{\hyperlink{class_c_i_pjoshi}{CIPjoshi}} \mbox{\hyperlink{class_c_simulador_i_p_a012def637bc17534ed556b53616e4553}{joshi}};}
+\DoxyCodeLine{30         \mbox{\hyperlink{class_c_i_prenard_dupuy}{CIPrenardDupuy}} \mbox{\hyperlink{class_c_simulador_i_p_a7f94dc456fbf1298144bff9663dc7f29}{dupuy}};}
+\DoxyCodeLine{31         \mbox{\hyperlink{class_c_i_pshedid}{CIPshedid}} \mbox{\hyperlink{class_c_simulador_i_p_a1624cc7e63fd083bb6f3e7e9b855fa6d}{shedid}};}
+\DoxyCodeLine{32         \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \mbox{\hyperlink{class_c_simulador_i_p_a5715c8acddbeca30567704941820e00b}{plot}};}
+\DoxyCodeLine{33         }
+\DoxyCodeLine{34         \mbox{\hyperlink{class_c_simulador_i_p_ae6a1449c8289b71ef141e1bae8fac486}{CSimuladorIP}}()\{\};}
+\DoxyCodeLine{35         }
+\DoxyCodeLine{36         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_simulador_i_p_a0048d934333f617c16830dbdab3b6820}{EntradaDados}}();}
+\DoxyCodeLine{37         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_simulador_i_p_a0f0b2882ab929be9ac19011c541ff48b}{Plot}}(std::vector <double> \_plot, std::string NomeArquivo);}
+\DoxyCodeLine{38         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_c_simulador_i_p_aecede6fc75dbe0e1486ad2c457e3497f}{Executar}}();}
+\DoxyCodeLine{39         }
+\DoxyCodeLine{40         \mbox{\hyperlink{class_c_simulador_i_p_aa4eda02b2695d55516b674faa2d7dd21}{\string~CSimuladorIP}}()\{\};}
+\DoxyCodeLine{41 \};}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

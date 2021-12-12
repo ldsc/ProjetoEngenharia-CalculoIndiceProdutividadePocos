@@ -167,7 +167,7 @@ reference "cap:Diagrama-de-classes"
 \end_inset
 
 .
- Como podemos perceber, ele é constituído de treze classes.
+ Como podemos perceber, ele é constituído de doze classes.
 \end_layout
 
 \begin_layout Standard
@@ -175,7 +175,7 @@ reference "cap:Diagrama-de-classes"
 placement H
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -253,11 +253,6 @@ Classe CIPrenardDupuy: Calcula o IP do poço pelo modelo de Renard&Dupuy.
 \end_layout
 
 \begin_layout Itemize
-Classe CIPjoshiAnisotropico: Calcula o IP do poço pelo modelo de Joshi em
- casos de reservatórios anisotrópicos.
-\end_layout
-
-\begin_layout Itemize
 Classe CIPjoshi: Calcula o IP do poço pelo modelo de Joshi.
 \end_layout
 
@@ -266,7 +261,7 @@ Classe CIPgiger: Calcula o IP do poço pelo modelo de Giger.
 \end_layout
 
 \begin_layout Itemize
-Classe CIPgorisov: Calcula o IP do poço pelo modelo de Borisov.
+Classe CIPborisov: Calcula o IP do poço pelo modelo de Borisov.
 \end_layout
 
 \begin_layout Itemize
@@ -375,7 +370,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_Sequencia.png
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_Sequencia.jpeg
 	lyxscale 85
 	width 100text%
 

@@ -507,7 +507,7 @@ doxygen
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -524,8 +524,7 @@ status collapsed
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Histograma com os resultados para cada método do cálculo do Índice de Produtivid
-ade.
+Documentação do código no Doxygen.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Doxygen"

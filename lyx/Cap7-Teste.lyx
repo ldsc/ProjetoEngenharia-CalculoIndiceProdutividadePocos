@@ -150,11 +150,6 @@ O presente trabalho apresenta interface em modo texto.
  O software, primeiramente, pergunta ao usuário se ele deseja a execução
  do programa e, após isso, o usuário entra com os dados do sistema poço-reservat
 ório com extensão .dat e .txt.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-coloque aqui texto falando do diagrama de pacotes, referencie a figura.
  Veja Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -163,11 +158,6 @@ reference "fig:Teste-TelaPrograma-Captura1"
 \end_inset
 
 .
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -217,7 +207,7 @@ Teste 2: Descrição
 \end_layout
 
 \begin_layout Standard
-Instruções::
+No início apresente texto explicativo do teste:
 \end_layout
 
 \begin_layout Itemize
@@ -237,24 +227,27 @@ O programa, primeiramente, precisa ser aberto no diretório onde o código
 O programa pôde ser validado com base nos resultados obtidos na monografia
  em que foi baseado, neste caso, todos os dados possuem saída em .txt após
  a simulação para cada método.
-\begin_inset Note Note
-status collapsed
+\end_layout
 
-\begin_layout Plain Layout
-Coloque aqui texto falando do diagrama de pacotes, referencie a figura.
- Veja Figura 
+\begin_layout Standard
+Veja as figuras 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Teste-TelaPrograma-Captura2"
 
 \end_inset
 
-.
-\end_layout
+ e 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-Validacao"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Standard
@@ -284,6 +277,48 @@ ade.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Teste-TelaPrograma-Captura2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/ValidacaoResultados.jpeg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Validação dos cenários I e II.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-Validacao"
 
 \end_inset
 

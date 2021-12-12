@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3c_3c',['operator&lt;&lt;',['../classGnuplot.html#ae56495dc15f23d32f099129d3a50dd6c',1,'Gnuplot']]]
+  ['legend_0',['Legend',['../class_gnuplot.html#a2b9ba1e2d6babf020158c042eefdff76',1,'Gnuplot::Legend(const std::string &amp;position=&quot;default&quot;)'],['../class_gnuplot.html#af2f2bf238db3ebce2d92cd6ca95c1466',1,'Gnuplot::Legend(int _flegend)']]]
 ];

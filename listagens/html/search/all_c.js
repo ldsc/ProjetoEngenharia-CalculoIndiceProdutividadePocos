@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['yautoscale',['YAutoscale',['../classGnuplot.html#a288c0be86e20ff6986f5b43cb69b2bb0',1,'Gnuplot']]],
-  ['ylabel',['YLabel',['../classGnuplot.html#ab4cdb8c1abd919b9851ca9a81667f2a4',1,'Gnuplot']]],
-  ['ylogscale',['YLogscale',['../classGnuplot.html#ab9b5e2985c658f7791d9a49dd7008bbf',1,'Gnuplot::YLogscale(const double base=10)'],['../classGnuplot.html#a6ab94815fbf0fabfa108cf659079828f',1,'Gnuplot::YLogscale(bool _fylogscale)']]],
-  ['yrange',['YRange',['../classGnuplot.html#a266411505d17e3f85ceebd252b9e5fe9',1,'Gnuplot']]]
+  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]],
+  ['main_2ecpp_1',['main.cpp',['../main_8cpp.html',1,'']]],
+  ['mi_2',['mi',['../class_c_fluido.html#a81dba96895fa2995007a4b8b0fd2a426',1,'CFluido']]]
 ];

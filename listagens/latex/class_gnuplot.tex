@@ -1,0 +1,1448 @@
+\hypertarget{class_gnuplot}{}\doxysection{Refer√™ncia da Classe Gnuplot}
+\label{class_gnuplot}\index{Gnuplot@{Gnuplot}}
+
+
+Classe de interface para acesso ao programa gnuplot.  
+
+
+
+
+{\ttfamily \#include $<$CGnuplot.\+h$>$}
+
+\doxysubsection*{Membros P√∫blicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_gnuplot_a187eb517b362cf379492fe7f1621ee50}{Gnuplot}} (const std\+::string \&style=\char`\"{}points\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construtor, seta o estilo do grafico na construcao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot_a8ceac5808e42665c1dee305ae7ea9070}{Gnuplot}} (const std\+::vector$<$ double $>$ \&x, const std\+::string \&title=\char`\"{}\char`\"{}, const std\+::string \&style=\char`\"{}points\char`\"{}, const std\+::string \&labelx=\char`\"{}x\char`\"{}, const std\+::string \&labely=\char`\"{}y\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construtor, plota um grafico a partir de um vector, diretamente na construcao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot_a24327b6116c71acdc195eadf665c67cb}{Gnuplot}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y, const std\+::string \&title=\char`\"{}\char`\"{}, const std\+::string \&style=\char`\"{}points\char`\"{}, const std\+::string \&labelx=\char`\"{}x\char`\"{}, const std\+::string \&labely=\char`\"{}y\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construtor, plota um grafico do tipo x\+\_\+y a partir de vetores, diretamente na construcao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot_a14191e89154f2716608f6907975cc012}{Gnuplot}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y, const std\+::vector$<$ double $>$ \&z, const std\+::string \&title=\char`\"{}\char`\"{}, const std\+::string \&style=\char`\"{}points\char`\"{}, const std\+::string \&labelx=\char`\"{}x\char`\"{}, const std\+::string \&labely=\char`\"{}y\char`\"{}, const std\+::string \&labelz=\char`\"{}z\char`\"{})
+\begin{DoxyCompactList}\small\item\em Construtor, plota um grafico de x\+\_\+y\+\_\+z a partir de vetores, diretamente na construcao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot_a78a68f621caa87d1f34324fcd093c7bd}{$\sim$\+Gnuplot}} ()
+\begin{DoxyCompactList}\small\item\em Destrutor, necessario para deletar arquivos temporarios. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a07607803ede8dd5416906df0a1924fc5}{cmd}} (const std\+::string \&cmdstr)
+\begin{DoxyCompactList}\small\item\em Envia comando para o gnuplot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a59921d80c0315c95fc5f2cf28e6718df}{Cmd}} (const std\+::string \&cmdstr)
+\begin{DoxyCompactList}\small\item\em Envia comando para o gnuplot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_abd081059ee059e67c204585c456d41a2}{Command}} (const std\+::string \&cmdstr)
+\begin{DoxyCompactList}\small\item\em Envia comando para o gnuplot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ae56495dc15f23d32f099129d3a50dd6c}{operator$<$$<$}} (const std\+::string \&cmdstr)
+\begin{DoxyCompactList}\small\item\em Sobrecarga operador \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}, funciona como Comando. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a356d2faaa79f08d13fec9718b776b28d}{showonscreen}} ()
+\begin{DoxyCompactList}\small\item\em Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal\+\_\+std. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aada22f547a0a9ac26adea4a4ec836ea4}{Show\+On\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal\+\_\+std. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a032072c7c01b508a7535a17fb08562b1}{savetops}} (const std\+::string \&filename=\char`\"{}gnuplot\+\_\+output\char`\"{})
+\begin{DoxyCompactList}\small\item\em Salva sessao do gnuplot para um arquivo postscript, informe o nome do arquivo sem extensao. Depois retorna para modo terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a9dd058e30035a4a0009b38012d38efd0}{Save\+Tops}} (const std\+::string \&filename=\char`\"{}gnuplot\+\_\+output\char`\"{})
+\begin{DoxyCompactList}\small\item\em Salva sessao do gnuplot para um arquivo postscript, informe o nome do arquivo sem extensao Depois retorna para modo terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a14c986c74017988acd306f42005c0fb7}{savetopng}} (const std\+::string \&filename=\char`\"{}gnuplot\+\_\+output\char`\"{})
+\begin{DoxyCompactList}\small\item\em Salva sessao do gnuplot para um arquivo png, nome do arquivo sem extensao Depois retorna para modo terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aaa38f9e689fca36da83a660f4b9cf36b}{Save\+Topng}} (const std\+::string \&filename=\char`\"{}gnuplot\+\_\+output\char`\"{})
+\begin{DoxyCompactList}\small\item\em Salva sessao do gnuplot para um arquivo png, nome do arquivo sem extensao Depois retorna para modo terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a0808fae92ce7e38af3bed8897748acf0}{savetojpeg}} (const std\+::string \&filename=\char`\"{}gnuplot\+\_\+output\char`\"{})
+\begin{DoxyCompactList}\small\item\em Salva sessao do gnuplot para um arquivo jpg, nome do arquivo sem extensao Depois retorna para modo terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a190d66f0efa9cf3a90633543f5a59328}{Save\+Tojpeg}} (const std\+::string \&filename=\char`\"{}gnuplot\+\_\+output\char`\"{})
+\begin{DoxyCompactList}\small\item\em Salva sessao do gnuplot para um arquivo jpg, nome do arquivo sem extensao Depois retorna para modo terminal. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a3986669a73f911715d0baa4ab83d416c}{Save\+To}} (const std\+::string \&filename, const std\+::string \&terminal\+\_\+type, std\+::string flags=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Salva sessao do gnuplot para um arquivo filename, usando o terminal\+\_\+type e algum flag adicional Ex\+: grafico.\+Save\+To(\char`\"{}pressao\+\_\+\+X\+\_\+temperatura\char`\"{},\char`\"{}png\char`\"{}, \char`\"{}enhanced size 1280,960\char`\"{}); Para melhor uso dos flags adicionais consulte o manual do gnuplot (help term) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_acfdcda292650775ebed4683e8e1515b5}{set\+\_\+style}} (const std\+::string \&stylestr=\char`\"{}points\char`\"{})
+\begin{DoxyCompactList}\small\item\em Seta estilos de linhas (em alguns casos sao necessarias informacoes adicionais). lines, points, linespoints, impulses, dots, steps, fsteps, histeps, boxes, histograms, filledcurves. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aef1de768157bb75e080d1c60a1756e42}{Style}} (const std\+::string \&stylestr=\char`\"{}points\char`\"{})
+\begin{DoxyCompactList}\small\item\em Seta estilos de linhas (em alguns casos sao necessarias informacoes adicionais). lines, points, linespoints, impulses, dots, steps, fsteps, histeps, boxes, histograms, filledcurves. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aa18386919da2ec4c994f1f9c7195d384}{set\+\_\+smooth}} (const std\+::string \&stylestr=\char`\"{}csplines\char`\"{})
+\begin{DoxyCompactList}\small\item\em Ativa suavizacao. Argumentos para interpolacoes e aproximacoes. csplines, bezier, acsplines (para dados com valor \texorpdfstring{$>$}{>} 0), sbezier, unique, frequency (funciona somente com plot\+\_\+x, plot\+\_\+xy, plotfile\+\_\+x, plotfile\+\_\+xy (se a suavizacao esta ativa, set\+\_\+style nao tem efeito na plotagem dos graficos) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aec18795f217d6d8791275a1c866b550e}{unset\+\_\+smooth}} ()
+\begin{DoxyCompactList}\small\item\em Desativa suavizacao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a29497993835d6b72df35188564ff71cd}{Smooth}} (const std\+::string \&stylestr=\char`\"{}csplines\char`\"{})
+\begin{DoxyCompactList}\small\item\em Ativa suavizacao. Argumentos para interpolacoes e aproximacoes. csplines, bezier, acsplines (para dados com valor \texorpdfstring{$>$}{>} 0), sbezier, unique, frequency (funciona somente com plot\+\_\+x, plot\+\_\+xy, plotfile\+\_\+x, plotfile\+\_\+xy (se a suavizacao esta ativa, set\+\_\+style nao tem efeito na plotagem dos graficos) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a07d44cceb72d28ab566dd09a09e870dc}{Smooth}} (int \+\_\+fsmooth)
+\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a95ec1636a871447dfe99463b769339c7}{set\+\_\+pointsize}} (const double pointsize=1.\+0)
+\begin{DoxyCompactList}\small\item\em Desativa suavizacao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_af81087e5b9753620d73b66f6229d2646}{Point\+Size}} (const double pointsize=1.\+0)
+\begin{DoxyCompactList}\small\item\em Escala o tamanho do ponto usado na plotagem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a4b7245b12dad1c0ef326e5f59eb83001}{set\+\_\+grid}} ()
+\begin{DoxyCompactList}\small\item\em Ativa o grid (padrao = desativado). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a8b9a16d5793c3f4939b917b2c263860c}{unset\+\_\+grid}} ()
+\begin{DoxyCompactList}\small\item\em Desativa o grid (padrao = desativado). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aba6c206ff95d6d7377627f8545ca62c1}{Grid}} (bool \+\_\+fgrid=1)
+\begin{DoxyCompactList}\small\item\em Ativa/\+Desativa o grid (padrao = desativado). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a671cbe7b18a267ea59f532c83a0035f6}{set\+\_\+samples}} (const int samples=100)
+\begin{DoxyCompactList}\small\item\em Seta taxa de amostragem das funcoes, ou dos dados de interpolacao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a5fe518307dfcca82468b7e6279408525}{Samples}} (const int samples=100)
+\begin{DoxyCompactList}\small\item\em Seta taxa de amostragem das funcoes, ou dos dados de interpolacao. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ab810fa4c02fb49ae197786c305b78702}{set\+\_\+isosamples}} (const int isolines=10)
+\begin{DoxyCompactList}\small\item\em Seta densidade de isolinhas para plotagem de funcoes como superficies (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a14c7ba149d3e9f523d15bb1fd66445e9}{Iso\+Samples}} (const int isolines=10)
+\begin{DoxyCompactList}\small\item\em Seta densidade de isolinhas para plotagem de funcoes como superficies (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a5ada5c76db0a735d3d331caa0eb4968a}{set\+\_\+hidden3d}} ()
+\begin{DoxyCompactList}\small\item\em Ativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a763ff17df1679cc2b1463b024aa89ebc}{unset\+\_\+hidden3d}} ()
+\begin{DoxyCompactList}\small\item\em Desativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a42195fcdfc544df50d7d412f2918c218}{Hidden3d}} (bool \+\_\+fhidden3d=1)
+\begin{DoxyCompactList}\small\item\em Ativa/\+Desativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_af845efc728a90d7e10de764eff0b2423}{set\+\_\+contour}} (const std\+::string \&position=\char`\"{}base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Ativa desenho do contorno em superficies (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a39d10e6ce85875939a9c594d132a10d7}{unset\+\_\+contour}} ()
+\begin{DoxyCompactList}\small\item\em Desativa desenho do contorno em superficies (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aac76a01e16642ca0415b32a2fd4c93be}{Contour}} (const std\+::string \&position=\char`\"{}base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Ativa/\+Desativa desenho do contorno em superficies (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a50ca33d75a5be32ac59abaa5100153a1}{Contour}} (int \+\_\+fcontour)
+\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a0e36dcd81618234c6cdd135a9e1eee2b}{set\+\_\+surface}} ()
+\begin{DoxyCompactList}\small\item\em Ativa a visualizacao da superficie (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a805f1807c9b3a0a6745d66fa1729e3be}{unset\+\_\+surface}} ()
+\begin{DoxyCompactList}\small\item\em Desativa a visualizacao da superficie (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ad5367a586328205bc451a958db705274}{Surface}} (int \+\_\+fsurface=1)
+\begin{DoxyCompactList}\small\item\em Ativa/\+Desativa a visualizacao da superficie (para plotagen 3d). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ad64a717dac18167f656c4f09239973f8}{set\+\_\+legend}} (const std\+::string \&position=\char`\"{}default\char`\"{})
+\begin{DoxyCompactList}\small\item\em Ativa a legenda (a legenda È setada por padrao). Posicao\+: inside/outside, left/center/right, top/center/bottom, nobox/box. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a584e0710d7f5bcaa35653d1987f1563e}{unset\+\_\+legend}} ()
+\begin{DoxyCompactList}\small\item\em Desativa a legenda (a legenda È setada por padrao). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a2b9ba1e2d6babf020158c042eefdff76}{Legend}} (const std\+::string \&position=\char`\"{}default\char`\"{})
+\begin{DoxyCompactList}\small\item\em Ativa/\+Desativa a legenda (a legenda È setada por padrao). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_af2f2bf238db3ebce2d92cd6ca95c1466}{Legend}} (int \+\_\+flegend)
+\begin{DoxyCompactList}\small\item\em Ativa/\+Desativa a legenda (a legenda È setada por padrao). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aa693e806a115af1e2776a15078e75b46}{set\+\_\+title}} (const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Ativa o titulo da secao do gnuplot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a0d205a55ae104403292622b49af14ae7}{unset\+\_\+title}} ()
+\begin{DoxyCompactList}\small\item\em Desativa o titulo da secao do gnuplot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a83804130dca9267a667220852eb1a181}{Title}} (const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Ativa/\+Desativa o titulo da secao do gnuplot. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_acce4e1245cc08c6bb13d6675419a7c49}{Title}} (int \+\_\+ftitle)
+\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a7654b86e3873aec4c5101abb466fe4ab}{set\+\_\+ylabel}} (const std\+::string \&label=\char`\"{}y\char`\"{})
+\begin{DoxyCompactList}\small\item\em Seta o rotulo (nome) do eixo y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a8e7fb34039d3252f01d3e78a44d6af08}{YLabel}} (const std\+::string \&label=\char`\"{}y\char`\"{})
+\begin{DoxyCompactList}\small\item\em Seta o rotulo (nome) do eixo y. Ex\+: set ylabel \char`\"{}\{/\+Symbol s\}\mbox{[}\+MPa\mbox{]}\char`\"{} font \char`\"{}\+Times Italic, 10\char`\"{}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a58808028aec03a22b5c19693b14baeef}{set\+\_\+xlabel}} (const std\+::string \&label=\char`\"{}x\char`\"{})
+\begin{DoxyCompactList}\small\item\em Seta o rotulo (nome) do eixo x. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aefb9c21bd11f2dd6724be22c8aba98bb}{XLabel}} (const std\+::string \&label=\char`\"{}x\char`\"{})
+\begin{DoxyCompactList}\small\item\em Seta o rotulo (nome) do eixo x. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ab3206e715d20f05cc0dd1eec89ce8b07}{set\+\_\+zlabel}} (const std\+::string \&label=\char`\"{}z\char`\"{})
+\begin{DoxyCompactList}\small\item\em Seta o rotulo (nome) do eixo z. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a74cd41eda01e17ab43cf8dcbe145333e}{ZLabel}} (const std\+::string \&label=\char`\"{}z\char`\"{})
+\begin{DoxyCompactList}\small\item\em Seta o rotulo (nome) do eixo z. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a726232ac7226b9fc8811eaefa87c902b}{set\+\_\+xrange}} (const int i\+From, const int i\+To)
+\begin{DoxyCompactList}\small\item\em Seta intervalo do eixo x. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_acee07201a6f6c3cf40b87bee425058c0}{XRange}} (const int i\+From, const int i\+To)
+\begin{DoxyCompactList}\small\item\em Seta intervalo do eixo x. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_af621a43664a07523f098ffc3fb5a99b0}{set\+\_\+yrange}} (const int i\+From, const int i\+To)
+\begin{DoxyCompactList}\small\item\em Seta intervalo do eixo y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ada2935405def74527ec9d86eebb88aad}{YRange}} (const int i\+From, const int i\+To)
+\begin{DoxyCompactList}\small\item\em Seta intervalo do eixo y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a91666451b8cfd1c5b279d2e585b11af6}{set\+\_\+zrange}} (const int i\+From, const int i\+To)
+\begin{DoxyCompactList}\small\item\em Seta intervalo do eixo z. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a58ce69438ac8f8b525c90a282228368f}{ZRange}} (const int i\+From, const int i\+To)
+\begin{DoxyCompactList}\small\item\em Seta intervalo do eixo z. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a453688dc2eb979f842082290f3c02ac3}{set\+\_\+xautoscale}} ()
+\begin{DoxyCompactList}\small\item\em Seta escalonamento automatico do eixo x (default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ab7c7f50c7b7a55ffc9b87ff892d2b2b6}{XAutoscale}} ()
+\begin{DoxyCompactList}\small\item\em Seta escalonamento automatico do eixo x (default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a3cc19dba32bb2d3ac59494ae1493faa7}{set\+\_\+yautoscale}} ()
+\begin{DoxyCompactList}\small\item\em Seta escalonamento automatico do eixo y (default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_af84a02a03a3c7c76fb8ea2364ad89546}{YAutoscale}} ()
+\begin{DoxyCompactList}\small\item\em Seta escalonamento automatico do eixo y (default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ad72aa208fad039b6b7d13ea9595ce157}{set\+\_\+zautoscale}} ()
+\begin{DoxyCompactList}\small\item\em Seta escalonamento automatico do eixo z (default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a8d5f375097a968d169ecbf294af0c4b2}{ZAutoscale}} ()
+\begin{DoxyCompactList}\small\item\em Seta escalonamento automatico do eixo z (default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aff546fad227d93babeb5d2cc9f047b89}{set\+\_\+xlogscale}} (const double base=10)
+\begin{DoxyCompactList}\small\item\em Ativa escala logaritma do eixo x (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aed8f962539fd8f53ab2c0218da7a6010}{unset\+\_\+xlogscale}} ()
+\begin{DoxyCompactList}\small\item\em Desativa escala logaritma do eixo x (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a4a26f10f3d11eedcefa1582140144841}{XLogscale}} (const double base=10)
+\begin{DoxyCompactList}\small\item\em Ativa escala logaritma do eixo x (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a1c713ae32678d4ada2b170bf774f8f8c}{XLogscale}} (bool \+\_\+fxlogscale)
+\begin{DoxyCompactList}\small\item\em Ativa/\+Desativa escala logaritma do eixo x (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a201a802d2f27fece0d39809c4eb3bce0}{set\+\_\+ylogscale}} (const double base=10)
+\begin{DoxyCompactList}\small\item\em Ativa escala logaritma do eixo y (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aad6e2709ed492e4bf5d587143881c8b2}{YLogscale}} (const double base=10)
+\begin{DoxyCompactList}\small\item\em Ativa escala logaritma do eixo y (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a74ebc96273b30c98fb9c8f047dd34ac0}{unset\+\_\+ylogscale}} ()
+\begin{DoxyCompactList}\small\item\em Desativa escala logaritma do eixo y (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a391e01377127dab11cb7fb3ecbecd2fd}{YLogscale}} (bool \+\_\+fylogscale)
+\begin{DoxyCompactList}\small\item\em Ativa/\+Desativa escala logaritma do eixo y (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a1da3838163b0dbde8809b55c5b5c56b1}{set\+\_\+zlogscale}} (const double base=10)
+\begin{DoxyCompactList}\small\item\em Ativa escala logaritma do eixo y (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ac223d0668c8a0b361ac67eb949224cd4}{ZLogscale}} (const double base=10)
+\begin{DoxyCompactList}\small\item\em Ativa escala logaritma do eixo y (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a294d7473091f849fe70e4dba8df8712a}{unset\+\_\+zlogscale}} ()
+\begin{DoxyCompactList}\small\item\em Desativa escala logaritma do eixo z (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a377c6088dd9c9378eafb260e993c35c1}{ZLogscale}} (bool \+\_\+fzlogscale)
+\begin{DoxyCompactList}\small\item\em Ativa/\+Desativa escala logaritma do eixo y (logscale nao e setado por default). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a2c8c8ae0441f54dd728bc6594051c137}{set\+\_\+cbrange}} (const int i\+From, const int i\+To)
+\begin{DoxyCompactList}\small\item\em Seta intervalo da palette (autoscale por padrao). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a72c287667a80e2dfa8275688c93db056}{CBRange}} (const int i\+From, const int i\+To)
+\begin{DoxyCompactList}\small\item\em Seta intervalo da palette (autoscale por padrao). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a4ca35415fa5560764597cfdfa46c6c40}{plotfile\+\_\+x}} (const std\+::string \&filename, const int column=1, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota dados de um arquivo de disco. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ac9383787c3831cada55dd081b0592857}{Plot\+File}} (const std\+::string \&filename, const int column=1, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota dados de um arquivo de disco. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a9400d43204b9df62851c063aee604f0d}{plot\+\_\+x}} (const std\+::vector$<$ double $>$ \&x, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota dados de um vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ac80f65502e2af281ae7c8c4a73d604d8}{Plot\+Vector}} (const std\+::vector$<$ double $>$ \&x, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota dados de um vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_af226f395310d3c5c4f8b4d2aaf5d8823}{plotfile\+\_\+xy}} (const std\+::string \&filename, const int column\+\_\+x=1, const int column\+\_\+y=2, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota pares x,y a partir de um arquivo de disco. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ac19856a234621520bf08ce5d0105d436}{Plot\+File}} (const std\+::string \&filename, const int column\+\_\+x=1, const int column\+\_\+y=2, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota pares x,y a partir de um arquivo de disco. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a777b6a5474951d6d023dff4237d80a2b}{plot\+\_\+xy}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota pares x,y a partir de vetores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aefa64bbed449a6c7c1eb1fabb392d3f6}{Plot\+Vector}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota pares x,y a partir de vetores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a33ab4bb031fa6a6b798c90a9089648e9}{plotfile\+\_\+xy\+\_\+err}} (const std\+::string \&filename, const int column\+\_\+x=1, const int column\+\_\+y=2, const int column\+\_\+dy=3, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota pares x,y com barra de erro dy a partir de um arquivo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_abe9f9f5301c1dcc35acecbf854623085}{Plot\+File\+XYError\+Bar}} (const std\+::string \&filename, const int column\+\_\+x=1, const int column\+\_\+y=2, const int column\+\_\+dy=3, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota pares x,y com barra de erro dy a partir de um arquivo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a3dd3934b09094a9ba48035a2edf4d4fd}{plot\+\_\+xy\+\_\+err}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y, const std\+::vector$<$ double $>$ \&dy, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota pares x,y com barra de erro dy a partir de vetores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ac19dffd0bd609bb8de3cc29250d9f4dd}{Plot\+Vector\+XYError\+Bar}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y, const std\+::vector$<$ double $>$ \&dy, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota pares x,y com barra de erro dy a partir de vetores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_abd1c17c49fc59979a1143384c77c5b66}{plotfile\+\_\+xyz}} (const std\+::string \&filename, const int column\+\_\+x=1, const int column\+\_\+y=2, const int column\+\_\+z=3, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota valores de x,y,z a partir de um arquivo de disco. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a75a67ae376eb94892aa5ba48ae6c29c5}{Plot\+File}} (const std\+::string \&filename, const int column\+\_\+x=1, const int column\+\_\+y=2, const int column\+\_\+z=3, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota valores de x,y,z a partir de um arquivo de disco. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_aee30f21a00a4f31c8356a2ef1f0e26e3}{plot\+\_\+xyz}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y, const std\+::vector$<$ double $>$ \&z, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota valores de x,y,z a partir de vetores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a2b2b8d5ffa6e9f0cc06617449e84c286}{Plot\+Vector}} (const std\+::vector$<$ double $>$ \&x, const std\+::vector$<$ double $>$ \&y, const std\+::vector$<$ double $>$ \&z, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota valores de x,y,z a partir de vetores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a51ea5105eb87285820bb93910f8d346c}{plot\+\_\+slope}} (const double a, const double b, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota uma equacao da forma y = ax + b, voce fornece os coeficientes a e b. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_af4912dcec86b05a74b27c30adddc5113}{Plot\+Slope}} (const double a, const double b, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota uma equacao da forma y = ax + b, voce fornece os coeficientes a e b. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a42dfb8c9d4636745c7be277ed818e849}{plot\+\_\+equation}} (const std\+::string \&equation, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota uma equacao fornecida como uma std\+::string y=f(x). Escrever somente a funcao f(x) e nao y= A variavel independente deve ser x Os operadores binarios aceitos sao\+: $\ast$$\ast$ exponenciacao,. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a54a8351d4ea06e4873a73fa200835380}{Plot\+Equation}} (const std\+::string \&equation, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota uma equacao fornecida como uma std\+::string y=f(x). Escrever somente a funcao f(x) e nao y= A variavel independente deve ser x. Exemplo\+: gnuplot-\/\texorpdfstring{$>$}{>}Plot\+Equation(\+CFuncao\& obj); ~\newline
+ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a79aed3a6927f7d1d3497cba441e8a943}{plot\+\_\+equation3d}} (const std\+::string \&equation, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota uma equacao fornecida na forma de uma std\+::string z=f(x,y). Escrever somente a funcao f(x,y) e nao z=, as variaveis independentes sao x e y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a1bd342bc27ae0d3155bfb4847431f5a3}{Plot\+Equation3d}} (const std\+::string \&equation, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota uma equacao fornecida na forma de uma std\+::string z=f(x,y). Escrever somente a funcao f(x,y) e nao z=, as vaiaveis independentes sao x e y. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ab71117b8fa74d53ea20c313717d86b5c}{plot\+\_\+image}} (const unsigned char $\ast$uc\+Pic\+Buf, const int i\+Width, const int i\+Height, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota uma imagem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a93fa9569c46f615840fcb364a29059a9}{Plot\+Image}} (const unsigned char $\ast$uc\+Pic\+Buf, const int i\+Width, const int i\+Height, const std\+::string \&title=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Plota uma imagem. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ae4f110479cfd8dc9b1b3d45809fb05e0}{replot}} ()
+\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_afbe378ac601c83c406eed0ca51d75504}{Replot}} ()
+\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a6797761712d3c311e3685bcccba65dd4}{reset\+\_\+plot}} ()
+\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a6e3411abb065d4f0f556966c61b870c6}{Reset\+Plot}} ()
+\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ab22bb6a97740eeec7cc8226ac12ceda1}{Reset}} ()
+\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_a9aedfe8371083a1a3ac2b9493810049c}{reset\+\_\+all}} ()
+\item 
+\mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& \mbox{\hyperlink{class_gnuplot_ad909ddbdd0cd8da2a11d60b7f3ee4869}{Reset\+All}} ()
+\item 
+bool \mbox{\hyperlink{class_gnuplot_a3135ffebb308b50c4f3178a62b23ab03}{is\+\_\+valid}} ()
+\item 
+bool \mbox{\hyperlink{class_gnuplot_af1af0e2a0b3661df825b4e7b1f7e8d94}{Is\+Valid}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Membros P√∫blicos Est√°ticos}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_gnuplot_a67cae885c26ced821e335d98986f1967}{set\+\_\+\+GNUPlot\+Path}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Seta caminho para path do gnuplot. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_gnuplot_a3920eab5d6595ea80d4bc4f72b06dab1}{Path}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Seta caminho para path do gnuplot. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_gnuplot_a21feba7a3916708b742c3dc25850ab2f}{set\+\_\+terminal\+\_\+std}} (const std\+::string \&type)
+\begin{DoxyCompactList}\small\item\em Opcional\+: Seta terminal padrao (standart), usado para visualizacao dos graficos. Valores padroes (default)\+: Windows -\/ win, Linux -\/ x11, Mac -\/ aqua. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_gnuplot_a4039b0fdcf0e3fbf97dac187825138fb}{Terminal}} (const std\+::string \&type)
+\begin{DoxyCompactList}\small\item\em Opcional\+: Seta terminal padrao (standart), usado para visualizacao dos graficos. Para retornar para terminal janela precisa chamar \mbox{\hyperlink{class_gnuplot_aada22f547a0a9ac26adea4a4ec836ea4}{Show\+On\+Screen()}}. Valores padroes (default)\+: Windows -\/ win, Linux -\/ x11 ou wxt (fedora9), Mac -\/ aqua. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descri√ß√£o detalhada}
+Classe de interface para acesso ao programa gnuplot. 
+
+\doxysubsection{Construtores e Destrutores}
+\mbox{\Hypertarget{class_gnuplot_a187eb517b362cf379492fe7f1621ee50}\label{class_gnuplot_a187eb517b362cf379492fe7f1621ee50}} 
+\index{Gnuplot@{Gnuplot}!Gnuplot@{Gnuplot}}
+\index{Gnuplot@{Gnuplot}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Gnuplot()}{Gnuplot()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily Gnuplot\+::\+Gnuplot (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{style = {\ttfamily \char`\"{}points\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Construtor, seta o estilo do grafico na construcao. 
+
+\mbox{\Hypertarget{class_gnuplot_a8ceac5808e42665c1dee305ae7ea9070}\label{class_gnuplot_a8ceac5808e42665c1dee305ae7ea9070}} 
+\index{Gnuplot@{Gnuplot}!Gnuplot@{Gnuplot}}
+\index{Gnuplot@{Gnuplot}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Gnuplot()}{Gnuplot()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily Gnuplot\+::\+Gnuplot (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const std\+::string \&}]{style = {\ttfamily \char`\"{}points\char`\"{}},  }\item[{const std\+::string \&}]{labelx = {\ttfamily \char`\"{}x\char`\"{}},  }\item[{const std\+::string \&}]{labely = {\ttfamily \char`\"{}y\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Construtor, plota um grafico a partir de um vector, diretamente na construcao. 
+
+\mbox{\Hypertarget{class_gnuplot_a24327b6116c71acdc195eadf665c67cb}\label{class_gnuplot_a24327b6116c71acdc195eadf665c67cb}} 
+\index{Gnuplot@{Gnuplot}!Gnuplot@{Gnuplot}}
+\index{Gnuplot@{Gnuplot}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Gnuplot()}{Gnuplot()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily Gnuplot\+::\+Gnuplot (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const std\+::string \&}]{style = {\ttfamily \char`\"{}points\char`\"{}},  }\item[{const std\+::string \&}]{labelx = {\ttfamily \char`\"{}x\char`\"{}},  }\item[{const std\+::string \&}]{labely = {\ttfamily \char`\"{}y\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Construtor, plota um grafico do tipo x\+\_\+y a partir de vetores, diretamente na construcao. 
+
+\mbox{\Hypertarget{class_gnuplot_a14191e89154f2716608f6907975cc012}\label{class_gnuplot_a14191e89154f2716608f6907975cc012}} 
+\index{Gnuplot@{Gnuplot}!Gnuplot@{Gnuplot}}
+\index{Gnuplot@{Gnuplot}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Gnuplot()}{Gnuplot()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily Gnuplot\+::\+Gnuplot (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y,  }\item[{const std\+::vector$<$ double $>$ \&}]{z,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const std\+::string \&}]{style = {\ttfamily \char`\"{}points\char`\"{}},  }\item[{const std\+::string \&}]{labelx = {\ttfamily \char`\"{}x\char`\"{}},  }\item[{const std\+::string \&}]{labely = {\ttfamily \char`\"{}y\char`\"{}},  }\item[{const std\+::string \&}]{labelz = {\ttfamily \char`\"{}z\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Construtor, plota um grafico de x\+\_\+y\+\_\+z a partir de vetores, diretamente na construcao. 
+
+\mbox{\Hypertarget{class_gnuplot_a78a68f621caa87d1f34324fcd093c7bd}\label{class_gnuplot_a78a68f621caa87d1f34324fcd093c7bd}} 
+\index{Gnuplot@{Gnuplot}!````~Gnuplot@{$\sim$Gnuplot}}
+\index{````~Gnuplot@{$\sim$Gnuplot}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{$\sim$Gnuplot()}{~Gnuplot()}}
+{\footnotesize\ttfamily Gnuplot\+::$\sim$\+Gnuplot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destrutor, necessario para deletar arquivos temporarios. 
+
+
+
+\doxysubsection{Fun√ß√µes membros}
+\mbox{\Hypertarget{class_gnuplot_a72c287667a80e2dfa8275688c93db056}\label{class_gnuplot_a72c287667a80e2dfa8275688c93db056}} 
+\index{Gnuplot@{Gnuplot}!CBRange@{CBRange}}
+\index{CBRange@{CBRange}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{CBRange()}{CBRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+CBRange (\begin{DoxyParamCaption}\item[{const int}]{i\+From,  }\item[{const int}]{i\+To }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta intervalo da palette (autoscale por padrao). 
+
+\mbox{\Hypertarget{class_gnuplot_a07607803ede8dd5416906df0a1924fc5}\label{class_gnuplot_a07607803ede8dd5416906df0a1924fc5}} 
+\index{Gnuplot@{Gnuplot}!cmd@{cmd}}
+\index{cmd@{cmd}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{cmd()}{cmd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::cmd (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cmdstr }\end{DoxyParamCaption})}
+
+
+
+Envia comando para o gnuplot. 
+
+\mbox{\Hypertarget{class_gnuplot_a59921d80c0315c95fc5f2cf28e6718df}\label{class_gnuplot_a59921d80c0315c95fc5f2cf28e6718df}} 
+\index{Gnuplot@{Gnuplot}!Cmd@{Cmd}}
+\index{Cmd@{Cmd}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Cmd()}{Cmd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Cmd (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cmdstr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Envia comando para o gnuplot. 
+
+\mbox{\Hypertarget{class_gnuplot_abd081059ee059e67c204585c456d41a2}\label{class_gnuplot_abd081059ee059e67c204585c456d41a2}} 
+\index{Gnuplot@{Gnuplot}!Command@{Command}}
+\index{Command@{Command}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Command()}{Command()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Command (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cmdstr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Envia comando para o gnuplot. 
+
+\mbox{\Hypertarget{class_gnuplot_aac76a01e16642ca0415b32a2fd4c93be}\label{class_gnuplot_aac76a01e16642ca0415b32a2fd4c93be}} 
+\index{Gnuplot@{Gnuplot}!Contour@{Contour}}
+\index{Contour@{Contour}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Contour()}{Contour()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Contour (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{position = {\ttfamily \char`\"{}base\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa/\+Desativa desenho do contorno em superficies (para plotagen 3d). 
+
+
+\begin{DoxyParams}{Par√¢metros}
+{\em base,surface,both.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gnuplot_a50ca33d75a5be32ac59abaa5100153a1}\label{class_gnuplot_a50ca33d75a5be32ac59abaa5100153a1}} 
+\index{Gnuplot@{Gnuplot}!Contour@{Contour}}
+\index{Contour@{Contour}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Contour()}{Contour()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Contour (\begin{DoxyParamCaption}\item[{int}]{\+\_\+fcontour }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_gnuplot_aba6c206ff95d6d7377627f8545ca62c1}\label{class_gnuplot_aba6c206ff95d6d7377627f8545ca62c1}} 
+\index{Gnuplot@{Gnuplot}!Grid@{Grid}}
+\index{Grid@{Grid}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Grid()}{Grid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Grid (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+fgrid = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa/\+Desativa o grid (padrao = desativado). 
+
+\mbox{\Hypertarget{class_gnuplot_a42195fcdfc544df50d7d412f2918c218}\label{class_gnuplot_a42195fcdfc544df50d7d412f2918c218}} 
+\index{Gnuplot@{Gnuplot}!Hidden3d@{Hidden3d}}
+\index{Hidden3d@{Hidden3d}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Hidden3d()}{Hidden3d()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Hidden3d (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+fhidden3d = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa/\+Desativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). 
+
+\mbox{\Hypertarget{class_gnuplot_a3135ffebb308b50c4f3178a62b23ab03}\label{class_gnuplot_a3135ffebb308b50c4f3178a62b23ab03}} 
+\index{Gnuplot@{Gnuplot}!is\_valid@{is\_valid}}
+\index{is\_valid@{is\_valid}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{is\_valid()}{is\_valid()}}
+{\footnotesize\ttfamily bool Gnuplot\+::is\+\_\+valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_gnuplot_a14c7ba149d3e9f523d15bb1fd66445e9}\label{class_gnuplot_a14c7ba149d3e9f523d15bb1fd66445e9}} 
+\index{Gnuplot@{Gnuplot}!IsoSamples@{IsoSamples}}
+\index{IsoSamples@{IsoSamples}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{IsoSamples()}{IsoSamples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Iso\+Samples (\begin{DoxyParamCaption}\item[{const int}]{isolines = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta densidade de isolinhas para plotagem de funcoes como superficies (para plotagen 3d). 
+
+\mbox{\Hypertarget{class_gnuplot_af1af0e2a0b3661df825b4e7b1f7e8d94}\label{class_gnuplot_af1af0e2a0b3661df825b4e7b1f7e8d94}} 
+\index{Gnuplot@{Gnuplot}!IsValid@{IsValid}}
+\index{IsValid@{IsValid}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{IsValid()}{IsValid()}}
+{\footnotesize\ttfamily bool Gnuplot\+::\+Is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_gnuplot_a2b9ba1e2d6babf020158c042eefdff76}\label{class_gnuplot_a2b9ba1e2d6babf020158c042eefdff76}} 
+\index{Gnuplot@{Gnuplot}!Legend@{Legend}}
+\index{Legend@{Legend}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Legend()}{Legend()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Legend (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{position = {\ttfamily \char`\"{}default\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa/\+Desativa a legenda (a legenda È setada por padrao). 
+
+\mbox{\Hypertarget{class_gnuplot_af2f2bf238db3ebce2d92cd6ca95c1466}\label{class_gnuplot_af2f2bf238db3ebce2d92cd6ca95c1466}} 
+\index{Gnuplot@{Gnuplot}!Legend@{Legend}}
+\index{Legend@{Legend}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Legend()}{Legend()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Legend (\begin{DoxyParamCaption}\item[{int}]{\+\_\+flegend }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa/\+Desativa a legenda (a legenda È setada por padrao). 
+
+\mbox{\Hypertarget{class_gnuplot_ae56495dc15f23d32f099129d3a50dd6c}\label{class_gnuplot_ae56495dc15f23d32f099129d3a50dd6c}} 
+\index{Gnuplot@{Gnuplot}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{cmdstr }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga operador \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}, funciona como Comando. 
+
+\mbox{\Hypertarget{class_gnuplot_a3920eab5d6595ea80d4bc4f72b06dab1}\label{class_gnuplot_a3920eab5d6595ea80d4bc4f72b06dab1}} 
+\index{Gnuplot@{Gnuplot}!Path@{Path}}
+\index{Path@{Path}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Path()}{Path()}}
+{\footnotesize\ttfamily static bool Gnuplot\+::\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Seta caminho para path do gnuplot. 
+
+\mbox{\Hypertarget{class_gnuplot_a42dfb8c9d4636745c7be277ed818e849}\label{class_gnuplot_a42dfb8c9d4636745c7be277ed818e849}} 
+\index{Gnuplot@{Gnuplot}!plot\_equation@{plot\_equation}}
+\index{plot\_equation@{plot\_equation}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plot\_equation()}{plot\_equation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plot\+\_\+equation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{equation,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota uma equacao fornecida como uma std\+::string y=f(x). Escrever somente a funcao f(x) e nao y= A variavel independente deve ser x Os operadores binarios aceitos sao\+: $\ast$$\ast$ exponenciacao,. 
+
+
+\begin{DoxyItemize}
+\item multiplicacao, / divisao,
+\end{DoxyItemize}
+
+adicao,
+\begin{DoxyItemize}
+\item subtracao, \% modulo Os operadores unarios aceitos sao\+:
+\item menos, ! fatorial Funcoes elementares\+: rand(x), abs(x), sgn(x), ceil(x), floor(x), int(x), imag(x), real(x), arg(x), sqrt(x), exp(x), log(x), log10(x), sin(x), cos(x), tan(x), asin(x), acos(x), atan(x), atan2(y,x), sinh(x), cosh(x), tanh(x), asinh(x), acosh(x), atanh(x) Funcoes especiais\+: erf(x), erfc(x), inverf(x), gamma(x), igamma(a,x), lgamma(x), ibeta(p,q,x), besj0(x), besj1(x), besy0(x), besy1(x), lambertw(x) Funcoes estatisticas\+: norm(x), invnorm(x) 
+\end{DoxyItemize}\mbox{\Hypertarget{class_gnuplot_a79aed3a6927f7d1d3497cba441e8a943}\label{class_gnuplot_a79aed3a6927f7d1d3497cba441e8a943}} 
+\index{Gnuplot@{Gnuplot}!plot\_equation3d@{plot\_equation3d}}
+\index{plot\_equation3d@{plot\_equation3d}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plot\_equation3d()}{plot\_equation3d()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plot\+\_\+equation3d (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{equation,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota uma equacao fornecida na forma de uma std\+::string z=f(x,y). Escrever somente a funcao f(x,y) e nao z=, as variaveis independentes sao x e y. 
+
+\mbox{\Hypertarget{class_gnuplot_ab71117b8fa74d53ea20c313717d86b5c}\label{class_gnuplot_ab71117b8fa74d53ea20c313717d86b5c}} 
+\index{Gnuplot@{Gnuplot}!plot\_image@{plot\_image}}
+\index{plot\_image@{plot\_image}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plot\_image()}{plot\_image()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plot\+\_\+image (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{uc\+Pic\+Buf,  }\item[{const int}]{i\+Width,  }\item[{const int}]{i\+Height,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota uma imagem. 
+
+
+\begin{DoxyItemize}
+\item note that this function is not valid for versions of GNUPlot below 4.\+2 
+\end{DoxyItemize}\mbox{\Hypertarget{class_gnuplot_a51ea5105eb87285820bb93910f8d346c}\label{class_gnuplot_a51ea5105eb87285820bb93910f8d346c}} 
+\index{Gnuplot@{Gnuplot}!plot\_slope@{plot\_slope}}
+\index{plot\_slope@{plot\_slope}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plot\_slope()}{plot\_slope()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plot\+\_\+slope (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota uma equacao da forma y = ax + b, voce fornece os coeficientes a e b. 
+
+\mbox{\Hypertarget{class_gnuplot_a9400d43204b9df62851c063aee604f0d}\label{class_gnuplot_a9400d43204b9df62851c063aee604f0d}} 
+\index{Gnuplot@{Gnuplot}!plot\_x@{plot\_x}}
+\index{plot\_x@{plot\_x}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plot\_x()}{plot\_x()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plot\+\_\+x (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota dados de um vector. 
+
+\mbox{\Hypertarget{class_gnuplot_a777b6a5474951d6d023dff4237d80a2b}\label{class_gnuplot_a777b6a5474951d6d023dff4237d80a2b}} 
+\index{Gnuplot@{Gnuplot}!plot\_xy@{plot\_xy}}
+\index{plot\_xy@{plot\_xy}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plot\_xy()}{plot\_xy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plot\+\_\+xy (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota pares x,y a partir de vetores. 
+
+\mbox{\Hypertarget{class_gnuplot_a3dd3934b09094a9ba48035a2edf4d4fd}\label{class_gnuplot_a3dd3934b09094a9ba48035a2edf4d4fd}} 
+\index{Gnuplot@{Gnuplot}!plot\_xy\_err@{plot\_xy\_err}}
+\index{plot\_xy\_err@{plot\_xy\_err}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plot\_xy\_err()}{plot\_xy\_err()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plot\+\_\+xy\+\_\+err (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y,  }\item[{const std\+::vector$<$ double $>$ \&}]{dy,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota pares x,y com barra de erro dy a partir de vetores. 
+
+\mbox{\Hypertarget{class_gnuplot_aee30f21a00a4f31c8356a2ef1f0e26e3}\label{class_gnuplot_aee30f21a00a4f31c8356a2ef1f0e26e3}} 
+\index{Gnuplot@{Gnuplot}!plot\_xyz@{plot\_xyz}}
+\index{plot\_xyz@{plot\_xyz}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plot\_xyz()}{plot\_xyz()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plot\+\_\+xyz (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y,  }\item[{const std\+::vector$<$ double $>$ \&}]{z,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota valores de x,y,z a partir de vetores. 
+
+\mbox{\Hypertarget{class_gnuplot_a54a8351d4ea06e4873a73fa200835380}\label{class_gnuplot_a54a8351d4ea06e4873a73fa200835380}} 
+\index{Gnuplot@{Gnuplot}!PlotEquation@{PlotEquation}}
+\index{PlotEquation@{PlotEquation}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotEquation()}{PlotEquation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+Equation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{equation,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota uma equacao fornecida como uma std\+::string y=f(x). Escrever somente a funcao f(x) e nao y= A variavel independente deve ser x. Exemplo\+: gnuplot-\/\texorpdfstring{$>$}{>}Plot\+Equation(\+CFuncao\& obj); ~\newline
+ 
+
+\mbox{\Hypertarget{class_gnuplot_a1bd342bc27ae0d3155bfb4847431f5a3}\label{class_gnuplot_a1bd342bc27ae0d3155bfb4847431f5a3}} 
+\index{Gnuplot@{Gnuplot}!PlotEquation3d@{PlotEquation3d}}
+\index{PlotEquation3d@{PlotEquation3d}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotEquation3d()}{PlotEquation3d()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+Equation3d (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{equation,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota uma equacao fornecida na forma de uma std\+::string z=f(x,y). Escrever somente a funcao f(x,y) e nao z=, as vaiaveis independentes sao x e y. 
+
+\mbox{\Hypertarget{class_gnuplot_ac9383787c3831cada55dd081b0592857}\label{class_gnuplot_ac9383787c3831cada55dd081b0592857}} 
+\index{Gnuplot@{Gnuplot}!PlotFile@{PlotFile}}
+\index{PlotFile@{PlotFile}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotFile()}{PlotFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const int}]{column = {\ttfamily 1},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota dados de um arquivo de disco. 
+
+\mbox{\Hypertarget{class_gnuplot_a75a67ae376eb94892aa5ba48ae6c29c5}\label{class_gnuplot_a75a67ae376eb94892aa5ba48ae6c29c5}} 
+\index{Gnuplot@{Gnuplot}!PlotFile@{PlotFile}}
+\index{PlotFile@{PlotFile}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotFile()}{PlotFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const int}]{column\+\_\+x = {\ttfamily 1},  }\item[{const int}]{column\+\_\+y = {\ttfamily 2},  }\item[{const int}]{column\+\_\+z = {\ttfamily 3},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota valores de x,y,z a partir de um arquivo de disco. 
+
+\mbox{\Hypertarget{class_gnuplot_ac19856a234621520bf08ce5d0105d436}\label{class_gnuplot_ac19856a234621520bf08ce5d0105d436}} 
+\index{Gnuplot@{Gnuplot}!PlotFile@{PlotFile}}
+\index{PlotFile@{PlotFile}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotFile()}{PlotFile()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const int}]{column\+\_\+x = {\ttfamily 1},  }\item[{const int}]{column\+\_\+y = {\ttfamily 2},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota pares x,y a partir de um arquivo de disco. 
+
+\mbox{\Hypertarget{class_gnuplot_a4ca35415fa5560764597cfdfa46c6c40}\label{class_gnuplot_a4ca35415fa5560764597cfdfa46c6c40}} 
+\index{Gnuplot@{Gnuplot}!plotfile\_x@{plotfile\_x}}
+\index{plotfile\_x@{plotfile\_x}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plotfile\_x()}{plotfile\_x()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plotfile\+\_\+x (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const int}]{column = {\ttfamily 1},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota dados de um arquivo de disco. 
+
+\mbox{\Hypertarget{class_gnuplot_af226f395310d3c5c4f8b4d2aaf5d8823}\label{class_gnuplot_af226f395310d3c5c4f8b4d2aaf5d8823}} 
+\index{Gnuplot@{Gnuplot}!plotfile\_xy@{plotfile\_xy}}
+\index{plotfile\_xy@{plotfile\_xy}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plotfile\_xy()}{plotfile\_xy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plotfile\+\_\+xy (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const int}]{column\+\_\+x = {\ttfamily 1},  }\item[{const int}]{column\+\_\+y = {\ttfamily 2},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota pares x,y a partir de um arquivo de disco. 
+
+\mbox{\Hypertarget{class_gnuplot_a33ab4bb031fa6a6b798c90a9089648e9}\label{class_gnuplot_a33ab4bb031fa6a6b798c90a9089648e9}} 
+\index{Gnuplot@{Gnuplot}!plotfile\_xy\_err@{plotfile\_xy\_err}}
+\index{plotfile\_xy\_err@{plotfile\_xy\_err}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plotfile\_xy\_err()}{plotfile\_xy\_err()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plotfile\+\_\+xy\+\_\+err (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const int}]{column\+\_\+x = {\ttfamily 1},  }\item[{const int}]{column\+\_\+y = {\ttfamily 2},  }\item[{const int}]{column\+\_\+dy = {\ttfamily 3},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota pares x,y com barra de erro dy a partir de um arquivo. 
+
+\mbox{\Hypertarget{class_gnuplot_abd1c17c49fc59979a1143384c77c5b66}\label{class_gnuplot_abd1c17c49fc59979a1143384c77c5b66}} 
+\index{Gnuplot@{Gnuplot}!plotfile\_xyz@{plotfile\_xyz}}
+\index{plotfile\_xyz@{plotfile\_xyz}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{plotfile\_xyz()}{plotfile\_xyz()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::plotfile\+\_\+xyz (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const int}]{column\+\_\+x = {\ttfamily 1},  }\item[{const int}]{column\+\_\+y = {\ttfamily 2},  }\item[{const int}]{column\+\_\+z = {\ttfamily 3},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Plota valores de x,y,z a partir de um arquivo de disco. 
+
+\mbox{\Hypertarget{class_gnuplot_abe9f9f5301c1dcc35acecbf854623085}\label{class_gnuplot_abe9f9f5301c1dcc35acecbf854623085}} 
+\index{Gnuplot@{Gnuplot}!PlotFileXYErrorBar@{PlotFileXYErrorBar}}
+\index{PlotFileXYErrorBar@{PlotFileXYErrorBar}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotFileXYErrorBar()}{PlotFileXYErrorBar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+File\+XYError\+Bar (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const int}]{column\+\_\+x = {\ttfamily 1},  }\item[{const int}]{column\+\_\+y = {\ttfamily 2},  }\item[{const int}]{column\+\_\+dy = {\ttfamily 3},  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota pares x,y com barra de erro dy a partir de um arquivo. 
+
+\mbox{\Hypertarget{class_gnuplot_a93fa9569c46f615840fcb364a29059a9}\label{class_gnuplot_a93fa9569c46f615840fcb364a29059a9}} 
+\index{Gnuplot@{Gnuplot}!PlotImage@{PlotImage}}
+\index{PlotImage@{PlotImage}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotImage()}{PlotImage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+Image (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{uc\+Pic\+Buf,  }\item[{const int}]{i\+Width,  }\item[{const int}]{i\+Height,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota uma imagem. 
+
+\mbox{\Hypertarget{class_gnuplot_af4912dcec86b05a74b27c30adddc5113}\label{class_gnuplot_af4912dcec86b05a74b27c30adddc5113}} 
+\index{Gnuplot@{Gnuplot}!PlotSlope@{PlotSlope}}
+\index{PlotSlope@{PlotSlope}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotSlope()}{PlotSlope()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+Slope (\begin{DoxyParamCaption}\item[{const double}]{a,  }\item[{const double}]{b,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota uma equacao da forma y = ax + b, voce fornece os coeficientes a e b. 
+
+\mbox{\Hypertarget{class_gnuplot_ac80f65502e2af281ae7c8c4a73d604d8}\label{class_gnuplot_ac80f65502e2af281ae7c8c4a73d604d8}} 
+\index{Gnuplot@{Gnuplot}!PlotVector@{PlotVector}}
+\index{PlotVector@{PlotVector}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotVector()}{PlotVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+Vector (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota dados de um vector. 
+
+\mbox{\Hypertarget{class_gnuplot_aefa64bbed449a6c7c1eb1fabb392d3f6}\label{class_gnuplot_aefa64bbed449a6c7c1eb1fabb392d3f6}} 
+\index{Gnuplot@{Gnuplot}!PlotVector@{PlotVector}}
+\index{PlotVector@{PlotVector}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotVector()}{PlotVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+Vector (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota pares x,y a partir de vetores. 
+
+\mbox{\Hypertarget{class_gnuplot_a2b2b8d5ffa6e9f0cc06617449e84c286}\label{class_gnuplot_a2b2b8d5ffa6e9f0cc06617449e84c286}} 
+\index{Gnuplot@{Gnuplot}!PlotVector@{PlotVector}}
+\index{PlotVector@{PlotVector}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotVector()}{PlotVector()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+Vector (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y,  }\item[{const std\+::vector$<$ double $>$ \&}]{z,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota valores de x,y,z a partir de vetores. 
+
+\mbox{\Hypertarget{class_gnuplot_ac19dffd0bd609bb8de3cc29250d9f4dd}\label{class_gnuplot_ac19dffd0bd609bb8de3cc29250d9f4dd}} 
+\index{Gnuplot@{Gnuplot}!PlotVectorXYErrorBar@{PlotVectorXYErrorBar}}
+\index{PlotVectorXYErrorBar@{PlotVectorXYErrorBar}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PlotVectorXYErrorBar()}{PlotVectorXYErrorBar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Plot\+Vector\+XYError\+Bar (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{x,  }\item[{const std\+::vector$<$ double $>$ \&}]{y,  }\item[{const std\+::vector$<$ double $>$ \&}]{dy,  }\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Plota pares x,y com barra de erro dy a partir de vetores. 
+
+\mbox{\Hypertarget{class_gnuplot_af81087e5b9753620d73b66f6229d2646}\label{class_gnuplot_af81087e5b9753620d73b66f6229d2646}} 
+\index{Gnuplot@{Gnuplot}!PointSize@{PointSize}}
+\index{PointSize@{PointSize}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{PointSize()}{PointSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Point\+Size (\begin{DoxyParamCaption}\item[{const double}]{pointsize = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Escala o tamanho do ponto usado na plotagem. 
+
+\mbox{\Hypertarget{class_gnuplot_ae4f110479cfd8dc9b1b3d45809fb05e0}\label{class_gnuplot_ae4f110479cfd8dc9b1b3d45809fb05e0}} 
+\index{Gnuplot@{Gnuplot}!replot@{replot}}
+\index{replot@{replot}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{replot()}{replot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::replot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_gnuplot_afbe378ac601c83c406eed0ca51d75504}\label{class_gnuplot_afbe378ac601c83c406eed0ca51d75504}} 
+\index{Gnuplot@{Gnuplot}!Replot@{Replot}}
+\index{Replot@{Replot}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Replot()}{Replot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Replot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_gnuplot_ab22bb6a97740eeec7cc8226ac12ceda1}\label{class_gnuplot_ab22bb6a97740eeec7cc8226ac12ceda1}} 
+\index{Gnuplot@{Gnuplot}!Reset@{Reset}}
+\index{Reset@{Reset}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_gnuplot_a9aedfe8371083a1a3ac2b9493810049c}\label{class_gnuplot_a9aedfe8371083a1a3ac2b9493810049c}} 
+\index{Gnuplot@{Gnuplot}!reset\_all@{reset\_all}}
+\index{reset\_all@{reset\_all}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{reset\_all()}{reset\_all()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::reset\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_gnuplot_a6797761712d3c311e3685bcccba65dd4}\label{class_gnuplot_a6797761712d3c311e3685bcccba65dd4}} 
+\index{Gnuplot@{Gnuplot}!reset\_plot@{reset\_plot}}
+\index{reset\_plot@{reset\_plot}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{reset\_plot()}{reset\_plot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::reset\+\_\+plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_gnuplot_ad909ddbdd0cd8da2a11d60b7f3ee4869}\label{class_gnuplot_ad909ddbdd0cd8da2a11d60b7f3ee4869}} 
+\index{Gnuplot@{Gnuplot}!ResetAll@{ResetAll}}
+\index{ResetAll@{ResetAll}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{ResetAll()}{ResetAll()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Reset\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_gnuplot_a6e3411abb065d4f0f556966c61b870c6}\label{class_gnuplot_a6e3411abb065d4f0f556966c61b870c6}} 
+\index{Gnuplot@{Gnuplot}!ResetPlot@{ResetPlot}}
+\index{ResetPlot@{ResetPlot}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{ResetPlot()}{ResetPlot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Reset\+Plot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_gnuplot_a5fe518307dfcca82468b7e6279408525}\label{class_gnuplot_a5fe518307dfcca82468b7e6279408525}} 
+\index{Gnuplot@{Gnuplot}!Samples@{Samples}}
+\index{Samples@{Samples}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Samples()}{Samples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Samples (\begin{DoxyParamCaption}\item[{const int}]{samples = {\ttfamily 100} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta taxa de amostragem das funcoes, ou dos dados de interpolacao. 
+
+\mbox{\Hypertarget{class_gnuplot_a3986669a73f911715d0baa4ab83d416c}\label{class_gnuplot_a3986669a73f911715d0baa4ab83d416c}} 
+\index{Gnuplot@{Gnuplot}!SaveTo@{SaveTo}}
+\index{SaveTo@{SaveTo}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{SaveTo()}{SaveTo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Save\+To (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const std\+::string \&}]{terminal\+\_\+type,  }\item[{std\+::string}]{flags = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Salva sessao do gnuplot para um arquivo filename, usando o terminal\+\_\+type e algum flag adicional Ex\+: grafico.\+Save\+To(\char`\"{}pressao\+\_\+\+X\+\_\+temperatura\char`\"{},\char`\"{}png\char`\"{}, \char`\"{}enhanced size 1280,960\char`\"{}); Para melhor uso dos flags adicionais consulte o manual do gnuplot (help term) 
+
+\mbox{\Hypertarget{class_gnuplot_a0808fae92ce7e38af3bed8897748acf0}\label{class_gnuplot_a0808fae92ce7e38af3bed8897748acf0}} 
+\index{Gnuplot@{Gnuplot}!savetojpeg@{savetojpeg}}
+\index{savetojpeg@{savetojpeg}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{savetojpeg()}{savetojpeg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::savetojpeg (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}gnuplot\+\_\+output\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Salva sessao do gnuplot para um arquivo jpg, nome do arquivo sem extensao Depois retorna para modo terminal. 
+
+\mbox{\Hypertarget{class_gnuplot_a190d66f0efa9cf3a90633543f5a59328}\label{class_gnuplot_a190d66f0efa9cf3a90633543f5a59328}} 
+\index{Gnuplot@{Gnuplot}!SaveTojpeg@{SaveTojpeg}}
+\index{SaveTojpeg@{SaveTojpeg}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{SaveTojpeg()}{SaveTojpeg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Save\+Tojpeg (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}gnuplot\+\_\+output\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Salva sessao do gnuplot para um arquivo jpg, nome do arquivo sem extensao Depois retorna para modo terminal. 
+
+\mbox{\Hypertarget{class_gnuplot_a14c986c74017988acd306f42005c0fb7}\label{class_gnuplot_a14c986c74017988acd306f42005c0fb7}} 
+\index{Gnuplot@{Gnuplot}!savetopng@{savetopng}}
+\index{savetopng@{savetopng}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{savetopng()}{savetopng()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::savetopng (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}gnuplot\+\_\+output\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Salva sessao do gnuplot para um arquivo png, nome do arquivo sem extensao Depois retorna para modo terminal. 
+
+\mbox{\Hypertarget{class_gnuplot_aaa38f9e689fca36da83a660f4b9cf36b}\label{class_gnuplot_aaa38f9e689fca36da83a660f4b9cf36b}} 
+\index{Gnuplot@{Gnuplot}!SaveTopng@{SaveTopng}}
+\index{SaveTopng@{SaveTopng}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{SaveTopng()}{SaveTopng()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Save\+Topng (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}gnuplot\+\_\+output\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Salva sessao do gnuplot para um arquivo png, nome do arquivo sem extensao Depois retorna para modo terminal. 
+
+\mbox{\Hypertarget{class_gnuplot_a032072c7c01b508a7535a17fb08562b1}\label{class_gnuplot_a032072c7c01b508a7535a17fb08562b1}} 
+\index{Gnuplot@{Gnuplot}!savetops@{savetops}}
+\index{savetops@{savetops}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{savetops()}{savetops()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::savetops (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}gnuplot\+\_\+output\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Salva sessao do gnuplot para um arquivo postscript, informe o nome do arquivo sem extensao. Depois retorna para modo terminal. 
+
+\mbox{\Hypertarget{class_gnuplot_a9dd058e30035a4a0009b38012d38efd0}\label{class_gnuplot_a9dd058e30035a4a0009b38012d38efd0}} 
+\index{Gnuplot@{Gnuplot}!SaveTops@{SaveTops}}
+\index{SaveTops@{SaveTops}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{SaveTops()}{SaveTops()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Save\+Tops (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename = {\ttfamily \char`\"{}gnuplot\+\_\+output\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Salva sessao do gnuplot para um arquivo postscript, informe o nome do arquivo sem extensao Depois retorna para modo terminal. 
+
+\mbox{\Hypertarget{class_gnuplot_a2c8c8ae0441f54dd728bc6594051c137}\label{class_gnuplot_a2c8c8ae0441f54dd728bc6594051c137}} 
+\index{Gnuplot@{Gnuplot}!set\_cbrange@{set\_cbrange}}
+\index{set\_cbrange@{set\_cbrange}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_cbrange()}{set\_cbrange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+cbrange (\begin{DoxyParamCaption}\item[{const int}]{i\+From,  }\item[{const int}]{i\+To }\end{DoxyParamCaption})}
+
+
+
+Seta intervalo da palette (autoscale por padrao). 
+
+\mbox{\Hypertarget{class_gnuplot_af845efc728a90d7e10de764eff0b2423}\label{class_gnuplot_af845efc728a90d7e10de764eff0b2423}} 
+\index{Gnuplot@{Gnuplot}!set\_contour@{set\_contour}}
+\index{set\_contour@{set\_contour}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_contour()}{set\_contour()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+contour (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{position = {\ttfamily \char`\"{}base\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Ativa desenho do contorno em superficies (para plotagen 3d). 
+
+
+\begin{DoxyParams}{Par√¢metros}
+{\em base,surface,both.} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_gnuplot_a67cae885c26ced821e335d98986f1967}\label{class_gnuplot_a67cae885c26ced821e335d98986f1967}} 
+\index{Gnuplot@{Gnuplot}!set\_GNUPlotPath@{set\_GNUPlotPath}}
+\index{set\_GNUPlotPath@{set\_GNUPlotPath}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_GNUPlotPath()}{set\_GNUPlotPath()}}
+{\footnotesize\ttfamily bool Gnuplot\+::set\+\_\+\+GNUPlot\+Path (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Seta caminho para path do gnuplot. 
+
+\mbox{\Hypertarget{class_gnuplot_a4b7245b12dad1c0ef326e5f59eb83001}\label{class_gnuplot_a4b7245b12dad1c0ef326e5f59eb83001}} 
+\index{Gnuplot@{Gnuplot}!set\_grid@{set\_grid}}
+\index{set\_grid@{set\_grid}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_grid()}{set\_grid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ativa o grid (padrao = desativado). 
+
+\mbox{\Hypertarget{class_gnuplot_a5ada5c76db0a735d3d331caa0eb4968a}\label{class_gnuplot_a5ada5c76db0a735d3d331caa0eb4968a}} 
+\index{Gnuplot@{Gnuplot}!set\_hidden3d@{set\_hidden3d}}
+\index{set\_hidden3d@{set\_hidden3d}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_hidden3d()}{set\_hidden3d()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+hidden3d (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). 
+
+\mbox{\Hypertarget{class_gnuplot_ab810fa4c02fb49ae197786c305b78702}\label{class_gnuplot_ab810fa4c02fb49ae197786c305b78702}} 
+\index{Gnuplot@{Gnuplot}!set\_isosamples@{set\_isosamples}}
+\index{set\_isosamples@{set\_isosamples}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_isosamples()}{set\_isosamples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+isosamples (\begin{DoxyParamCaption}\item[{const int}]{isolines = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+
+
+Seta densidade de isolinhas para plotagem de funcoes como superficies (para plotagen 3d). 
+
+\mbox{\Hypertarget{class_gnuplot_ad64a717dac18167f656c4f09239973f8}\label{class_gnuplot_ad64a717dac18167f656c4f09239973f8}} 
+\index{Gnuplot@{Gnuplot}!set\_legend@{set\_legend}}
+\index{set\_legend@{set\_legend}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_legend()}{set\_legend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+legend (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{position = {\ttfamily \char`\"{}default\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Ativa a legenda (a legenda È setada por padrao). Posicao\+: inside/outside, left/center/right, top/center/bottom, nobox/box. 
+
+\mbox{\Hypertarget{class_gnuplot_a95ec1636a871447dfe99463b769339c7}\label{class_gnuplot_a95ec1636a871447dfe99463b769339c7}} 
+\index{Gnuplot@{Gnuplot}!set\_pointsize@{set\_pointsize}}
+\index{set\_pointsize@{set\_pointsize}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_pointsize()}{set\_pointsize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+pointsize (\begin{DoxyParamCaption}\item[{const double}]{pointsize = {\ttfamily 1.0} }\end{DoxyParamCaption})}
+
+
+
+Desativa suavizacao. 
+
+Escala o tamanho do ponto usado na plotagem. \mbox{\Hypertarget{class_gnuplot_a671cbe7b18a267ea59f532c83a0035f6}\label{class_gnuplot_a671cbe7b18a267ea59f532c83a0035f6}} 
+\index{Gnuplot@{Gnuplot}!set\_samples@{set\_samples}}
+\index{set\_samples@{set\_samples}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_samples()}{set\_samples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+samples (\begin{DoxyParamCaption}\item[{const int}]{samples = {\ttfamily 100} }\end{DoxyParamCaption})}
+
+
+
+Seta taxa de amostragem das funcoes, ou dos dados de interpolacao. 
+
+\mbox{\Hypertarget{class_gnuplot_aa18386919da2ec4c994f1f9c7195d384}\label{class_gnuplot_aa18386919da2ec4c994f1f9c7195d384}} 
+\index{Gnuplot@{Gnuplot}!set\_smooth@{set\_smooth}}
+\index{set\_smooth@{set\_smooth}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_smooth()}{set\_smooth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+smooth (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{stylestr = {\ttfamily \char`\"{}csplines\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Ativa suavizacao. Argumentos para interpolacoes e aproximacoes. csplines, bezier, acsplines (para dados com valor \texorpdfstring{$>$}{>} 0), sbezier, unique, frequency (funciona somente com plot\+\_\+x, plot\+\_\+xy, plotfile\+\_\+x, plotfile\+\_\+xy (se a suavizacao esta ativa, set\+\_\+style nao tem efeito na plotagem dos graficos) 
+
+\mbox{\Hypertarget{class_gnuplot_acfdcda292650775ebed4683e8e1515b5}\label{class_gnuplot_acfdcda292650775ebed4683e8e1515b5}} 
+\index{Gnuplot@{Gnuplot}!set\_style@{set\_style}}
+\index{set\_style@{set\_style}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_style()}{set\_style()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+style (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{stylestr = {\ttfamily \char`\"{}points\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Seta estilos de linhas (em alguns casos sao necessarias informacoes adicionais). lines, points, linespoints, impulses, dots, steps, fsteps, histeps, boxes, histograms, filledcurves. 
+
+\mbox{\Hypertarget{class_gnuplot_a0e36dcd81618234c6cdd135a9e1eee2b}\label{class_gnuplot_a0e36dcd81618234c6cdd135a9e1eee2b}} 
+\index{Gnuplot@{Gnuplot}!set\_surface@{set\_surface}}
+\index{set\_surface@{set\_surface}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_surface()}{set\_surface()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Ativa a visualizacao da superficie (para plotagen 3d). 
+
+\mbox{\Hypertarget{class_gnuplot_a21feba7a3916708b742c3dc25850ab2f}\label{class_gnuplot_a21feba7a3916708b742c3dc25850ab2f}} 
+\index{Gnuplot@{Gnuplot}!set\_terminal\_std@{set\_terminal\_std}}
+\index{set\_terminal\_std@{set\_terminal\_std}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_terminal\_std()}{set\_terminal\_std()}}
+{\footnotesize\ttfamily void Gnuplot\+::set\+\_\+terminal\+\_\+std (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Opcional\+: Seta terminal padrao (standart), usado para visualizacao dos graficos. Valores padroes (default)\+: Windows -\/ win, Linux -\/ x11, Mac -\/ aqua. 
+
+\mbox{\Hypertarget{class_gnuplot_aa693e806a115af1e2776a15078e75b46}\label{class_gnuplot_aa693e806a115af1e2776a15078e75b46}} 
+\index{Gnuplot@{Gnuplot}!set\_title@{set\_title}}
+\index{set\_title@{set\_title}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_title()}{set\_title()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Ativa o titulo da secao do gnuplot. 
+
+\mbox{\Hypertarget{class_gnuplot_a453688dc2eb979f842082290f3c02ac3}\label{class_gnuplot_a453688dc2eb979f842082290f3c02ac3}} 
+\index{Gnuplot@{Gnuplot}!set\_xautoscale@{set\_xautoscale}}
+\index{set\_xautoscale@{set\_xautoscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_xautoscale()}{set\_xautoscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+xautoscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Seta escalonamento automatico do eixo x (default). 
+
+\mbox{\Hypertarget{class_gnuplot_a58808028aec03a22b5c19693b14baeef}\label{class_gnuplot_a58808028aec03a22b5c19693b14baeef}} 
+\index{Gnuplot@{Gnuplot}!set\_xlabel@{set\_xlabel}}
+\index{set\_xlabel@{set\_xlabel}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_xlabel()}{set\_xlabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+xlabel (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{label = {\ttfamily \char`\"{}x\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Seta o rotulo (nome) do eixo x. 
+
+\mbox{\Hypertarget{class_gnuplot_aff546fad227d93babeb5d2cc9f047b89}\label{class_gnuplot_aff546fad227d93babeb5d2cc9f047b89}} 
+\index{Gnuplot@{Gnuplot}!set\_xlogscale@{set\_xlogscale}}
+\index{set\_xlogscale@{set\_xlogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_xlogscale()}{set\_xlogscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+xlogscale (\begin{DoxyParamCaption}\item[{const double}]{base = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+
+
+Ativa escala logaritma do eixo x (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_a726232ac7226b9fc8811eaefa87c902b}\label{class_gnuplot_a726232ac7226b9fc8811eaefa87c902b}} 
+\index{Gnuplot@{Gnuplot}!set\_xrange@{set\_xrange}}
+\index{set\_xrange@{set\_xrange}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_xrange()}{set\_xrange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+xrange (\begin{DoxyParamCaption}\item[{const int}]{i\+From,  }\item[{const int}]{i\+To }\end{DoxyParamCaption})}
+
+
+
+Seta intervalo do eixo x. 
+
+\mbox{\Hypertarget{class_gnuplot_a3cc19dba32bb2d3ac59494ae1493faa7}\label{class_gnuplot_a3cc19dba32bb2d3ac59494ae1493faa7}} 
+\index{Gnuplot@{Gnuplot}!set\_yautoscale@{set\_yautoscale}}
+\index{set\_yautoscale@{set\_yautoscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_yautoscale()}{set\_yautoscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+yautoscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Seta escalonamento automatico do eixo y (default). 
+
+\mbox{\Hypertarget{class_gnuplot_a7654b86e3873aec4c5101abb466fe4ab}\label{class_gnuplot_a7654b86e3873aec4c5101abb466fe4ab}} 
+\index{Gnuplot@{Gnuplot}!set\_ylabel@{set\_ylabel}}
+\index{set\_ylabel@{set\_ylabel}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_ylabel()}{set\_ylabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+ylabel (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{label = {\ttfamily \char`\"{}y\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Seta o rotulo (nome) do eixo y. 
+
+\mbox{\Hypertarget{class_gnuplot_a201a802d2f27fece0d39809c4eb3bce0}\label{class_gnuplot_a201a802d2f27fece0d39809c4eb3bce0}} 
+\index{Gnuplot@{Gnuplot}!set\_ylogscale@{set\_ylogscale}}
+\index{set\_ylogscale@{set\_ylogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_ylogscale()}{set\_ylogscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+ylogscale (\begin{DoxyParamCaption}\item[{const double}]{base = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+
+
+Ativa escala logaritma do eixo y (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_af621a43664a07523f098ffc3fb5a99b0}\label{class_gnuplot_af621a43664a07523f098ffc3fb5a99b0}} 
+\index{Gnuplot@{Gnuplot}!set\_yrange@{set\_yrange}}
+\index{set\_yrange@{set\_yrange}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_yrange()}{set\_yrange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+yrange (\begin{DoxyParamCaption}\item[{const int}]{i\+From,  }\item[{const int}]{i\+To }\end{DoxyParamCaption})}
+
+
+
+Seta intervalo do eixo y. 
+
+\mbox{\Hypertarget{class_gnuplot_ad72aa208fad039b6b7d13ea9595ce157}\label{class_gnuplot_ad72aa208fad039b6b7d13ea9595ce157}} 
+\index{Gnuplot@{Gnuplot}!set\_zautoscale@{set\_zautoscale}}
+\index{set\_zautoscale@{set\_zautoscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_zautoscale()}{set\_zautoscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+zautoscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Seta escalonamento automatico do eixo z (default). 
+
+\mbox{\Hypertarget{class_gnuplot_ab3206e715d20f05cc0dd1eec89ce8b07}\label{class_gnuplot_ab3206e715d20f05cc0dd1eec89ce8b07}} 
+\index{Gnuplot@{Gnuplot}!set\_zlabel@{set\_zlabel}}
+\index{set\_zlabel@{set\_zlabel}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_zlabel()}{set\_zlabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+zlabel (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{label = {\ttfamily \char`\"{}z\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+Seta o rotulo (nome) do eixo z. 
+
+\mbox{\Hypertarget{class_gnuplot_a1da3838163b0dbde8809b55c5b5c56b1}\label{class_gnuplot_a1da3838163b0dbde8809b55c5b5c56b1}} 
+\index{Gnuplot@{Gnuplot}!set\_zlogscale@{set\_zlogscale}}
+\index{set\_zlogscale@{set\_zlogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_zlogscale()}{set\_zlogscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+zlogscale (\begin{DoxyParamCaption}\item[{const double}]{base = {\ttfamily 10} }\end{DoxyParamCaption})}
+
+
+
+Ativa escala logaritma do eixo y (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_a91666451b8cfd1c5b279d2e585b11af6}\label{class_gnuplot_a91666451b8cfd1c5b279d2e585b11af6}} 
+\index{Gnuplot@{Gnuplot}!set\_zrange@{set\_zrange}}
+\index{set\_zrange@{set\_zrange}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{set\_zrange()}{set\_zrange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::set\+\_\+zrange (\begin{DoxyParamCaption}\item[{const int}]{i\+From,  }\item[{const int}]{i\+To }\end{DoxyParamCaption})}
+
+
+
+Seta intervalo do eixo z. 
+
+\mbox{\Hypertarget{class_gnuplot_a356d2faaa79f08d13fec9718b776b28d}\label{class_gnuplot_a356d2faaa79f08d13fec9718b776b28d}} 
+\index{Gnuplot@{Gnuplot}!showonscreen@{showonscreen}}
+\index{showonscreen@{showonscreen}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{showonscreen()}{showonscreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::showonscreen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal\+\_\+std. 
+
+\mbox{\Hypertarget{class_gnuplot_aada22f547a0a9ac26adea4a4ec836ea4}\label{class_gnuplot_aada22f547a0a9ac26adea4a4ec836ea4}} 
+\index{Gnuplot@{Gnuplot}!ShowOnScreen@{ShowOnScreen}}
+\index{ShowOnScreen@{ShowOnScreen}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{ShowOnScreen()}{ShowOnScreen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Show\+On\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Mostrar na tela ou escrever no arquivo, seta o tipo de terminal para terminal\+\_\+std. 
+
+\mbox{\Hypertarget{class_gnuplot_a29497993835d6b72df35188564ff71cd}\label{class_gnuplot_a29497993835d6b72df35188564ff71cd}} 
+\index{Gnuplot@{Gnuplot}!Smooth@{Smooth}}
+\index{Smooth@{Smooth}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Smooth()}{Smooth()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Smooth (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{stylestr = {\ttfamily \char`\"{}csplines\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa suavizacao. Argumentos para interpolacoes e aproximacoes. csplines, bezier, acsplines (para dados com valor \texorpdfstring{$>$}{>} 0), sbezier, unique, frequency (funciona somente com plot\+\_\+x, plot\+\_\+xy, plotfile\+\_\+x, plotfile\+\_\+xy (se a suavizacao esta ativa, set\+\_\+style nao tem efeito na plotagem dos graficos) 
+
+\mbox{\Hypertarget{class_gnuplot_a07d44cceb72d28ab566dd09a09e870dc}\label{class_gnuplot_a07d44cceb72d28ab566dd09a09e870dc}} 
+\index{Gnuplot@{Gnuplot}!Smooth@{Smooth}}
+\index{Smooth@{Smooth}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Smooth()}{Smooth()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Smooth (\begin{DoxyParamCaption}\item[{int}]{\+\_\+fsmooth }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_gnuplot_aef1de768157bb75e080d1c60a1756e42}\label{class_gnuplot_aef1de768157bb75e080d1c60a1756e42}} 
+\index{Gnuplot@{Gnuplot}!Style@{Style}}
+\index{Style@{Style}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Style()}{Style()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Style (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{stylestr = {\ttfamily \char`\"{}points\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta estilos de linhas (em alguns casos sao necessarias informacoes adicionais). lines, points, linespoints, impulses, dots, steps, fsteps, histeps, boxes, histograms, filledcurves. 
+
+\mbox{\Hypertarget{class_gnuplot_ad5367a586328205bc451a958db705274}\label{class_gnuplot_ad5367a586328205bc451a958db705274}} 
+\index{Gnuplot@{Gnuplot}!Surface@{Surface}}
+\index{Surface@{Surface}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Surface()}{Surface()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Surface (\begin{DoxyParamCaption}\item[{int}]{\+\_\+fsurface = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa/\+Desativa a visualizacao da superficie (para plotagen 3d). 
+
+\mbox{\Hypertarget{class_gnuplot_a4039b0fdcf0e3fbf97dac187825138fb}\label{class_gnuplot_a4039b0fdcf0e3fbf97dac187825138fb}} 
+\index{Gnuplot@{Gnuplot}!Terminal@{Terminal}}
+\index{Terminal@{Terminal}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Terminal()}{Terminal()}}
+{\footnotesize\ttfamily static void Gnuplot\+::\+Terminal (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Opcional\+: Seta terminal padrao (standart), usado para visualizacao dos graficos. Para retornar para terminal janela precisa chamar \mbox{\hyperlink{class_gnuplot_aada22f547a0a9ac26adea4a4ec836ea4}{Show\+On\+Screen()}}. Valores padroes (default)\+: Windows -\/ win, Linux -\/ x11 ou wxt (fedora9), Mac -\/ aqua. 
+
+\mbox{\Hypertarget{class_gnuplot_a83804130dca9267a667220852eb1a181}\label{class_gnuplot_a83804130dca9267a667220852eb1a181}} 
+\index{Gnuplot@{Gnuplot}!Title@{Title}}
+\index{Title@{Title}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Title()}{Title()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Title (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title = {\ttfamily \char`\"{}\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa/\+Desativa o titulo da secao do gnuplot. 
+
+\mbox{\Hypertarget{class_gnuplot_acce4e1245cc08c6bb13d6675419a7c49}\label{class_gnuplot_acce4e1245cc08c6bb13d6675419a7c49}} 
+\index{Gnuplot@{Gnuplot}!Title@{Title}}
+\index{Title@{Title}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{Title()}{Title()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+Title (\begin{DoxyParamCaption}\item[{int}]{\+\_\+ftitle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_gnuplot_a39d10e6ce85875939a9c594d132a10d7}\label{class_gnuplot_a39d10e6ce85875939a9c594d132a10d7}} 
+\index{Gnuplot@{Gnuplot}!unset\_contour@{unset\_contour}}
+\index{unset\_contour@{unset\_contour}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{unset\_contour()}{unset\_contour()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::unset\+\_\+contour (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desativa desenho do contorno em superficies (para plotagen 3d). 
+
+\mbox{\Hypertarget{class_gnuplot_a8b9a16d5793c3f4939b917b2c263860c}\label{class_gnuplot_a8b9a16d5793c3f4939b917b2c263860c}} 
+\index{Gnuplot@{Gnuplot}!unset\_grid@{unset\_grid}}
+\index{unset\_grid@{unset\_grid}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{unset\_grid()}{unset\_grid()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::unset\+\_\+grid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desativa o grid (padrao = desativado). 
+
+\mbox{\Hypertarget{class_gnuplot_a763ff17df1679cc2b1463b024aa89ebc}\label{class_gnuplot_a763ff17df1679cc2b1463b024aa89ebc}} 
+\index{Gnuplot@{Gnuplot}!unset\_hidden3d@{unset\_hidden3d}}
+\index{unset\_hidden3d@{unset\_hidden3d}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{unset\_hidden3d()}{unset\_hidden3d()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::unset\+\_\+hidden3d (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desativa remocao de linhas ocultas na plotagem de superficies (para plotagen 3d). 
+
+\mbox{\Hypertarget{class_gnuplot_a584e0710d7f5bcaa35653d1987f1563e}\label{class_gnuplot_a584e0710d7f5bcaa35653d1987f1563e}} 
+\index{Gnuplot@{Gnuplot}!unset\_legend@{unset\_legend}}
+\index{unset\_legend@{unset\_legend}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{unset\_legend()}{unset\_legend()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::unset\+\_\+legend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desativa a legenda (a legenda È setada por padrao). 
+
+\mbox{\Hypertarget{class_gnuplot_aec18795f217d6d8791275a1c866b550e}\label{class_gnuplot_aec18795f217d6d8791275a1c866b550e}} 
+\index{Gnuplot@{Gnuplot}!unset\_smooth@{unset\_smooth}}
+\index{unset\_smooth@{unset\_smooth}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{unset\_smooth()}{unset\_smooth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::unset\+\_\+smooth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desativa suavizacao. 
+
+\mbox{\Hypertarget{class_gnuplot_a805f1807c9b3a0a6745d66fa1729e3be}\label{class_gnuplot_a805f1807c9b3a0a6745d66fa1729e3be}} 
+\index{Gnuplot@{Gnuplot}!unset\_surface@{unset\_surface}}
+\index{unset\_surface@{unset\_surface}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{unset\_surface()}{unset\_surface()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::unset\+\_\+surface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desativa a visualizacao da superficie (para plotagen 3d). 
+
+\mbox{\Hypertarget{class_gnuplot_a0d205a55ae104403292622b49af14ae7}\label{class_gnuplot_a0d205a55ae104403292622b49af14ae7}} 
+\index{Gnuplot@{Gnuplot}!unset\_title@{unset\_title}}
+\index{unset\_title@{unset\_title}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{unset\_title()}{unset\_title()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::unset\+\_\+title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desativa o titulo da secao do gnuplot. 
+
+\mbox{\Hypertarget{class_gnuplot_aed8f962539fd8f53ab2c0218da7a6010}\label{class_gnuplot_aed8f962539fd8f53ab2c0218da7a6010}} 
+\index{Gnuplot@{Gnuplot}!unset\_xlogscale@{unset\_xlogscale}}
+\index{unset\_xlogscale@{unset\_xlogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{unset\_xlogscale()}{unset\_xlogscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::unset\+\_\+xlogscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desativa escala logaritma do eixo x (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_a74ebc96273b30c98fb9c8f047dd34ac0}\label{class_gnuplot_a74ebc96273b30c98fb9c8f047dd34ac0}} 
+\index{Gnuplot@{Gnuplot}!unset\_ylogscale@{unset\_ylogscale}}
+\index{unset\_ylogscale@{unset\_ylogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{unset\_ylogscale()}{unset\_ylogscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::unset\+\_\+ylogscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desativa escala logaritma do eixo y (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_a294d7473091f849fe70e4dba8df8712a}\label{class_gnuplot_a294d7473091f849fe70e4dba8df8712a}} 
+\index{Gnuplot@{Gnuplot}!unset\_zlogscale@{unset\_zlogscale}}
+\index{unset\_zlogscale@{unset\_zlogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{unset\_zlogscale()}{unset\_zlogscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::unset\+\_\+zlogscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Desativa escala logaritma do eixo z (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_ab7c7f50c7b7a55ffc9b87ff892d2b2b6}\label{class_gnuplot_ab7c7f50c7b7a55ffc9b87ff892d2b2b6}} 
+\index{Gnuplot@{Gnuplot}!XAutoscale@{XAutoscale}}
+\index{XAutoscale@{XAutoscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{XAutoscale()}{XAutoscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+XAutoscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta escalonamento automatico do eixo x (default). 
+
+\mbox{\Hypertarget{class_gnuplot_aefb9c21bd11f2dd6724be22c8aba98bb}\label{class_gnuplot_aefb9c21bd11f2dd6724be22c8aba98bb}} 
+\index{Gnuplot@{Gnuplot}!XLabel@{XLabel}}
+\index{XLabel@{XLabel}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{XLabel()}{XLabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+XLabel (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{label = {\ttfamily \char`\"{}x\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta o rotulo (nome) do eixo x. 
+
+\mbox{\Hypertarget{class_gnuplot_a1c713ae32678d4ada2b170bf774f8f8c}\label{class_gnuplot_a1c713ae32678d4ada2b170bf774f8f8c}} 
+\index{Gnuplot@{Gnuplot}!XLogscale@{XLogscale}}
+\index{XLogscale@{XLogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{XLogscale()}{XLogscale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+XLogscale (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+fxlogscale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa/\+Desativa escala logaritma do eixo x (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_a4a26f10f3d11eedcefa1582140144841}\label{class_gnuplot_a4a26f10f3d11eedcefa1582140144841}} 
+\index{Gnuplot@{Gnuplot}!XLogscale@{XLogscale}}
+\index{XLogscale@{XLogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{XLogscale()}{XLogscale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+XLogscale (\begin{DoxyParamCaption}\item[{const double}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa escala logaritma do eixo x (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_acee07201a6f6c3cf40b87bee425058c0}\label{class_gnuplot_acee07201a6f6c3cf40b87bee425058c0}} 
+\index{Gnuplot@{Gnuplot}!XRange@{XRange}}
+\index{XRange@{XRange}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{XRange()}{XRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+XRange (\begin{DoxyParamCaption}\item[{const int}]{i\+From,  }\item[{const int}]{i\+To }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta intervalo do eixo x. 
+
+\mbox{\Hypertarget{class_gnuplot_af84a02a03a3c7c76fb8ea2364ad89546}\label{class_gnuplot_af84a02a03a3c7c76fb8ea2364ad89546}} 
+\index{Gnuplot@{Gnuplot}!YAutoscale@{YAutoscale}}
+\index{YAutoscale@{YAutoscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{YAutoscale()}{YAutoscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+YAutoscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta escalonamento automatico do eixo y (default). 
+
+\mbox{\Hypertarget{class_gnuplot_a8e7fb34039d3252f01d3e78a44d6af08}\label{class_gnuplot_a8e7fb34039d3252f01d3e78a44d6af08}} 
+\index{Gnuplot@{Gnuplot}!YLabel@{YLabel}}
+\index{YLabel@{YLabel}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{YLabel()}{YLabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+YLabel (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{label = {\ttfamily \char`\"{}y\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta o rotulo (nome) do eixo y. Ex\+: set ylabel \char`\"{}\{/\+Symbol s\}\mbox{[}\+MPa\mbox{]}\char`\"{} font \char`\"{}\+Times Italic, 10\char`\"{}. 
+
+\mbox{\Hypertarget{class_gnuplot_a391e01377127dab11cb7fb3ecbecd2fd}\label{class_gnuplot_a391e01377127dab11cb7fb3ecbecd2fd}} 
+\index{Gnuplot@{Gnuplot}!YLogscale@{YLogscale}}
+\index{YLogscale@{YLogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{YLogscale()}{YLogscale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+YLogscale (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+fylogscale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa/\+Desativa escala logaritma do eixo y (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_aad6e2709ed492e4bf5d587143881c8b2}\label{class_gnuplot_aad6e2709ed492e4bf5d587143881c8b2}} 
+\index{Gnuplot@{Gnuplot}!YLogscale@{YLogscale}}
+\index{YLogscale@{YLogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{YLogscale()}{YLogscale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+YLogscale (\begin{DoxyParamCaption}\item[{const double}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa escala logaritma do eixo y (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_ada2935405def74527ec9d86eebb88aad}\label{class_gnuplot_ada2935405def74527ec9d86eebb88aad}} 
+\index{Gnuplot@{Gnuplot}!YRange@{YRange}}
+\index{YRange@{YRange}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{YRange()}{YRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+YRange (\begin{DoxyParamCaption}\item[{const int}]{i\+From,  }\item[{const int}]{i\+To }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta intervalo do eixo y. 
+
+\mbox{\Hypertarget{class_gnuplot_a8d5f375097a968d169ecbf294af0c4b2}\label{class_gnuplot_a8d5f375097a968d169ecbf294af0c4b2}} 
+\index{Gnuplot@{Gnuplot}!ZAutoscale@{ZAutoscale}}
+\index{ZAutoscale@{ZAutoscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{ZAutoscale()}{ZAutoscale()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+ZAutoscale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta escalonamento automatico do eixo z (default). 
+
+\mbox{\Hypertarget{class_gnuplot_a74cd41eda01e17ab43cf8dcbe145333e}\label{class_gnuplot_a74cd41eda01e17ab43cf8dcbe145333e}} 
+\index{Gnuplot@{Gnuplot}!ZLabel@{ZLabel}}
+\index{ZLabel@{ZLabel}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{ZLabel()}{ZLabel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+ZLabel (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{label = {\ttfamily \char`\"{}z\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta o rotulo (nome) do eixo z. 
+
+\mbox{\Hypertarget{class_gnuplot_a377c6088dd9c9378eafb260e993c35c1}\label{class_gnuplot_a377c6088dd9c9378eafb260e993c35c1}} 
+\index{Gnuplot@{Gnuplot}!ZLogscale@{ZLogscale}}
+\index{ZLogscale@{ZLogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{ZLogscale()}{ZLogscale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+ZLogscale (\begin{DoxyParamCaption}\item[{bool}]{\+\_\+fzlogscale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa/\+Desativa escala logaritma do eixo y (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_ac223d0668c8a0b361ac67eb949224cd4}\label{class_gnuplot_ac223d0668c8a0b361ac67eb949224cd4}} 
+\index{Gnuplot@{Gnuplot}!ZLogscale@{ZLogscale}}
+\index{ZLogscale@{ZLogscale}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{ZLogscale()}{ZLogscale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+ZLogscale (\begin{DoxyParamCaption}\item[{const double}]{base = {\ttfamily 10} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ativa escala logaritma do eixo y (logscale nao e setado por default). 
+
+\mbox{\Hypertarget{class_gnuplot_a58ce69438ac8f8b525c90a282228368f}\label{class_gnuplot_a58ce69438ac8f8b525c90a282228368f}} 
+\index{Gnuplot@{Gnuplot}!ZRange@{ZRange}}
+\index{ZRange@{ZRange}!Gnuplot@{Gnuplot}}
+\doxysubsubsection{\texorpdfstring{ZRange()}{ZRange()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_gnuplot}{Gnuplot}} \& Gnuplot\+::\+ZRange (\begin{DoxyParamCaption}\item[{const int}]{i\+From,  }\item[{const int}]{i\+To }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Seta intervalo do eixo z. 
+
+
+
+A documenta√ß√£o para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Usuario/\+Desktop/\+Codigo/\+Carol\&\+Douglas/\mbox{\hyperlink{_c_gnuplot_8h}{CGnuplot.\+h}}\item 
+C\+:/\+Users/\+Usuario/\+Desktop/\+Codigo/\+Carol\&\+Douglas/\mbox{\hyperlink{_c_gnuplot_8cpp}{CGnuplot.\+cpp}}\end{DoxyCompactItemize}

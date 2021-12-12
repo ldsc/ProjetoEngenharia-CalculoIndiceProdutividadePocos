@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isosamples',['IsoSamples',['../classGnuplot.html#a215f314f3bcc2c869e7379a9728e5f95',1,'Gnuplot']]]
+  ['hidden3d_0',['Hidden3d',['../class_gnuplot.html#a42195fcdfc544df50d7d412f2918c218',1,'Gnuplot']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['run',['Run',['../classCAplicacao.html#a47bf6fb7afc11f9966a52ccfdb13673e',1,'CAplicacao']]]
+  ['operator_3c_3c_0',['operator&lt;&lt;',['../class_gnuplot.html#ae56495dc15f23d32f099129d3a50dd6c',1,'Gnuplot']]]
 ];
