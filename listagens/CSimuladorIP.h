@@ -9,10 +9,10 @@
 #include "CReservatorioVertical.h"
 #include "CPoco.h"
 #include "CIPborisov.h"
-#include "CIpgiger.h"
+#include "CIPgiger.h"
 #include "CIPjoshi.h"
 #include "CIPrenardDupuy.h"
-#include "CIpshedid.h"
+#include "CIPshedid.h"
 #include "CGnuplot.h"
 
 class CSimuladorIP

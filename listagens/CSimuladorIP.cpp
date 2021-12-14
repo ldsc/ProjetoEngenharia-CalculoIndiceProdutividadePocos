@@ -4,7 +4,6 @@
 #include <fstream>
 #include <string>
 #include <vector>
-#include <conio.h>
 #include <dirent.h>
 
 #include "CSimuladorIP.h"
@@ -139,8 +138,8 @@ void CSimuladorIP::Plot(vector <double> _plot, string NomeArquivo)
 		
 	plot.plot_x(_plot);
 	plot.savetops(NomeArquivo);	
-	cout << "Aperte qualquer tecla para continuar ..." << endl;
-  	_getch();
+	cout << "Aperte Enter para continuar ..." << endl;
+  	cin.get();
 }
 
 void CSimuladorIP::Executar()
