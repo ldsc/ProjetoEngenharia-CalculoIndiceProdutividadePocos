@@ -287,17 +287,17 @@ Missão
 \begin_inset Text
 
 \begin_layout Plain Layout
-Simular diferentes cenários do sistema fluido/reservatório e sua influência
+- Simular diferentes cenários do sistema fluido/reservatório e sua influência
  na produtividade dos poços.
 \end_layout
 
 \begin_layout Plain Layout
-Calcular IP dos poços.
+- Calcular IP dos poços.
 \end_layout
 
 \begin_layout Plain Layout
-Gerar gráficos que permita comparar IP de poços com diferentes design (horizonta
-l/vertical).
+- Gerar gráficos que permita comparar IP de poços com diferentes designs
+ (horizontal/vertical).
 \end_layout
 
 \end_inset
@@ -329,7 +329,7 @@ Apresenta-se a seguir a especicação do software.
 \end_layout
 
 \begin_layout Standard
-O projeto a ser desenvolvido cosiste de um programa que deverá realizar
+O projeto a ser desenvolvido consiste de um programa que deverá realizar
  cálculos de IP de poços horizontais e verticais, além de mostrar os resultados
  graficamente.
  Os cálculos serão feitos a partir de modelos matemáticos existentes na
@@ -339,8 +339,8 @@ O projeto a ser desenvolvido cosiste de um programa que deverá realizar
  Além disso, o usuário deverá entrar com os dados do reservatório (permeabilidad
 es horizontal e vertical, espessura, comprimento e raio do poço) e viscosidade
  e fator de formação do fluido - via arquivo .txt, ao final da simulação
- o usuário poderá ver os resultados em tela, gerar gráficos e salvá-los
- como imagem.
+ o usuário poderá salvar os resultados em arquivo .txt, ver os resultados
+ em tela, gerar gráficos e salvá-los como imagem.
 \end_layout
 
 \begin_layout Subsection
@@ -853,10 +853,6 @@ Inserir valores negativos para parâmetros do reservatório ou incompatíveis
 
 \end_layout
 
-\begin_layout Standard
- 
-\end_layout
-
 \begin_layout Subsection
 Diagrama de caso de uso geral
 \begin_inset Note Note
@@ -880,20 +876,20 @@ reference "cap:Diagrama-caso-uso-geral"
 \end_inset
 
  mostra o usuário interagindo com o software para obter o IP de um poço.
- Neste caso de uso geral, o usuário insere os dados de entrada (via tela
- ou através de um arquivo .txt) para então analisar o resultado obtido.
+ Neste caso de uso geral, o usuário insere os dados de entrada (via arquivo
+ .txt) para então analisar o resultado obtido.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_CasoUsoGeral.png
+	filename ../imagens/Diagrama_CasoUsoGeral.png
 	width 100text%
 
 \end_inset
@@ -975,12 +971,12 @@ reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_CasoUsoEspecifico.png
+	filename ../imagens/Diagrama_CasoUsoEspecifico.png
 	width 100text%
 
 \end_inset

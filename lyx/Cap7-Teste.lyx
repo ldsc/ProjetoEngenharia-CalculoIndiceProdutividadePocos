@@ -165,12 +165,12 @@ reference "fig:Teste-TelaPrograma-Captura1"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/teste_apresentação.png
+	filename ../imagens/teste_apresentacao.png
 	width 100text%
 
 \end_inset
@@ -255,12 +255,12 @@ noprefix "false"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Histograma.png
+	filename ../imagens/Histograma.png
 	width 100text%
 
 \end_inset
@@ -298,12 +298,12 @@ name "fig:Teste-TelaPrograma-Captura2"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/ValidacaoResultados.jpeg
+	filename ../imagens/ValidacaoResultados.jpeg
 	width 100text%
 
 \end_inset
@@ -337,7 +337,7 @@ name "fig:Teste-Validacao"
 
 \begin_layout Description
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Nota: 

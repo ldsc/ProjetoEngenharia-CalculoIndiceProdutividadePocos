@@ -129,7 +129,7 @@ space - Elaboração}
 \begin_layout Chapter
 Elaboração
 \begin_inset Index idx
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Elaboração
@@ -595,12 +595,12 @@ noprefix "false"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Figura-3-18.PNG
+	filename ../imagens/Figura-3-18.PNG
 
 \end_inset
 
@@ -787,12 +787,12 @@ reference "fig:Diagrama-de-Pacotes"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_Pacotes.png
+	filename ../imagens/Diagrama_Pacotes.png
 
 \end_inset
 

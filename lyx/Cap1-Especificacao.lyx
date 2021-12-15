@@ -853,10 +853,6 @@ Inserir valores negativos para parâmetros do reservatório ou incompatíveis
 
 \end_layout
 
-\begin_layout Standard
- 
-\end_layout
-
 \begin_layout Subsection
 Diagrama de caso de uso geral
 \begin_inset Note Note
@@ -888,12 +884,12 @@ reference "cap:Diagrama-caso-uso-geral"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_CasoUsoGeral.png
+	filename ../imagens/Diagrama_CasoUsoGeral.png
 	width 100text%
 
 \end_inset
@@ -975,12 +971,12 @@ reference "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Usuario/Desktop/Projeto PP/ProjetoEngenharia-CarolinaB-DouglasR/imagens/Diagrama_CasoUsoEspecifico.png
+	filename ../imagens/Diagrama_CasoUsoEspecifico.png
 	width 100text%
 
 \end_inset

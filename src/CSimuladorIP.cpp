@@ -23,7 +23,7 @@ void CSimuladorIP::EntradaDados()
 	
 	bool errado = true;
 	
-	string path = "./Src/";
+	string path = ".";
 
 	cout << "\nArquivos Disponiveis\n" << endl;
 	
@@ -39,7 +39,7 @@ void CSimuladorIP::EntradaDados()
 	cin.get();
 	getline (cin, nomeArquivo);
     
-	nomeArquivo="Src/"+nomeArquivo;
+	//nomeArquivo="Src/"+nomeArquivo;
 	  	 	
 	ifstream in;
 	

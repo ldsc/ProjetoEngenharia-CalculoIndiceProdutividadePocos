@@ -693,7 +693,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CAplicacao.}, label={CAp
-licacao-h}] {../listagens/CAplicacao.h}
+licacao-h}] {../src/CAplicacao.h}
 \end_layout
 
 \end_inset
@@ -734,7 +734,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CAplicacao.},
- label={CAplicacao-cpp}] {../listagens/CAplicacao.cpp}
+ label={CAplicacao-cpp}] {../src/CAplicacao.cpp}
 \end_layout
 
 \end_inset
@@ -806,7 +806,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CFluido.}, label={CFluid
-o}] {../listagens/CFluido.h}
+o}] {../src/CFluido.h}
 \end_layout
 
 \end_inset
@@ -847,7 +847,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CFluido.}, label={CF
-luido-cpp}] {../listagens/CFluido.cpp}
+luido-cpp}] {../src/CFluido.cpp}
 \end_layout
 
 \end_inset
@@ -900,7 +900,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CPoco.}, label={CPoco}]
- {../listagens/CPoco.h}
+ {../src/CPoco.h}
 \end_layout
 
 \end_inset
@@ -941,7 +941,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CPoco.}, label={CPoc
-o-cpp}] {../listagens/CPoco.cpp}
+o-cpp}] {../src/CPoco.cpp}
 \end_layout
 
 \end_inset
@@ -994,7 +994,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CReservatorio.},
- label={CReservatorio}] {../listagens/CReservatorio.h}
+ label={CReservatorio}] {../src/CReservatorio.h}
 \end_layout
 
 \end_inset
@@ -1035,7 +1035,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CReservatorio.},
- label={CReservatorio-cpp}] {../listagens/CReservatorio.cpp}
+ label={CReservatorio-cpp}] {../src/CReservatorio.cpp}
 \end_layout
 
 \end_inset
@@ -1088,7 +1088,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CReservatorioVertical.},
- label={CReservatorioVertical}] {../listagens/CReservatorioVertical.h}
+ label={CReservatorioVertical}] {../src/CReservatorioVertical.h}
 \end_layout
 
 \end_inset
@@ -1129,7 +1129,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CReservatorioVertic
-al.}, label={CReservatorioVertical-cpp}] {../listagens/CReservatorioVertical.cpp}
+al.}, label={CReservatorioVertical-cpp}] {../src/CReservatorioVertical.cpp}
 \end_layout
 
 \end_inset
@@ -1182,7 +1182,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CCalcIP.}, label={CCalcI
-P}] {../listagens/CCalcIP.h}
+P}] {../src/CCalcIP.h}
 \end_layout
 
 \end_inset
@@ -1223,7 +1223,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CCalcIP.}, label={CC
-alcIP-cpp}] {../listagens/CCalcIP.cpp}
+alcIP-cpp}] {../src/CCalcIP.cpp}
 \end_layout
 
 \end_inset
@@ -1276,7 +1276,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPborisov.}, label={CIP
-borisov-h}] {../listagens/CIPborisov.h}
+borisov-h}] {../src/CIPborisov.h}
 \end_layout
 
 \end_inset
@@ -1317,7 +1317,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPborisov.},
- label={CIPborisov-cpp}] {../listagens/CIPborisov.cpp}
+ label={CIPborisov-cpp}] {../src/CIPborisov.cpp}
 \end_layout
 
 \end_inset
@@ -1370,7 +1370,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPgiger.}, label={CIPgi
-ger}] {../listagens/CIPgiger.h}
+ger}] {../src/CIPgiger.h}
 \end_layout
 
 \end_inset
@@ -1411,7 +1411,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPgiger.},
- label={CIPgiger-cpp}] {../listagens/CIPgiger.cpp}
+ label={CIPgiger-cpp}] {../src/CIPgiger.cpp}
 \end_layout
 
 \end_inset
@@ -1464,7 +1464,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPjoshi.}, label={CIPjo
-shi}] {../listagens/CIPjoshi.h}
+shi}] {../src/CIPjoshi.h}
 \end_layout
 
 \end_inset
@@ -1505,7 +1505,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPjoshi.},
- label={CIPjoshi-cpp}] {../listagens/CIPjoshi.cpp}
+ label={CIPjoshi-cpp}] {../src/CIPjoshi.cpp}
 \end_layout
 
 \end_inset
@@ -1558,7 +1558,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPrenardDupuy.},
- label={CIPrenardDupuy}] {../listagens/CIPrenardDupuy.h}
+ label={CIPrenardDupuy}] {../src/CIPrenardDupuy.h}
 \end_layout
 
 \end_inset
@@ -1599,7 +1599,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPrenardDupuy.},
- label={CIPrenardDupuy-cpp}] {../listagens/CIPrenardDupuy.cpp}
+ label={CIPrenardDupuy-cpp}] {../src/CIPrenardDupuy.cpp}
 \end_layout
 
 \end_inset
@@ -1652,7 +1652,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CIPshedid.}, label={CIPs
-hedid}] {../listagens/CIPshedid.h}
+hedid}] {../src/CIPshedid.h}
 \end_layout
 
 \end_inset
@@ -1693,7 +1693,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CIPshedid.},
- label={CIPshedid-cpp}] {../listagens/CIPshedid.cpp}
+ label={CIPshedid-cpp}] {../src/CIPshedid.cpp}
 \end_layout
 
 \end_inset
@@ -1746,7 +1746,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CSimuladorIP.},
- label={CSimuladorIP}] {../listagens/CSimuladorIP.h}
+ label={CSimuladorIP}] {../src/CSimuladorIP.h}
 \end_layout
 
 \end_inset
@@ -1787,7 +1787,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CSimuladorIP.},
- label={CSimuladorIP-cpp}] {../listagens/CSimuladorIP.cpp}
+ label={CSimuladorIP-cpp}] {../src/CSimuladorIP.cpp}
 \end_layout
 
 \end_inset
@@ -1796,6 +1796,15 @@ lstinputlisting[ caption={Arquivo de implementação da classe CSimuladorIP.},
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Os arquivos do gnuplot são muito grandes, o documento final fica muito grande
+ e é algo externo ao código que elaboraram; não deve ser incluido.
+\end_layout
+
+\begin_layout Plain Layout
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -1829,7 +1838,7 @@ C
 Gnuplot.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1840,7 +1849,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de cabeçalho da classe CGnuplot.}, label={CGnup
-lot}] {../listagens/CGnuplot.h}
+lot}] {../src/CGnuplot.h}
 \end_layout
 
 \end_inset
@@ -1848,7 +1857,7 @@ lot}] {../listagens/CGnuplot.h}
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -1870,7 +1879,7 @@ Gnuplot.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -1881,7 +1890,7 @@ status open
 lstset{style=C++} 
 \backslash
 lstinputlisting[ caption={Arquivo de implementação da classe CGnuplot.},
- label={CGnuplot-cpp}] {../listagens/CGnuplot.cpp}
+ label={CGnuplot-cpp}] {../src/CGnuplot.cpp}
 \end_layout
 
 \end_inset
@@ -1889,7 +1898,8 @@ lstinputlisting[ caption={Arquivo de implementação da classe CGnuplot.},
 
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
 Apresenta-se na listagem 
 \begin_inset ERT
 status open
@@ -1924,7 +1934,7 @@ lstinputlisting[ caption={
 
 Arquivo de implementação da função 
 \backslash
-texttt{main()}.}, label={main-cpp}] {../listagens/main.cpp}
+texttt{main()}.}, label={main-cpp}] {../src/main.cpp}
 \end_layout
 
 \end_inset
@@ -1962,7 +1972,7 @@ lstset{language=,backgroundcolor=
 \backslash
 color{azulclaro}}   
 \backslash
-lstinputlisting[caption=] {../listagens/main.o}   
+lstinputlisting[caption=] {../src/main.o}   
 \end_layout
 
 \begin_layout Plain Layout

@@ -1,0 +1,9 @@
+Para compilar vá no diretório src e execute o comando:
+g++ -std=c++20 *.cpp -lstdc++fs
+
+Para rodar:
+-Vá para o diretorio test;
+-Copie para test uma cópia do executavel
+cd test
+cp ../src/a.out .
+-Execute o programa
